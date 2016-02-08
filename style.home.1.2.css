@@ -1,0 +1,36 @@
+
+body {
+	margin: 0 auto;
+}
+
+table{
+	border: 1px double grey;
+	border-radius: 10px;
+	margin: 0 auto;
+	width: 85%
+}
+.osnova{
+	width: 460px;
+	position: relative; top: -12px; left: 420px;
+	font-family: arial;
+	background-color: white; 
+	box-shadow: 0px 0px 1px 1px #909090;
+	padding: 0px 10px 60px 50px;
+}
+h2{		
+	padding: 35px 0px 0px 90px;
+}
+img{
+	padding: 10px 0px 0px 160px;	
+}
+.patalogy, .frontend, .table{
+	border-bottom: 1px double grey;
+	width: 90%;
+	padding:  10px;
+}
+.frontend{
+	padding: 15px 40px 10px	10px;
+}
+.back{
+	padding-left:  10px;
+}
