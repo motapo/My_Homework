@@ -27,17 +27,15 @@ a {
 	padding-right: 45px;
 }
 .container_1 {
-	padding: 5px 45px 25px 45px; 
+	padding-top: 5px;
+	padding-bottom: 25px; 
 }
 .logo {
 	padding-top: 50px;
 	padding-bottom: 40px;
 }
 .logo_1 {
-	padding-top: 0px;
-	padding-bottom: 0px;
 	padding-left: 550px;
-	padding-right: 1px;
 }
 
 /*================================верхняя панелька*/
@@ -62,6 +60,9 @@ a {
 	padding-top: 40px;
 	width: 28%;
   	height: 400px;
+  	font-size: 14px;
+	line-height: 40px;
+	text-align: left;
 }
 .content {
 	width: 72%;
@@ -74,12 +75,6 @@ a {
 }
 .sidebar a:hover {
 	color: #a9b2b9;
-}
-.sidebar {
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 40px;
-	text-align: left;
 }
 
 /*=============================нижняя панелька*/
