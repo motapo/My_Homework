@@ -1,0 +1,182 @@
+body {
+	background: url(../img/background.jpg);
+	width: 1000px;
+	margin: 0 auto;
+}
+.list {
+	background: white;
+	height: 975px;
+	margin-top: 38px;
+	margin-bottom: 20px;
+	box-shadow: 0 4px 9px black;
+	font-family: tahoma;
+}
+header {
+	height: 412px;
+	position: relative;
+}
+/*======================логотип=======================*/
+.logo {
+	position: absolute;
+	top: 11px;
+	left: 28px;
+}
+.travel {
+	position: absolute;
+	top: 111px;
+	left: 103px;
+	font-size: 12px;
+	color: #128aa7;
+}
+/*==========================контакты=============*/
+.contacts {
+	position: absolute;
+	color: #128aa7; 
+	top: 11px;
+	right: 32px;
+	font-size: 12px;
+	line-height: 1.5;
+}
+.contacts_1 {
+	font-weight: 700;
+/*======================флаги==================*/	
+}
+.prapor {
+	position: absolute;
+	overflow: hidden;
+	top: 110px;
+	right: 20px;
+}
+.prapor li {
+	float: left;
+	padding-right: 15px;
+/*===================ссылки под флагами=======*/	
+}
+.land {
+	position: absolute;
+	overflow: hidden;
+	top: 155px;
+	right: 25px;
+	font-size: 11px;
+}
+.land li{
+	float: left;
+	text-align: center;
+	width: 57.5px;
+}
+.land a {
+	color: #128aa7;
+}
+.land li:hover {
+	background: #34ebf6;
+	border: 1px solid #1d597b;
+	border-radius: 3px;
+}
+.land a:hover {
+	color: black;
+	text-decoration: none;
+} 
+/*================================photo==============*/
+.rollover {
+	position: absolute;
+	top: 175px;
+	border-top: 1px solid #128aa7;
+	border-bottom: 1px solid #128aa7;
+}
+a.rollover {
+	background: url(../img/photo_3.jpg);
+	display: block;
+	width: 1000px;
+	height: 237px;
+}
+a.rollover:hover {
+	background: url(../img/photo_1.jpg);
+}
+/*=================================menu================*/
+.menu {
+	height: 30px;
+	width: 1000px;
+	border-bottom: 1px solid black;
+	position: relative;
+	background: #353535;
+    z-index: 2;
+}
+.menu li {
+	float: left;
+	text-align: center;
+	width: 142.85px;
+	line-height: 2;
+	display: block;
+}
+.menu a {
+	color: white;
+	vertical-align: 50%;
+	font-size: 14px;
+	text-decoration: none;
+}
+.menu a:hover {
+	color: #34ebf6;
+}
+/*=============выпадающие меню========*/
+.menu li a{
+	display:block;
+	background:#353535;
+	box-shadow: 0px 4px 7px #353535;
+}
+.menu ul {
+	opacity:0; /* выпадающее меню спрятано без курсора */
+}	
+.menu li:hover ul { 
+	left: 0;  /*выпадающее меню при наведении курсора*/
+	opacity: 1; /* 0.5 будет полупрозрачным */
+	-webkit-transition: 0.5s linear opacity; /* время проявления выпадалки */ 
+}
+.menu ul li{
+	border-bottom: 2px solid white; 
+	background: white;
+}
+/*==========================колонки==================*/
+.fon {
+	position: absolute;
+	overflow: hidden;
+	width: 1000px;
+	height: 535px;
+	background: url(../img/fone.centre.jpg) repeat-y;
+	text-align: justify;
+	color: #424c43;
+	z-index: 1;	
+}
+.left {
+	position: relative;
+	width: 180px;
+	float: left;
+	padding: 0px 24px 5px 16px;	
+}
+.centre {
+	position: relative;
+	width: 520px;
+	float: left;
+	padding: 0px 24px 5px 16px;
+}
+.right {
+	position: relative;
+	width: 180px;
+	float: left;
+	padding: 0px 24px 5px 16px;
+} 
+.left p,
+.right p {
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 2;
+	text-shadow: 1px 1px 1px gray;
+}
+/*==============концовочка================*/
+footer {
+	color: white;
+	text-align: center;
+	margin-bottom: 12px;
+	font-size: 12px; 
+}
+
