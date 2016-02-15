@@ -75,9 +75,11 @@ a.rollover {
 	display: block;
 	width: 1000px;
 	height: 237px;
+	-webkit-transition: 1.2s;
 }
 a.rollover:hover {
 	background: url(../img/photo_1.jpg);
+	-webkit-transition: 1.2s;
 }
 /*=================================menu================*/
 .menu {
