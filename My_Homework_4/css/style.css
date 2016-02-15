@@ -45,40 +45,21 @@ header {
 	position: absolute;
 	overflow: hidden;
 	top: 110px;
-	right: 20px;
+	right: 28px;
 }
 .prapor li {
 	float: left;
-	padding-right: 15px;
-/*===================ссылки под флагами=======*/	
-}
-.land:after,
-.land:before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-.land {
-	position: absolute;
-	overflow: hidden;
-	top: 155px;
-	right: 25px;
-	font-size: 11px;
-}
-.land li{
-	float: left;
+	width: 54px;
 	text-align: center;
-	width: 57.5px;
 }
-.land a {
-	color: #128aa7;
+.flag_a {
+	margin: 0 auto;
+	display: block;
+	font-family: tahoma;
+	font-size: 10px;
+	color: #128aa7; 
 }
-.land li:hover {
-	background: #34ebf6;
-	border: 1px solid #1d597b;
-	border-radius: 1px;
-}
-.land a:hover {
+.prapor a:hover {
 	color: black;
 	text-decoration: none;
 } 
