@@ -48,7 +48,6 @@ header {
 	right: 308px;
 	border-left: 1px solid #60b5ed;
 }
-
 /*==========================================*/
 .Ola {
 	display: block;
@@ -133,7 +132,7 @@ header {
 	width: 259px;
 	padding-left: 17px;
 }
-li input:hover {
+li input:focus {
 	background-color: #1b5288;
 	box-shadow: 0 1px 9px #689bcc;
 }
