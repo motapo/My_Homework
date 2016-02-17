@@ -1,6 +1,6 @@
 body {
 	background: url(../img/background.jpg);
-	font-family: tahoma;
+	font-family: helveticaneuecyrlight;
 }	
 .web {
 	background: url(../img/fone_3.jpg);
@@ -83,10 +83,11 @@ header {
 	position: relative;
 	margin-bottom: 1px;
 	background: rgba(0,0,0,0.5);
-	font-size: 24px;
+	font-family: redlineregular;
+	font-size: 30px;
 	color: white;
 	text-align: center;
-	padding: 33px 0px;
+	padding: 30px 0px;
 }
 .face {
 	position: absolute;

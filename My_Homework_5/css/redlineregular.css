@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'redlineregular';
+    src: url('../fonts/redline-webfont.eot');
+    src: url('../fonts/redline-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/redline-webfont.woff2') format('woff2'),
+         url('../fonts/redline-webfont.woff') format('woff'),
+         url('../fonts/redline-webfont.ttf') format('truetype'),
+         url('../fonts/redline-webfont.svg#redlineregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
