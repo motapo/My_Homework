@@ -1,0 +1,164 @@
+body {
+	background: url(../img/background.jpg);
+	font-family: tahoma;
+}	
+.web {
+	background: url(../img/fone_3.jpg);
+	width: 1215px;
+	height: 1028px;
+	margin: 0 auto;
+	box-shadow: 0 0 10px rgb(0,0,0);
+}
+/*=============================================*/
+header {
+	position: absolute;
+	height: 36px;
+	width: 1215px;
+	background: linear-gradient(to left, #0c101b, #2e4b85);
+	z-index: 2;
+	font-size: 14px;
+	border-bottom: 3px double white;
+	box-shadow: 0 0 10px rgb(186,208,249);		
+}
+.nav {
+	position: absolute;
+	float: left;
+	left: 468px;
+}
+.nav li {
+	float: left;
+	padding: 11px 13px;
+}
+.nav a {
+	color: #60b5ed;
+	text-decoration: none;
+}
+.nav li:hover {
+	background: #4eabda;
+}
+.nav a:hover {
+	color: white;
+}
+/*============================================*/
+.logo {
+	display: block;
+	position: absolute;
+	margin: 4px 0px 2px 0px;
+	padding: 3px 15px 3px 20px;
+	right: 308px;
+	border-left: 1px solid #60b5ed;
+}
+
+/*==========================================*/
+.Ola {
+	display: block;
+	position: absolute;
+	right: 20px;
+}
+.Ola li {
+	float: left;
+	padding: 11px 10px;
+}
+.Ola a {
+	color: white;
+	text-decoration: none;
+}
+.Ola li:hover {
+	background: linear-gradient(to top, #2e7ac4, #50afdc)
+}
+
+/*.Ola li a span:hover {
+	text-decoration: underline;
+} */		
+/*==========================================*/
+.bord {
+	position: absolute;
+	display: block;
+	margin: 208px 327.5px;
+	height: 612px;
+	width: 560px;
+	z-index: 1;
+}
+.cadastre {
+	position: relative;
+	margin-bottom: 1px;
+	background: rgba(0,0,0,0.5);
+	font-size: 24px;
+	color: white;
+	text-align: center;
+	padding: 33px 0px;
+}
+.face {
+	position: absolute;
+	margin-top: 1px;
+	height: 521px;
+	width: 560px;
+	background: rgba(0,0,0,0.5);
+
+}
+.face img {
+	position: absolute;
+	top: 35px;
+	left: 142px;
+	padding-bottom: 35px;
+	border-bottom: 1px solid #666666;
+	box-shadow: 0px 1px black; 
+}
+/*============================================*/		
+.OU {
+	position: relative;
+	top: 90px;
+	left: 250px;
+	margin: 10px;
+	padding-left: 10px;
+}
+.form {
+	position: absolute;
+	top: 237px;
+	left: 140px;
+}
+.colortext {
+	background-color: #0f0f0f;
+	color: white;
+	margin-bottom: 15px;
+	line-height: 28px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid grey;
+	width: 259px;
+	padding-left: 17px;
+}
+li input:hover {
+	background-color: #1b5288;
+	box-shadow: 0 1px 9px #689bcc;
+}
+label {
+	color: white;
+}
+.chbox {
+	margin-top: 5px;
+}
+.chang_submit {
+	margin: 20px 64px 20px 64px;
+	padding: 10px 13px;
+	border: 1px solid rgba(0,0,0,0);
+	border-radius: 5px;
+	background: linear-gradient(to top, #2e7ac4, #4faddb);
+	text-align: center;
+	color: white;
+	font-size: 14px;
+}
+.police {
+
+	position: absolute;
+	left: 125px;
+	bottom: 20px;
+	color: white;
+	width: 310px;
+	text-align: center;
+	font-size: 11px;
+}
+
+
+
