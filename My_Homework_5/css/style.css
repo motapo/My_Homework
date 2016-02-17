@@ -33,10 +33,18 @@ header {
 	color: #60b5ed;
 	text-decoration: none;
 }
-.nav li:hover {
+.meu:hover,
+.ven:hover,
+.for:hover,
+.con:hover,
+.aju:hover {
 	background: #4eabda;
 }
-.nav a:hover {
+.meu:hover a,
+.ven:hover a,
+.for:hover a,
+.con:hover a,
+.aju:hover a {
 	color: white;
 }
 /*============================================*/
@@ -55,6 +63,9 @@ header {
 	position: absolute;
 	right: 20px;
 }
+.Ola span {
+	text-decoration:underline
+}	
 .Ola li {
 	float: left;
 	padding: 11px 10px;
