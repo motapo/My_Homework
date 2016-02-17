@@ -33,18 +33,10 @@ header {
 	color: #60b5ed;
 	text-decoration: none;
 }
-.meu:hover,
-.ven:hover,
-.for:hover,
-.con:hover,
-.aju:hover {
+.don:hover {
 	background: #4eabda;
 }
-.meu:hover a,
-.ven:hover a,
-.for:hover a,
-.con:hover a,
-.aju:hover a {
+.don:hover a {
 	color: white;
 }
 /*============================================*/
