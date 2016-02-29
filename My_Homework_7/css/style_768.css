@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 960px) {
 /*============== background под 768px==========*/
 .black_background {
 	position: absolute;
@@ -211,6 +211,13 @@ header {
 	-o-transform: scale(1);
 	transform: scale(1);
 }
+#slide_1:checked ~ #active label:nth-child(2), 
+#slide_2:checked ~ #active label:nth-child(3), 
+#slide_3:checked ~ #active label:nth-child(4), 
+#slide_4:checked ~ #active label:nth-child(1) {
+	display: none;
+}
+
 /*================ SECTION 768 =========*/
 section {
 	position: relative;
@@ -226,7 +233,7 @@ section {
 .section_about .icon {
 	position: relative;
 	float: left;
-	width: 25px;
+	width: 24px;
 	height: 25px;
 	background: url(../img/sprite.png) 0 0 no-repeat;
 }
@@ -234,12 +241,12 @@ section {
 	margin: 81px 0px 0px 35px;
 }
 .centre_about .icon {
-	background-position: -24px 0;
+	background-position: -25px 0;
 	width: 29px;
 	margin: 80px 0px 0px 29px;
 }
 .right_about .icon {
-	background-position: -52px 0;
+	background-position: -53px 0;
 	margin: 81px 0px 0px 34px;
 }
 .section_about {
