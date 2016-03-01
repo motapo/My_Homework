@@ -391,18 +391,12 @@ section {
 	color: #edbfff;
 	text-shadow: 0px 1px 2px black, 0 0 0em black;
 }
-.slide_white_1,
-.slide_white_2,
-.slide_white_3,
-.slide_white_4 {
+.slide_white_1, .slide_white_2, .slide_white_3, .slide_white_4 {
 	position: relative;
 	display: inline-block;
 	width: 370px;
 }
-.slide_white_1 p,
-.slide_white_2 p,
-.slide_white_3 p,
-.slide_white_4 p {
+.slide_white_1 p, .slide_white_2 p, .slide_white_3 p, .slide_white_4 p {
 	font-family: 'Open Sans', sans-serif;
 	line-height: 1.5;
 	padding-top: 13px;
@@ -482,7 +476,6 @@ section {
 	-o-transform: scale(1);
 	transform: scale(1);
 }
-
 /*====================== article 480 =================*/
 article {
 	position: relative;
@@ -518,7 +511,6 @@ article h3 {
 	color: #454545;
 	padding-left: 1px;
 	margin-bottom: 16px;
-
 }
 article h4 {
 	font-family: 'Open Sans', sans-serif;
@@ -547,13 +539,11 @@ article h5:hover {
 aside {
 	position: relative;
 	width: 480px;
-	height: 520px;
+	height: 985px;
 }
-.logo_grey_768,
-.logo_grey {
+.logo_grey_768, .logo_grey {
 	display: none;
 }
-
 .logo_grey_480 {
 	width: 480px;
 	height: 200px;
@@ -565,70 +555,62 @@ aside {
 	z-index: 2;
 	padding: 119px 0px 0px 66px;		
 }
-
 .grey_table {
 	position: relative;
 	display: block;
-	width: 960px;
+	width: 480px;
 	height: 399px;
 	margin: 0 auto;
-	padding-top: 97px; 
+	padding-top: 169px; 
 }
 .left_grey, .centre_grey, .right_grey {
-	position: relative;
+	display: block;
+	width: 100%;
+	height: 185px;
+}
+.left_grey h1 {  
+   	display: none;
+}
+.left_grey h4 {
 	display: inline-block;
-	width: 33%;
-	height: 290px;
-	vertical-align: top;
-
-} 	
-.left_grey h1 {
 	font-family: "league_gothicregular";
-	font-size: 47px;
+	font-size: 25px;
 	color: #454545;
 	text-transform: uppercase;
-	padding-bottom: 14px;
+	padding-bottom: 8px;
 }
 .left_grey span {
 	color: #b9b9b9;
 	padding-bottom: 11px;
 }
-.left_grey h4 {
+.left_grey h2 {
 	display: none;
 }
-.left_grey h2 {
-	margin-bottom: 12px;
-	font-size: 16px;
-	font-family: Georgia, Arial, sans-serif;
-	font-style: italic;
-	color: #aba9a9; 
-}
-.centre_grey h3,
-.right_grey h3 {
+.centre_grey h3, .right_grey h3 {
 	font-family: "league_gothicregular";
-	font-size: 30px;
+	font-size: 23px;
 	color: #454545;
 	text-transform: uppercase;
-	margin-bottom: 11px;
+	margin-bottom: 10px;
 }
-.left_grey p,
-.centre_grey p,
-.right_grey p,
-.grey_table h5 {
+.left_grey p, .centre_grey p, .right_grey p {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
-	line-height: 1.65em;
+	line-height: 1.6em;
 	font-weight: 100;
-}
+}	
 .centre_grey {
-	padding-left: 16px;
-	padding-right: 15px;
+	padding-right: 35px;
+	padding-left: 17px;
 }
 .right_grey {
-	padding-left: 36px;
+	padding-right: 35px;
+	padding-left: 17px;
+	padding-top: 3px;
 }
 .left_grey {
 	padding-right: 35px;
+	padding-left: 17px;
 }
 /*====================== FOOTER 480 =============*/ 
 footer {
@@ -640,25 +622,33 @@ footer {
 }
 .navi {
 	position: relative;
-	display: block;
-	width: 960px;
+	width: 480px;
 	height: 50px;
 	margin: 0 auto;
+	padding-top: 3px;
+	padding-left: 19px;
 }
 .navi .menu_li a {
-	font-size: 20px;
+	font-size: 19px;
 }  
 .navi .menu_li {
-	margin-right: 38px;
+	margin-right: 22px;
 	margin-top: 3px;
 	margin-left: 0px;
 	height: 25px;
+	display: inline;
+	background: none;
+	border-top: 0;
+	border-bottom: 0;
+}
+.navi .menu_li:hover {
+	border-bottom: 3px solid pink;
 }
 .navi_designed {
 	display: block;
 	position: relative;
-	top: -17px;
-	left: 823px;
+	top: 37px;
+	left: 150px;
 }
 footer h6 {
 	font-family: 'Open Sans', sans-serif;
@@ -669,7 +659,4 @@ footer h6 {
 footer h6 span {
 	font-weight: 900;
 }
-
-
-
 }

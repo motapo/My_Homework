@@ -217,7 +217,6 @@ header {
 #slide_4:checked ~ #active label:nth-child(1) {
 	display: none;
 }
-
 /*================ SECTION 768 =========*/
 section {
 	position: relative;
@@ -370,18 +369,12 @@ section {
 .slides_white p span {
 	display: none;
 }	
-.slide_white_1,
-.slide_white_2,
-.slide_white_3,
-.slide_white_4 {
+.slide_white_1, .slide_white_2, .slide_white_3, .slide_white_4 {
 	position: relative;
 	display: inline-block;
 	width: 370px;
 }
-.slide_white_1 p,
-.slide_white_2 p,
-.slide_white_3 p,
-.slide_white_4 p {
+.slide_white_1 p, .slide_white_2 p, .slide_white_3 p, .slide_white_4 p {
 	font-family: 'Open Sans', sans-serif;
 	line-height: 1.45;
 	padding-top: 9px;
@@ -496,7 +489,6 @@ article h3 {
 	color: #454545;
 	padding-left: 1px;
 	margin-bottom: 16px;
-
 }
 article h4 {
 	font-family: 'Open Sans', sans-serif;
@@ -554,9 +546,7 @@ aside {
 	width: 32%;
 	height: 280px;
 }
-.left_grey h5, 
-.centre_grey h5, 
-.right_grey h5 {
+.left_grey h5, .centre_grey h5, .right_grey h5 {
 	display: none;
 }
 .left_grey h1 {  
@@ -577,17 +567,14 @@ aside {
 .left_grey h2 {
 	display: none;
 }
-.centre_grey h3,
-.right_grey h3 {
+.centre_grey h3, .right_grey h3 {
 	font-family: "league_gothicregular";
 	font-size: 23px;
 	color: #454545;
 	text-transform: uppercase;
 	margin-bottom: 10px;
 }
-.left_grey p,
-.centre_grey p,
-.right_grey p {
+.left_grey p, .centre_grey p, .right_grey p {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
 	line-height: 1.6em;
