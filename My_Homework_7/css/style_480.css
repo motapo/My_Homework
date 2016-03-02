@@ -1,5 +1,10 @@
 @media (min-width: 481px) and (max-width: 768px) {
  
+.list {
+	width: 480px;
+	height: 3036px; 	
+	margin: 0 auto;
+}
 /*============== background под 480px==========*/
 .black_background {
 	position: absolute;
@@ -19,7 +24,7 @@
 	position: absolute;
 	top: 1932px;
 	height: 234px;
-	width: 2400px;
+	width: 100%;
 	background: #f9f9f9;
 	border-top: 2px solid #e6e6e6;
 }
@@ -35,10 +40,6 @@
 	background: url(../img/background_bottom_768..jpg);
 }	
 /*==================HEADER под 480px ============*/
- .list {
-	width: 480px;
-	margin: 0 auto;
-}
 header {
 	padding-top: 67px;
 }
