@@ -6,7 +6,12 @@
 	margin: 0 auto;
 }
 /*============== background под 480px==========*/
-
+.top_background {
+	background: url(../img/background_4.jpg);
+	position: absolute;
+	width: 100%;
+	height: 548px;
+}
 .black_background {
 	position: none;	
 	top: 203px;
@@ -14,29 +19,27 @@
 }
 .purple_background {
 	position: absolute;
-	top: 548px;
+	top: 516px;
 	height: 599px;
 }
 .white_background {
-	top: 1147px;
+	top: 1117px;
 	height: 785px;
 }
 .white_background_border {
 	position: absolute;
-	top: 1932px;
-	height: 234px;
+	top: 1902px;
+	height: 423px;
 	width: 100%;
 	background: #f9f9f9;
 	border-top: 2px solid #e6e6e6;
 }
 .grey_background {
-	position: absolute;
-	top: 2166px;
-	height: 669px;
+	display: none;
 }
 .background_bot {
 	position: absolute;
-	top: 2835px;
+	top: 2325px;
 	height: 201px;
 	background: url(../img/background_bottom_768..jpg);
 }	
@@ -85,16 +88,16 @@ header {
 	padding-left: 39px;
 	left: 0px;
 }
-.menu_li:hover {
-	background: rgba(49, 22, 71,0.5);
-	position: relative;
+.menu_li_320 a:hover {
+	border-bottom: 3px solid #edbfff;
 }
+
 /*============== slider под 320px==========*/
 .main {
 	height: 175px;
 	margin: 0 auto;
 	position: relative;
-	width: 320px;
+	width: 250px;
 	padding-top: 0px;
 }
 .slider	{
@@ -112,9 +115,7 @@ header {
 	display: none;
 }
 .slide_2 img {
-	position: absolute;
-	top: 0px;
-	left: 225px;
+	display: none;
 }
 .main > input {
 	display: none;
@@ -130,8 +131,8 @@ header {
 	color: white;
 	font-size: 21px;
 	text-shadow: 0px 1px 2px black, 0 0 0em #978b8f;
-	width: 250px;
-	padding-left: 28px;
+	width: 180px;
+	padding-left: 1px;
 }
 .slides h2 {
 	font-size: 35px;
@@ -147,8 +148,8 @@ header {
 	position: relative;
 	display: inline-block;
 	top: 0px;
-	width: 250px;
-	left: 38px;
+	width: 210px;
+	left: 30px;
 	padding-top: 80px;
 }
 .slides img {
@@ -159,35 +160,9 @@ header {
 }
 .main .controls {
 	position: relative;
-	margin-left: 118px;
+	margin-left: 83px;
 	padding-top: 192px;
-}
-.main label {
-	cursor: pointer;
-	display: inline-block;
-	height: 8px;
-	margin: 26px 0 0 10px;
-	position: relative;
-	width: 8px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-o-border-radius: 50%;
-	border-radius: 50%;
-	background: #43424c;
-}
-.main label:after {
-	border: 2px solid white;
-	content: " ";
-	display: block;
-	height: 11px;
-	left: -3px;
-	position: absolute;
-	top: -3px;
-	width: 11px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-o-border-radius: 50%;
-	border-radius: 50%;
+	width: 90px;
 }
 .main label {
 	-webkit-transition: background ease-in-out .5s;
@@ -227,14 +202,21 @@ header {
 	-o-transform: scale(1);
 	transform: scale(1);
 }
+#active {
+	width: 200px;
+	margin: 0;
+	height: 1px;
+}
 #slide_1:checked ~ #active label:nth-child(2), 
 #slide_2:checked ~ #active label:nth-child(3), 
 #slide_3:checked ~ #active label:nth-child(4), 
 #slide_4:checked ~ #active label:nth-child(1) {
 	background: url(../img/next.png) no-repeat;
 	float: right;
-	margin: -30px -20px 0 0;
 	display: block;
+	position: absolute;
+	top: 57px;
+	right: -54px;
 }
 #slide_1:checked ~ #active label:nth-child(4),
 #slide_2:checked ~ #active label:nth-child(1),
@@ -242,15 +224,18 @@ header {
 #slide_4:checked ~ #active label:nth-child(3) {
 	background: url(../img/prev.png) no-repeat;
 	float: left;
-	margin: -30px 0 0 -23px;
 	display: block;
+	position: absolute;
+	top: 57px;
+	left: -59px;
 }
+
 /*================SECTION под 320 пихарей =========*/
 section {
 	position: relative;
 	padding-left: 0px;
-	width: 320px;
-	height: 530px;
+	width: 363px;
+	height: 723px;
 	padding-top: 195px;
 }
 .section_about img {
@@ -291,7 +276,7 @@ section {
 	padding: 7px 4px 0px 84px;
 }
 .right_about .section_about_item {
-	padding: 18px 2px 0px 84px;
+	padding: 31px 2px 0px 84px;
 }
 .section_about h4 {
 	font-family: "league_gothicregular";
@@ -339,35 +324,42 @@ section {
 	display: inline-block;
 	overflow: hidden;
 	height: 770px;
-	width: 320px;
-	padding-top: 166px;
+	width: 290px;
+	padding-top: 88px;
 	margin-left: 17px;
 }
 /*=================== SLIDER LEFT WHITE 320==============*/
 .block_white_right {
 	position: relative;
 	display: inline-block;
-	width: 320px;
+	width: 330px;
 	height: 300px;
 	margin: 0 auto;
 }
 .fone_sender {
 	position: absolute;
-	top: -27px;
-	left: -39px;
+	top: -19px;
+	left: -35px;
 	z-index: -1;
-	width: 419px;
-	height: 290px;
+	width: 257px;
+	height: 292px;
 }
 .photo {
 	position: absolute;
 	display: inline-block;
 	float: left;
-	top: -9px;
-	left: -63px;
+	top: 0px;
+	left: -59px;
+}
+.pinker {
+	position: relative;
+	display: block;
+}
+.unvision {
+	display: none;
 }
 .slider_white {
-	top: 0px;
+	padding-top: 0px;
 	left: 63px;
 	width: 385px;
 	height: 220px;
@@ -386,10 +378,11 @@ section {
 	font-size: 20px;
 }
 .slides_white h2 {
-	font-size: 30px;
+	font-size: 24px;
 	word-spacing: 0.1px;
 	padding-left: 0px;
 	text-transform: uppercase;
+	padding-top: 6px;
 }
 .slides_white .pinker {
 	color: #edbfff;
@@ -402,16 +395,16 @@ section {
 }
 .slide_white_1 p, .slide_white_2 p, .slide_white_3 p, .slide_white_4 p {
 	font-family: 'Open Sans', sans-serif;
-	line-height: 1.5;
-	padding-top: 13px;
+	line-height: 1.45;
+	padding-top: 4px;
 	word-spacing: -1.2px;
 	font-size: 17px;
-	width: 370px;
+	width: 220px;
 	height: 180px;
 }
 .block_white_right .controls_white {
-	margin-top: 247px;
-	margin-left: 118px;
+	margin-top: 256px;
+	margin-left: 56px;
 	position: absolute;
 }
 .block_white_right label {
@@ -480,14 +473,18 @@ section {
 	-o-transform: scale(1);
 	transform: scale(1);
 }
+
 /*====================== article 320 =================*/
 article {
 	position: relative;
 	display: inline-block;
 	float: right;
-	top: 30px;
-	left: 33px;
-	width: 451px;	
+	top: 39px;
+	left: 119px;
+	width: 407px;	
+}
+.neque {
+	display: none;
 }
 .smile_1, .smile_2, .smile_3 {
 	display: inline-block;
@@ -500,11 +497,14 @@ article {
 	margin: 2px 19px 0px 4px;
 } 
 .smile_2 {
-	margin: 5px 19px 0px 4px;
+	margin: 5px 19px 0p4зчж
 } 
 .smile_3 {
 	margin: 7px 19px 0px 4px;
 } 
+.smile_3_h4 {
+	padding-top: 6px;
+}
 article li {
 	height: 65px;
 }
@@ -530,7 +530,7 @@ article p {
 	line-height: 1.5; 
 }
 article h5 {
-	margin: 10px 0px 0px 252px;
+	margin: 8px 0px 0px 188px;
 	font-family: "league_gothicregular";
 	font-size: 18px;
 	text-transform: uppercase;
@@ -541,81 +541,27 @@ article h5:hover {
 }
 /*============== ASIDE 320=====================*/
 aside {
-	position: relative;
 	width: 320px;
-	height: 985px;
+	height: 100px;
 }
-.logo_grey_768, .logo_grey {
+.logo_grey_768, .logo_grey, .logo_gray_480 {
 	display: none;
 }
 .logo_grey_320 {
 	width: 320px;
-	height: 200px;
+	height: 370px;
 	margin: 0 auto;
 	margin-bottom: 26px; 
 	position: relative;
 	display: block;
 	clear: both;
 	z-index: 2;
-	padding: 119px 0px 0px 66px;		
+	padding: 66px 0px 0px 42px;		
 }
 .grey_table {
-	position: relative;
-	display: block;
-	width: 320px;
-	height: 399px;
-	margin: 0 auto;
-	padding-top: 169px; 
-}
-.left_grey, .centre_grey, .right_grey {
-	display: block;
-	width: 100%;
-	height: 185px;
-}
-.left_grey h1 {  
-   	display: none;
-}
-.left_grey h4 {
-	display: inline-block;
-	font-family: "league_gothicregular";
-	font-size: 25px;
-	color: #454545;
-	text-transform: uppercase;
-	padding-bottom: 8px;
-}
-.left_grey span {
-	color: #b9b9b9;
-	padding-bottom: 11px;
-}
-.left_grey h2 {
 	display: none;
 }
-.centre_grey h3, .right_grey h3 {
-	font-family: "league_gothicregular";
-	font-size: 23px;
-	color: #454545;
-	text-transform: uppercase;
-	margin-bottom: 10px;
-}
-.left_grey p, .centre_grey p, .right_grey p {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 15px;
-	line-height: 1.6em;
-	font-weight: 100;
-}	
-.centre_grey {
-	padding-right: 35px;
-	padding-left: 17px;
-}
-.right_grey {
-	padding-right: 35px;
-	padding-left: 17px;
-	padding-top: 3px;
-}
-.left_grey {
-	padding-right: 35px;
-	padding-left: 17px;
-}
+
 /*====================== FOOTER 320 =============*/ 
 footer {
 	position: relative;
@@ -632,27 +578,14 @@ footer {
 	padding-top: 3px;
 	padding-left: 19px;
 }
-.navi .menu_li a {
-	font-size: 19px;
-}  
 .navi .menu_li {
-	margin-right: 22px;
-	margin-top: 3px;
-	margin-left: 0px;
-	height: 25px;
-	display: inline;
-	background: none;
-	border-top: 0;
-	border-bottom: 0;
-}
-.navi .menu_li:hover {
-	border-bottom: 3px solid pink;
+	display: none;
 }
 .navi_designed {
 	display: block;
 	position: relative;
-	top: 37px;
-	left: 150px;
+	top: 333px;
+	left: 73px;
 }
 footer h6 {
 	font-family: 'Open Sans', sans-serif;

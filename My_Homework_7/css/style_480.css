@@ -6,6 +6,12 @@
 	margin: 0 auto;
 }
 /*============== background под 480px==========*/
+.top_background {
+	background: url(../img/background_4.jpg);
+	position: absolute;
+	width: 100%;
+	height: 548px;
+}
 .black_background {
 	position: absolute;
 	top: 203px;
@@ -31,7 +37,7 @@
 .grey_background {
 	position: absolute;
 	top: 2166px;
-	height: 669px;
+	height: 670px;
 }
 .background_bot {
 	position: absolute;
@@ -160,33 +166,6 @@ header {
 	top: 77px;
 }
 .main label {
-	cursor: pointer;
-	display: inline-block;
-	height: 8px;
-	margin: 26px 0 0 10px;
-	position: relative;
-	width: 8px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-o-border-radius: 50%;
-	border-radius: 50%;
-	background: #43424c;
-}
-.main label:after {
-	border: 2px solid white;
-	content: " ";
-	display: block;
-	height: 11px;
-	left: -3px;
-	position: absolute;
-	top: -3px;
-	width: 11px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-o-border-radius: 50%;
-	border-radius: 50%;
-}
-.main label {
 	-webkit-transition: background ease-in-out .5s;
 	-moz-transition: background ease-in-out .5s;
 	-o-transition: background ease-in-out .5s;
@@ -230,8 +209,9 @@ header {
 #slide_4:checked ~ #active label:nth-child(1) {
 	background: url(../img/next.png) no-repeat;
 	float: right;
-	margin: 12px -20px 0 0;
 	display: block;
+	top: -99px;
+	right: -16px;
 }
 #slide_1:checked ~ #active label:nth-child(4),
 #slide_2:checked ~ #active label:nth-child(1),
@@ -239,8 +219,9 @@ header {
 #slide_4:checked ~ #active label:nth-child(3) {
 	background: url(../img/prev.png) no-repeat;
 	float: left;
-	margin: 12px 0 0 -23px;
 	display: block;
+	top: -99px;
+	left: -31px;
 }
 /*================SECTION под 480 пихарей =========*/
 section {
@@ -356,6 +337,9 @@ section {
 	width: 419px;
 	height: 290px;
 }
+.neque {
+	display: inline-block;
+}
 .photo {
 	position: absolute;
 	display: inline-block;
@@ -399,7 +383,7 @@ section {
 }
 .slide_white_1 p, .slide_white_2 p, .slide_white_3 p, .slide_white_4 p {
 	font-family: 'Open Sans', sans-serif;
-	line-height: 1.5;
+	line-height: 1.45;
 	padding-top: 13px;
 	word-spacing: -1.2px;
 	font-size: 17px;
@@ -535,6 +519,9 @@ article h5 {
 }
 article h5:hover {
 	text-shadow: 0px 0px 5px white, 0 0 0em #978b8f;
+}
+article li span {
+	display: none;
 }
 /*============== ASIDE 480=====================*/
 aside {
