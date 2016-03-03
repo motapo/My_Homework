@@ -267,7 +267,11 @@ section {
 	float: left;
 	overflow: hidden;
 	width: 460px;
-	height: 150px;
+	height: 135px;
+}
+.left_about {
+	height: 129px;
+	margin-bottom: 20px;
 }
 .left_about .section_about_item {
 	padding: 0px 3px 0px 84px;
@@ -293,6 +297,7 @@ section {
 	padding-top: 3px;
 	line-height: 24px;
 	word-spacing: 1.3px;
+	width: 230px;
 }
 .section_about_item h5 {
 	position: relative;
