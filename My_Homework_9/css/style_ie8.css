@@ -9,13 +9,13 @@ header, nav, section, article, aside, footer {
 }
 .big_text {
 	display: block;
-	height: 20px;
+	height: 16px;
 	width: 100%;
 	color: black;
 	text-align: center;
 	font-weight: 700;
 	font-family: Tahoma, sans-serif;
-	font-size: 16px;
+	font-size: 12px;
 	background: #a504bd;
 	border-bottom: 1px solid black; 
 	border-bottom: 1px solid black; 

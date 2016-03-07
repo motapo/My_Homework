@@ -45,6 +45,21 @@
 	height: 201px;
 	background: url(../img/background_bottom_768..jpg);
 }	
+/*=======================*/
+.big_text {
+	display: block;
+	height: 32px;
+	width: 100%;
+	color: black;
+	text-align: center;
+	font-weight: 700;
+	font-family: Tahoma, sans-serif;
+	font-size: 12px;
+	background: #a504bd;
+	border-bottom: 1px solid black; 
+	border-bottom: 1px solid black; 
+	text-transform: uppercase;  
+}
 /*==================HEADER под 480px ============*/
 header {
 	padding-top: 67px;
@@ -79,9 +94,16 @@ header {
 	border: 1px solid #111b22;
 	border-radius: 7px;
 	margin-top: 0;
-	border-radius: 10px;
 	z-index: 3;
 }
+.menu_item {
+  background: transparent;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000)"; /* IE8 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);   /* IE6 & 7 */
+  zoom: 1;
+
+}
+
 .menu_li:hover {
 	background: rgba(49, 22, 71,0.5);
 	position: relative;

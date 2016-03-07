@@ -36,8 +36,11 @@ body {
 	top: 279px;
 	height: 400px;
 	width: 100%;
-	background: rgba(60, 43, 68,0.45);
-}	
+		zoom:1; 
+  		background:#121210;
+  		filter:alpha(opacity=50);
+  	background: rgba(60, 43, 68,0.45);
+}
 .purple_background {
 	position: absolute;
 	top: 847px;
@@ -48,7 +51,7 @@ body {
     background: -ms-linear-gradient(top, #681193, #260236);
     background: -o-linear-gradient(top, #681193, #260236);
    	background: linear-gradient(to top, #681193, #260236);
-   	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#681193', endColorstr='#260236');
+   		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#681193', endColorstr='#260236');
 	border-top: 1px solid #33253a;
 	border-bottom: 1px solid #33253a;
 }
@@ -100,16 +103,17 @@ header {
 .menu_logo h1 p {
 	position: relative;
 	display: inline-block;
+	color: #65048f;
     background: -webkit-linear-gradient(#830bb7, #11deab);
-    background: -moz-linear-gradient(#830bb7, #11deab);
+    /*background: -moz-linear-gradient(#830bb7, #11deab);*/
     background: -ms-linear-gradient(#830bb7, #11deab);
     background: -o-linear-gradient(#830bb7, #11deab);
    	background: linear-gradient(#830bb7, #11deab);
 	-webkit-background-clip: text;
- 	-moz-background-clip: text;
+	-moz-background-clip: text;
  	background-clip: text;
 	color: transparent;
-  	text-shadow: none; 	
+	text-shadow: none; 	
 }
 .menu_item {
 	position: relative;
@@ -216,8 +220,9 @@ header {
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;
-	border-radius: 50%;
-	background: black;
+	border-radius: 4px;
+	behavior: url(PIE.htc);
+	background: #301369;
 }
 .controls label:after {
 	border: 2px solid white;
@@ -232,6 +237,7 @@ header {
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;
 	border-radius: 50%;
+		behavior: url(PIE.htc);
 }
 .main label {
 	-webkit-transition: background ease-in-out .5s;
