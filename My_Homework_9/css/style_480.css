@@ -306,6 +306,9 @@ section {
 	color: white;
 	font-family: "league_gothicregular";
 }
+.centre_about h5 {
+	padding-left: 255px\0/;
+}	
 .section_about_item h5:hover {
 	text-shadow: 0px 0px 5px white, 0 0 0em #978b8f;
 }
