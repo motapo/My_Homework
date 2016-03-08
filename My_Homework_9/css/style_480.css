@@ -75,16 +75,15 @@ header {
 	height: 259px;
 	top: 17px;
 	left: 115px;
-	border-radius: 10px;
-		behavior: url(PIE.htc);
 		zoom:1; 
   		background:#121210;
   		filter:alpha(opacity=50);
 	background: rgba(50, 15, 72,0.8);
 	border: 1px solid #111b22;
-
+	border-radius: 10px;
+		behavior: url(PIE.htc);
 	margin-top: 0;
-	z-index: 3;
+	z-index: 9;
 }
 .menu_li:hover {
 		zoom:1; 

@@ -1,0 +1,82 @@
+header, nav, section, article, aside, footer {
+   display:block;
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.big_text {
+	display: block;
+	height: 16px;
+	width: 100%;
+	color: black;
+	text-align: center;
+	font-weight: 700;
+	font-family: Tahoma, sans-serif;
+	font-size: 12px;
+	background: #a504bd;
+	border-bottom: 1px solid black; 
+	border-bottom: 1px solid black; 
+	text-transform: uppercase;  
+}
+.big_text a {
+	text-decoration: none;
+	color: black;
+}
+.big_text a:hover {
+	color: white;
+}
+.list {
+	width: 960px;
+	height: 2291px; 	
+	margin: 0 auto;
+}
+.black_background {
+	position: absolute;
+	top: 279px;
+	height: 400px;
+	width: 100%;
+  	background: rgba(60, 43, 68,0.9);
+}
+/*===============================slides ==============*/
+.slides iframe {
+	display: none;	
+}
+
+/*============== HEADER ie8=======================*/
+.menu_logo, .menu_item_a {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='black')";
+}
+.menu_logo h1 p {
+	color: #ad0ce2;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='black')";
+}
+.menu_li {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='black')";
+}
+.menu_li:hover {
+	border-bottom: 3px solid #edbfff;
+}
+/*=================== SLIDER ===============*/
+
+/*++++++++++++++++++ SECTION +++++++++++++++*/
+.section_about h4 {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#b1aa8e')";
+}
+.section_about p {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=140, Color='#978b8f')";	
+}
+.section_about_item h5:hover {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#f8f2c0')";
+}	
+/*====================БЛОК БЕЛОГО ФОНА =========*/
+
+/*======================article =================*/
+article h5:hover {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=130, Color='black')";
+}
+/*==============ASIDE=====================*/
+
+/*====================== FOOTER =============*/ 

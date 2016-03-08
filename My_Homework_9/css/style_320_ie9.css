@@ -1,0 +1,12 @@
+@media (max-width: 480px) {
+ 
+.big_text {
+	display: block;
+	height: 28px;
+}
+
+/*=================== SLIDER LEFT WHITE 320 ie9==============*/
+.block_white_right label {
+	display: inline-block;
+}
+}

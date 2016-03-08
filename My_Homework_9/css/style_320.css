@@ -18,7 +18,7 @@
 	height: 548px;
 }
 .black_background {
-	position: none;	
+	position: absolute;	
 	top: 203px;
 	height: 246px;
 }

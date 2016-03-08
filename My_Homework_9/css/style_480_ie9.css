@@ -1,0 +1,32 @@
+@media (min-width: 481px) and (max-width: 768px) {
+ 
+.list {
+	height: 3021px; 	
+}
+/*============== background под 480px==========*/
+}
+.black_background {
+	position: absolute;
+	top: 203px;
+	height: 246px;
+}
+
+/*==================HEADER под 480px ============*/
+
+/*============== slider под 480px==========*/
+
+.slide_2, .slide_3, .slide_4 {
+	display: inline-block;
+}
+/*================SECTION под 480 пихарей =========*/
+
+/*==================== БЛОК БЕЛОГО ФОНА 480 =========*/
+/*=================== SLIDER LEFT WHITE 480==============*/
+.block_white_right label {
+	display: inline-block;
+}
+/*====================== article 480 =================*/
+
+/*============== ASIDE 480=====================*/
+
+/*====================== FOOTER 480 =============*/ 

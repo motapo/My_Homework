@@ -37,7 +37,7 @@ body {
 	height: 400px;
 	width: 100%;
 		zoom:1; 
-  		background:#121210;
+  		background: black;
   		filter:alpha(opacity=50);
   	background: rgba(60, 43, 68,0.45);
 }

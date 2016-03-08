@@ -100,9 +100,9 @@ header, nav, section, article, aside, footer {
 	padding-top: 99px;
 	width: 508px;
 }
-.slide_2, .slide_3, .slide_4 {
+/*.slide_2, .slide_3, .slide_4 {
 	display: none;
-}
+}*/
 .slides img {
 	position: absolute;
 	display: inline-block;
