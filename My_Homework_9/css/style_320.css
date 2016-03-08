@@ -4,6 +4,11 @@
 	width: 380px;
 	height: 2525px; 	
 	margin: 0 auto;
+	height: 2496px\0/;
+}
+.big_text {
+	display: block;
+	height: 30px;
 }
 /*============== background под 480px==========*/
 .top_background {
@@ -20,7 +25,7 @@
 .purple_background {
 	position: absolute;
 	top: 516px;
-	height: 599px;
+	height: 601px;
 }
 .white_background {
 	top: 1117px;
@@ -415,6 +420,7 @@ section {
 .block_white_right label {
 	cursor: pointer;
 	display: inline-block;
+		display: none\0/;
 	height: 8px;
 	margin: 26px 0 0 10px;
 	position: relative;

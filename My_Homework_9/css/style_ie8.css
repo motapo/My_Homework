@@ -327,7 +327,7 @@ header, nav, section, article, aside, footer {
 }
 .block_white_right label {
 	cursor: pointer;
-	display: inline-block;
+	display: none;
 	height: 8px;
 	margin: 26px 0 0 10px;
 	position: relative;

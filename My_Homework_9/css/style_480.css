@@ -157,6 +157,9 @@ header {
 	left: 38px;
 	padding-top: 109px;
 }
+.slide_2, .slide_3, .slide_4 {
+	display: none\0/;
+}
 .slides img {
 	position: absolute;
 	display: inline-block;
@@ -405,6 +408,7 @@ section {
 .block_white_right label {
 	cursor: pointer;
 	display: inline-block;
+		display: none\0/;
 	height: 8px;
 	margin: 26px 0 0 10px;
 	position: relative;
