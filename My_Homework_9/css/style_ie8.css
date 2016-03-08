@@ -49,7 +49,7 @@ header, nav, section, article, aside, footer {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='black')";
 }
 .menu_logo h1 p {
-	color: #65048f;
+	color: #ad0ce2;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='black')";
 }
 .menu_li {
@@ -109,6 +109,9 @@ header, nav, section, article, aside, footer {
 	top: 2px;
 	left: 616px;
 }
+.slide_2 img, .slide_3 img, .slide_4 img {
+	display: none;
+}
 .slide_1 iframe {
 	display: none;
 	position: absolute;
@@ -121,7 +124,6 @@ header, nav, section, article, aside, footer {
 	top: 33px;
 	left: 683px;
 }
-
 .slide_1 p, .slide_2 p, .slide_3 p, .slide_4 p {
 	font-family: 'Open Sans', sans-serif;
 	line-height: 1.35;
@@ -137,7 +139,7 @@ header, nav, section, article, aside, footer {
 }
 .main label {
 	cursor: pointer;
-	display: inline-block;
+	display: none;
 	height: 8px;
 	margin: 26px 0 0 10px;
 	position: relative;
@@ -190,7 +192,6 @@ header, nav, section, article, aside, footer {
 	-o-transform: scale(1);
 	transform: scale(1);
 }
-
 .main label:hover, 
 #slide_1:checked ~ .controls label:nth-of-type(1),
 #slide_2:checked ~ .controls label:nth-of-type(2),
