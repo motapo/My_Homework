@@ -28,6 +28,13 @@ header, nav, section, article, aside, footer {
 .big_text a:hover {
 	color: white;
 }
+
+.big_text {
+	display: block;
+	height: 100%;
+	padding: 10px auto;
+	line-height: 1.5;
+}
 .list {
 	width: 960px;
 	height: 2291px; 	

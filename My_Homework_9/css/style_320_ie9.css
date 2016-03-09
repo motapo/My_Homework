@@ -2,9 +2,10 @@
  
 .big_text {
 	display: block;
-	height: 28px;
+	height: 100%;
+	padding: 10px auto;
+	line-height: 1.5;
 }
-
 /*=================== SLIDER LEFT WHITE 320 ie9==============*/
 .block_white_right label {
 	display: inline-block;

@@ -8,7 +8,9 @@
 }
 .big_text {
 	display: block;
-	height: 28px;
+	height: 100%;
+	padding: 10px auto;
+	line-height: 1.5;
 }
 /*============== background под 480px==========*/
 .top_background {

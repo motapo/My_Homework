@@ -1,9 +1,14 @@
 @media (min-width: 481px) and (max-width: 768px) {
- 
-.list {
+ .list {
 	width: 480px;
 	height: 3036px; 	
 	margin: 0 auto;
+}
+.big_text {
+	display: block;
+	height: 100%;
+	padding: 10px auto;
+	line-height: 1.5;
 }
 /*============== background под 480px==========*/
 .top_background {

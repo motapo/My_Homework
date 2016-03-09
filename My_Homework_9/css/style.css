@@ -121,6 +121,14 @@ header {
 .menu_logo h1 p {
 	color: #ad0ce2;
 	text-shadow: 0px 1px 2px black, 0 0 0em #978b8f;	
+
+}
+} 
+@media screen and (min-width:0\0) {  
+  .menu_logo h1 p {
+	color: #ad0ce2;
+	text-shadow: 0px 1px 2px black, 0 0 0em #978b8f;	
+	background: none;
 } 
 } 
 .menu_item {

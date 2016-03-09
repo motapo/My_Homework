@@ -1,10 +1,5 @@
-@media (min-width: 769px) and (max-width: 960px) {
-.big_text {
-	display: block;
-	height: 100%;
-	padding: 10px auto;
-	line-height: 1.5;
-}
+
+@media screen and (min-width:0\0) and (min-width: 769px) and (max-width: 960px) {
 /*============== background под 768px==========*/
 .top_background {
 	background: url(../img/background_4.jpg);
@@ -143,14 +138,6 @@ header {
 	top: 12px;
 	left: 404px;
 }
-.slide_2 img, .slide_3 img, .slide_4 img {
-	display: none\0/;
-}
-
-.slide_2, .slide_3, .slide_4 {
-	display: none\0/;
-}
-
 .slide_1 p, .slide_2 p, .slide_3 p, .slide_4 p {
 	font-family: 'Open Sans', sans-serif;
 	line-height: 1.55;
@@ -400,7 +387,6 @@ section {
 .block_white_right label {
 	cursor: pointer;
 	display: inline-block;
-		display: none\0/;
 	height: 8px;
 	margin: 26px 0 0 10px;
 	position: relative;
@@ -644,5 +630,6 @@ footer h6 {
 }
 footer h6 span {
 	font-weight: 900;
+}
 }
 }

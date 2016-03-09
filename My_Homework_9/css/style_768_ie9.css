@@ -1,4 +1,11 @@
 @media (min-width: 769px) and (max-width: 960px) {
+
+.big_text {
+	display: block;
+	height: 100%;
+	padding: 10px auto;
+	line-height: 1.5;
+}
 /*============== background под 768px ==========*/
 
 /*============== header 768px ==========*/	

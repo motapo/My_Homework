@@ -3,6 +3,12 @@
 .list {
 	height: 3021px; 	
 }
+.big_text {
+	display: block;
+	height: 100%;
+	padding: 10px auto;
+	line-height: 1.5;
+}
 /*============== background под 480px==========*/
 }
 .black_background {
