@@ -33,8 +33,6 @@
 			for (j = 0; j < 3; j++) {
 			var liAnswer = document.createElement('li');
 			nameList[j].appendChild(liAnswer);		
-			// liAnswer.innerHTML = 'Ответ на вопрос '+ i;
-			// var myIdChek = 'Ответ №'+ i' вопрос ' + j; 
 			liAnswer.innerHTML = '<input type="checkbox" id="liAnswer'+ j +'nameList'+ i +'"><label for="liAnswer'+ j +'nameList'+ i +'">Вариант ответа № </label>'+ i;	
 			liAnswer.style.listStyle = "none";
 			liAnswer.style.marginLeft = "20px";
@@ -42,13 +40,13 @@
 			liAnswer.style.marginBottom = "-10px";
 			}
 		}
-		var mySubmit = document.createElement('div');
-		mySubmit.className = "button-xlarge pure-button";
-		mySubmit.innerHTML = '<input type="submit" value="Проверить мои результаты" class="mySubClass">'
+		var mySubmit = document.createElement('submit');
+		mySubmit.className = "btn btn-primary btn-lg";
+		mySubmit.innerHTML = 'Проверить мои результаты';
 		document.body.appendChild(mySubmit);
 		mySubmit.style.marginLeft = "310px";
-		mySubmit.style.color = "black";
-		mySubmit.style.border = "2px solid black";		
+		mySubmit.style.color = "white";
+		mySubmit.style.border = "2px solid gray";		
 		mySubmit.style.marginTop = "20px";
 		},
 	}				
