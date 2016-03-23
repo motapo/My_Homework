@@ -1,0 +1,12 @@
+body {
+  background-color:black;
+}
+#c {
+  opacity:.5;
+}
+canvas {
+	width: 780px;
+	height: 700px;	
+    position:absolute;
+    top:0; left:0;
+}

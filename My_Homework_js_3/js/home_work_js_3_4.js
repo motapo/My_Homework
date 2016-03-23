@@ -26,6 +26,7 @@
 			nameList.style.marginTop = "20px";
 			}
 		},
+		
 	createAnswerLi: function() {
 		var liAnswer = document.createElement('li');
 		var nameList = document.getElementsByTagName('ul');
@@ -44,10 +45,11 @@
 		mySubmit.className = "btn btn-primary btn-lg";
 		mySubmit.innerHTML = 'Проверить мои результаты';
 		document.body.appendChild(mySubmit);
-		mySubmit.style.marginLeft = "310px";
+		mySubmit.style.marginLeft = '310px';
 		mySubmit.style.color = "white";
 		mySubmit.style.border = "2px solid gray";		
 		mySubmit.style.marginTop = "20px";
+		
 		},
 	}				
 createBody.createHeader();
