@@ -6,7 +6,8 @@
 }
 .sbHolder{
 	background: #0e0e0f;
-	border: 1px solid #a61b08;
+	border-top: 1px solid #a61b08;
+	border-bottom: 1px solid #a61b08;
 	font-family: Arial, sans-serif;
 	font-size: 12px;
 	font-weight: normal;
@@ -14,7 +15,12 @@
 	position: relative;
 	width: 200px;
 	box-shadow: 0px 8px 15px black;
-	border-radius: 10px;
+	border-radius: 2px;
+}
+.sbHolder:hover {
+	border-radius: 2px 2px 0px 0px;
+	border-bottom: none;
+	background-color: #212121;
 }
 .sbSelector{
 	display: block;
@@ -44,17 +50,18 @@
 	width: 31px;	
 }
 .sbToggle:hover{
-	background: url(../img/select-icons.png) 0 -167px no-repeat;
+	background: url(../img/select-icons.png) 0 -116px no-repeat;
 }
 .sbToggleOpen{
 	background: url(../img/select-icons.png) 0 -16px no-repeat;
 }
 .sbToggleOpen:hover{
-	background: url(../img/select-icons.png) 0 -66px no-repeat;
+	background: url(../img/select-icons.png) 0 -16px no-repeat;
 }
 .sbOptions{
 	background-color: #212121;
 	border: solid 1px red;
+	border-top: none;
 	list-style: none;
 	left: -1px;
 	margin: 0;

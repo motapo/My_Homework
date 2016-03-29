@@ -49,7 +49,7 @@ nav {
 }
 .name_brend, .main_menu_sub, .main_menu_sub_item_ul {
 	position: absolute;
-	top: 42px;
+	top: 38px;
 	width: 102%;
 	background: #0e0e0f;
 	display: none;
