@@ -1,0 +1,65 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	background: url(../img/walpapper.jpg);
+}
+.main {
+	width: 1060px;
+	margin: 150px auto; 
+}
+.carousel-list p {
+	text-align: center;
+	display: block;
+	padding: 5px;
+	font-family: Arial;
+	font-weight: 700;
+}
+.carousel-element {
+	display: inline-block;
+	margin: 0 10px;
+	float: left;
+}
+.carousel-element img {
+	max-width: 300px;
+}
+.carousel-list {
+	padding-top: 20px;
+	width: 10000px;
+	position: relative;
+}
+.wrapper {
+	width: 960px;
+	overflow: hidden;
+	float: left;
+	border-radius: 10px;
+}
+.carousel-arrow-left, .carousel-arrow-right {
+    float: left;
+}
+.carousel-arrow-left, .carousel-arrow-right {
+    float: left;
+    display: block;
+    border: 2px solid grey;
+	border-radius: 5px;
+    background-color: lightgrey;
+    padding: 20px 10px 0 5px;
+    font-size: 28px;
+    font-weight: 900;
+    margin-top: 86px;
+    height: 73px;
+    width: 27px;
+}
+.carousel-arrow-left:hover, .carousel-arrow-right:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+.carousel-arrow-left {
+    margin-right: 23px;
+}
+.carousel-arrow-right {
+    margin-left: 23px;
+}

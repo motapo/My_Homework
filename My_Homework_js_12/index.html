@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home work JS 11-12</title>
+	<link rel="stylesheet" href="css/style.home.1.2.css">
+	<script src="js/jquery-1.12.2.min.js"></script>
+	<script src="js/template.js"></script>
+	<script src="js/script_12_js.js"></script>
+</head>
+<body>
+<script type="text/template" id="test">
+	<div class="osnova">
+		<h2>
+			<%= name %>
+		</h2>
+		<img src="img/photo.jpg" height="150">
+		<p></p>
+		<div class="patalogy"><%= span1 %></div>
+				<div class="frontend"><%= title %>
+					<ul>
+				<% for (var i = 0; i < data.length; i++) { %>
+						<li><%= data[i].content %></li>
+				<% }; %>	
+					</ul>
+				</div>
+		<div class="table">
+			<p></p>
+			<table>
+				<tr>
+					<% for (var j = 0; j < tab.length; j++) { %>
+					<th><%= tab[j].table %></th>
+					<% }; %>		
+				</tr>
+				<tr>
+					<td>
+						<% for (var k = 0; k < number.length; k++) { %>
+						<p><%= number[k].num %></p>
+						<% }; %>
+					</td>
+					<td>
+						<%= nick %>
+					</td>
+					<td>
+						<% for (var z = 0; z < link.length; z++) { %>
+						<p>
+							<a href="<%= link[z].href %>" target="_blank"><b><%= link[z].a %></b></a>
+						</p>
+						<% }; %>
+					</tr>
+			</table>	
+				<p></p>
+				<p></p>	
+		</div>
+			<p></p>
+		<div class="back">
+			<%= motivation %>
+		</div>
+	</div>
+</script>
+
+<body bgcolor="#E0E0E0">
+
+</body>
+</html>
