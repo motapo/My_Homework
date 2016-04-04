@@ -10,56 +10,27 @@
 	<script src="js/jquery-1.12.2.min.js"></script>	
 	<script src="js/home_work_js_14.js"></script>
 	<script src="js/mustache.min.js"></script>
-	<script src="js/mustache.js"></script>
 </head>
 <body onload="loadtemp()" >
 <!-- ====================== -->
 	<header>
 		<h2 id="title"></h2>
 	</header>
-
-	<form action="">
-	<div class="main">
-		<ul class="question1"><h5 id="question1h5"></h5>
-
-					{{#question1}}
-			<li class="answer1-<%= i %>">
-				<input name="answer1" type="radio" id="answer1-<%= i %>" value="<%= data[i].answer1 %>">
-					<label for="answer1-<%= i %>">
-						{{answer1}}
-					</label>
-					{{/question1}}
-			</li>
-		</ul>
-		
-		<ul class="question2"><h5 id="question2h5"></h5>
-				<% for (var j = 0; j < data2.length; j++) { %>
-			<li class="answer2-<%= j %>">
-				<input name="answer2" type="radio" id="answer2-<%= j %>" value="<%= data2[j].answer2 %>">
-					<label for="answer2-<%= j %>">
-						<%= data2[j].answer2 %>
-					</label>
-					<% }; %>
-			</li>
-		</ul>
-		<ul class="question2"><h5 id="question3h5"></h5>
-				<% for (var z = 0; z < data3.length; z++) { %>
-			<li class="answer3-<%= z %>">
-				<input name="answer3" type="radio" id="answer3-<%= z %>"value="<%= data3[z].answer3 %>">
-					<label for="answer3-<%= z %>">
-						<%= data3[z].answer3 %>
-					</label>
-					<% }; %>
-			</li>
-		</ul>
-</div>
-<div class="button">
-	<input type="submit" id="myButton" value="">
-</div>
-</form>
-
-
-<!-- ============================= -->	
-
+		<form action="">
+			<div class="main" id="mainId">
+				<ul class="question1"><h5 id="question1h5"></h5>
+					<div id="qiestion1Div"></div>
+				</ul>
+				<ul class="question2"><h5 id="question2h5"></h5>
+					<div id="qiestion2Div"></div>
+				</ul>
+				<ul class="question3"><h5 id="question3h5"></h5>
+					<div id="qiestion3Div"></div>
+				</ul>
+			</div>
+			<div class="button">
+				<input type="submit" id="myButton" value="">
+			</div>
+		</form>
 </body>
 </html>

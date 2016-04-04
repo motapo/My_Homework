@@ -6,70 +6,45 @@ var questionTemp = {
 		quest1: '1. Какое из философских учений вымышленное?',
 		quest2: '2. Душа человека, возникающая в процессе жизни',
 		quest3: '3. Древнейшее философское учение Китая',}
-var question1Temp = [
-		{ answer1: 'Учение "Восьми стихий"' },
-		{ answer1: 'Восьмерка Оно Озаки' },
-		{ answer1: 'Философия "Восьмеричного пути"' }];
-var question2Temp = [
-		{ answer2: 'Манас' },
-		{ answer2: 'Атман' },
-		{ answer2: 'Сансара' }];
-var question3Temp = [
-		{ answer3: 'Буддизм' },
-		{ answer3: 'Конфуцианство' },
-		{ answer3: 'Даосизм' }];		
+var answerAll = { 
+	answer1: ["Учение 'Восьми стихий'", "Восьмерка Оно Озаки", "Философия 'Восьмеричного пути'"],
+	answer2: ["Манас", "Атман", "Сансара"],
+	answer3: ["Буддизм", "Конфуцианство", "Даосизм"]};		
 // переводим объект в строку
 var strQuestionTemp = JSON.stringify(questionTemp); 
-var strQuestion1Temp = JSON.stringify(question1Temp); 
-var strQuestion2Temp = JSON.stringify(question2Temp); 
-var strQuestion3Temp = JSON.stringify(question3Temp); 
+var strAnswerAll = JSON.stringify(answerAll); 
 // заносим в локальное хранилище именно строку, объект нельзя
 localStorage.setItem('boxQuestionTemp', strQuestionTemp);
-localStorage.setItem('boxQuestion1Temp', strQuestion1Temp);
-localStorage.setItem('boxQuestion2Temp', strQuestion2Temp);
-localStorage.setItem('boxQuestion3Temp', strQuestion3Temp);
+localStorage.setItem('boxAnswerAll', strAnswerAll);
 // выводим строку из хранилища
 var resultQuestionTemp = localStorage.getItem('boxQuestionTemp');
-var resultQuestion1Temp = localStorage.getItem('boxQuestion1Temp');
-var resultQuestion2Temp = localStorage.getItem('boxQuestion2Temp');
-var resultQuestion3Temp = localStorage.getItem('boxQuestion3Temp');
+var resultAnswerAll = localStorage.getItem('boxAnswerAll');
 //возвращаем строке вид объекта
 var question = JSON.parse(resultQuestionTemp);
-var question1 = JSON.parse(resultQuestion1Temp);
-var question2 = JSON.parse(resultQuestion2Temp);
-var question3 = JSON.parse(resultQuestion3Temp);
+var answerAll = JSON.parse(resultAnswerAll);
 
 // шаблонизируем это дело в HTML
-
-      function loadtemp(){
+    function loadtemp(){
       		
-		var outputTitle = Mustache.render("{{title}}", question);
-        document.getElementById('title').innerHTML = outputTitle;
-		var outputQuest1 = Mustache.render("{{quest1}}", question);
-        document.getElementById('question1h5').innerHTML = outputQuest1;
-		var outputQuest2 = Mustache.render("{{quest2}}", question);
-        document.getElementById('question2h5').innerHTML = outputQuest2;
-		var outputQuest3 = Mustache.render("{{quest3}}", question);
-        document.getElementById('question3h5').innerHTML = outputQuest3;
-        var outputSubmit = Mustache.render("{{submit}}", question);
-        document.getElementById('myButton').setAttribute('value', outputSubmit);
-
-      }
-
+	var outputTitle = Mustache.render("{{title}}", question);
+    document.getElementById('title').innerHTML = outputTitle;
+	var outputQuest1 = Mustache.render("{{quest1}}", question);
+	var templateAnswer1 = "{{#answer1}} <li><input name='answer1' type='radio' id='{{.}}' value=''><label for='{{.}}'> {{.}} </label> </li> {{/answer1}}";
+	var resultAnswer1 = Mustache.render(templateAnswer1, answerAll);
+	document.getElementById('qiestion1Div').innerHTML = resultAnswer1;
+	var templateAnswer2 = "{{#answer2}} <li><input name='answer2' type='radio' id='{{.}}' value=''><label for='{{.}}'> {{.}} </label> </li> {{/answer2}}";
+	var resultAnswer2 = Mustache.render(templateAnswer2, answerAll);
+	document.getElementById('qiestion2Div').innerHTML = resultAnswer2;
+	var templateAnswer3 = "{{#answer3}} <li><input name='answer3' type='radio' id='{{.}}' value=''><label for='{{.}}'> {{.}} </label> </li> {{/answer3}}";
+	var resultAnswer3 = Mustache.render(templateAnswer3, answerAll);
+	document.getElementById('qiestion3Div').innerHTML = resultAnswer3;
+	document.getElementById('question1h5').innerHTML = outputQuest1;
+	var outputQuest2 = Mustache.render("{{quest2}}", question);
+    document.getElementById('question2h5').innerHTML = outputQuest2;
+	var outputQuest3 = Mustache.render("{{quest3}}", question);
+    document.getElementById('question3h5').innerHTML = outputQuest3;
+    var outputSubmit = Mustache.render("{{submit}}", question);
+    document.getElementById('myButton').setAttribute('value', outputSubmit);};
 
 // ========пытаемся пробовать вешать функции на кнопку
-var $myCheckRadio = $('#question1h5');
-var $myButton = $('#myButton');
-console.log($myCheckRadio, $myButton);
-
-$myButton.on('click', function() {
-
-  alert( 'ты ошибся' )
-
-});
-
-
-
-
-// ========================
 
