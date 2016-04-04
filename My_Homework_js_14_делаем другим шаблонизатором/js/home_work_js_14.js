@@ -1,6 +1,8 @@
 'use strict;'
 //=====создаем объекты: "ВОПРОС"---"ВАРИАНТЫ ОТВЕТОВ"=====
 var questionTemp = {
+		title: 'Философские учения Востока',
+		submit: 'проверить мои результаты',
 		quest1: '1. Какое из философских учений вымышленное?',
 		quest2: '2. Душа человека, возникающая в процессе жизни',
 		quest3: '3. Древнейшее философское учение Китая',}
@@ -36,14 +38,38 @@ var question = JSON.parse(resultQuestionTemp);
 var question1 = JSON.parse(resultQuestion1Temp);
 var question2 = JSON.parse(resultQuestion2Temp);
 var question3 = JSON.parse(resultQuestion3Temp);
+
 // шаблонизируем это дело в HTML
-$(function(){
-	var html = $('#template').html();
-	var title = 'Философские учения Востока';
-	var submit = 'проверить мои результаты';
-	var answer = tmpl(html, {
-		data: question1, title, submit, question,
-		data2: question2,
-		data3: question3
-	 });
-	$('body').append(answer);});
+
+      function loadtemp(){
+      		
+		var outputTitle = Mustache.render("{{title}}", question);
+        document.getElementById('title').innerHTML = outputTitle;
+		var outputQuest1 = Mustache.render("{{quest1}}", question);
+        document.getElementById('question1h5').innerHTML = outputQuest1;
+		var outputQuest2 = Mustache.render("{{quest2}}", question);
+        document.getElementById('question2h5').innerHTML = outputQuest2;
+		var outputQuest3 = Mustache.render("{{quest3}}", question);
+        document.getElementById('question3h5').innerHTML = outputQuest3;
+        var outputSubmit = Mustache.render("{{submit}}", question);
+        document.getElementById('myButton').setAttribute('value', outputSubmit);
+
+      }
+
+
+// ========пытаемся пробовать вешать функции на кнопку
+var $myCheckRadio = $('#question1h5');
+var $myButton = $('#myButton');
+console.log($myCheckRadio, $myButton);
+
+$myButton.on('click', function() {
+
+  alert( 'ты ошибся' )
+
+});
+
+
+
+
+// ========================
+

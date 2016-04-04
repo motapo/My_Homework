@@ -35,3 +35,8 @@ $(function(){
 		
 	$('body').append(content);
 });
+
+var $myVar = $('img');
+$myVar.on('click', function(){
+	alert('работает!');
+});
