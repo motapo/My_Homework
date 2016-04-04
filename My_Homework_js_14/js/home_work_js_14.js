@@ -44,7 +44,40 @@ var answerAll = JSON.parse(resultAnswerAll);
 	var outputQuest3 = Mustache.render("{{quest3}}", question);
     document.getElementById('question3h5').innerHTML = outputQuest3;
     var outputSubmit = Mustache.render("{{submit}}", question);
-    document.getElementById('myButton').setAttribute('value', outputSubmit);};
+    document.getElementById('myButton').setAttribute('value', outputSubmit);
+
+
+var $statusAnswer1 = $("#Восьмерка Оно Озаки").is(':checked');
+console.log($statusAnswer1);
+var $statusAnswer2 = $("#Манас").is(':checked');
+console.log($statusAnswer2);
+var $statusAnswer3 = $("#Конфуцианство").is(':checked');
+console.log($statusAnswer3);
+
+
+var statusAnswer1 = document.querySelector('#Восьмерка Оно Озаки');
+var button = document.querySelector('#myButton');
+
+$('#myButton').on('click', function(e) {
+	console.log($statusAnswer1);
+	console.log($statusAnswer2);
+	console.log($statusAnswer3);
+	e.preventDefault();
+	if($statusAnswer1) {
+  		console.log('ты прав!')
+  	} else { console.log('ты не прав!')};
+});
+
+
+};
+
+
+
+
 
 // ========пытаемся пробовать вешать функции на кнопку
+
+
+
+
 

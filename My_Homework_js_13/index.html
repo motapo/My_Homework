@@ -22,7 +22,7 @@
 		<ul class="question1"><h5><%= question.quest1 %></h5>
 				<% for (var i = 0; i < data.length; i++) { %>
 			<li class="answer1-<%= i %>">
-				<input name="answer1" type="radio" id="answer1-<%= i %>" value="<%= data[i].answer1 %>">
+				<input name="answer1" type="checkbox" id="answer1-<%= i %>" value="<%= data[i].answer1 %>">
 					<label for="answer1-<%= i %>">
 						<%= data[i].answer1 %>
 					</label>

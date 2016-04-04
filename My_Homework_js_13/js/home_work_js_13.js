@@ -46,4 +46,41 @@ $(function(){
 		data2: question2,
 		data3: question3
 	 });
-	$('body').append(answer);});
+
+	$('body').append(answer);
+
+var $statusAnswer1 = $("#answer1-1").is(':checked');	
+console.log($statusAnswer1);
+var $statusAnswer2 = $("answer1-2").is(':checked');
+console.log($statusAnswer2);
+var $statusAnswer3 = $("#answer1-3").is(':checked');
+console.log($statusAnswer3);
+
+var $myCheckRadio = $('#answer1-2');
+var $myButton = $('#myButton');
+console.log($myCheckRadio, $myButton);
+
+$myButton.on('click', function(e) {
+
+	console.log($statusAnswer1);
+	console.log($statusAnswer2);
+	console.log($statusAnswer3);
+
+	e.preventDefault();
+ if ($statusAnswer2 == true) {
+  alert( 'ответ правильный' );
+ } else {
+  alert( 'ты ошибся' );
+ }
+});
+
+
+
+
+
+
+});
+
+// ========пытаемся пробовать вешать функции на кнопку
+
+
