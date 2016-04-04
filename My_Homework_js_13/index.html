@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index.html</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:800' rel='stylesheet' type='text/css'>
+	<script src="js/jquery-1.12.2.min.js"></script>	
+	<script src="js/home_work_js_13.js"></script>
+	<script src="js/template.js"></script>
+</head>
+<body>
+<!-- ====================== -->
+<script id="template" type="text/template">
+	<header>
+		<h2><%= title %></h2>
+	</header>
+	<div class="main">
+		<ul class="question1"><h5><%= question.quest1 %></h5>
+				<% for (var i = 0; i < data.length; i++) { %>
+			<li class="answer1-<%= i %>">
+				<input name="answer1" type="radio" id="answer1-<%= i %>">
+					<label for="answer1-<%= i %>">
+						<%= data[i].answer1 %>
+					</label>
+					<% }; %>
+			</li>
+		</ul>
+		<ul class="question2"><h5><%= question.quest2 %></h5>
+				<% for (var j = 0; j < data2.length; j++) { %>
+			<li class="answer2-<%= j %>">
+				<input name="answer2" type="radio" id="answer2-<%= j %>">
+					<label for="answer2-<%= j %>">
+						<%= data2[j].answer2 %>
+					</label>
+					<% }; %>
+			</li>
+		</ul>
+		<ul class="question2"><h5><%= question.quest3 %></h5>
+				<% for (var z = 0; z < data3.length; z++) { %>
+			<li class="answer3-<%= z %>">
+				<input name="answer3" type="radio" id="answer3-<%= z %>">
+					<label for="answer3-<%= z %>">
+						<%= data3[z].answer3 %>
+					</label>
+					<% }; %>
+			</li>
+		</ul>
+</div>
+<div class="button">
+	<input type="submit" id="myButton" value="<%= submit %>">
+</div>
+</script>	
+<!-- ============================= -->	
+</body>
+</html>
