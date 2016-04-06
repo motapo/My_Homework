@@ -49,38 +49,61 @@ $(function(){
 
 	$('body').append(answer);
 
-var $statusAnswer1 = $("#answer1-1").is(':checked');	
-console.log($statusAnswer1);
-var $statusAnswer2 = $("answer1-2").is(':checked');
-console.log($statusAnswer2);
-var $statusAnswer3 = $("#answer1-3").is(':checked');
-console.log($statusAnswer3);
-
-var $myCheckRadio = $('#answer1-2');
 var $myButton = $('#myButton');
-console.log($myCheckRadio, $myButton);
 
-$myButton.on('click', function(e) {
-
-	console.log($statusAnswer1);
-	console.log($statusAnswer2);
-	console.log($statusAnswer3);
-
-	e.preventDefault();
- if ($statusAnswer2 == true) {
-  alert( 'ответ правильный' );
- } else {
-  alert( 'ты ошибся' );
- }
-});
-
-
-
-
-
-
-});
 
 // ========пытаемся пробовать вешать функции на кнопку
+
+var $link = this;
+var $body = $('body');
+var $modal, $overlay;
+
+function showModal(){
+	$modal = $('<div class="statusAnswer-modal"><img src="img/man-hercules.png"/><h2>Ты явно знаток восточной культуры!)</h2></div>');
+	$overlay = $('<div class="statusAnswer-modal-overlay"></div>')
+	$overlay.one('click', hideModal);
+	$modal.one('click', hideModal);
+	$body.append($overlay);
+	$body.append($modal);
+	function hideModal(){
+		$modal.fadeOut(700);
+		$overlay.slideUp(500);
+		$('input').prop('checked', false); }; };
+
+function showModalNo(){
+	$modal = $('<div class="statusAnswer-modal-no"><img src="img/no.png"/><h2>Хреново ты знаком с восточной культурой...</h2></div>');
+	$overlay = $('<div class="statusAnswer-modal-overlay"></div>')
+	$overlay.one('click', hideModal);
+	$modal.one('click', hideModal);
+	$body.append($overlay);
+	$body.append($modal);
+	function hideModal(){
+		$modal.fadeOut(700);
+		$overlay.slideUp(500);
+		$('input').prop('checked', false); }; };
+
+
+$myButton.on('click', function(e) {
+	e.preventDefault();
+
+var $statusAnswer1_0 = $("#answer1-0").prop('checked');	
+var $statusAnswer1_1 = $("#answer1-1").prop('checked');
+var $statusAnswer1_2 = $("#answer1-2").prop('checked');
+
+var $statusAnswer2_0 = $("#answer2-0").prop('checked');	
+var $statusAnswer2_1 = $("#answer2-1").prop('checked');
+var $statusAnswer2_2 = $("#answer2-2").prop('checked');
+
+var $statusAnswer3_0 = $("#answer3-0").prop('checked');	
+var $statusAnswer3_1 = $("#answer3-1").prop('checked');
+var $statusAnswer3_2 = $("#answer3-2").prop('checked');
+
+if ($statusAnswer1_1 == true &&
+	$statusAnswer2_0 == true && 
+	$statusAnswer3_2 == true) {
+  	  	showModal();
+ } else { showModalNo(); } }); });
+
+
 
 

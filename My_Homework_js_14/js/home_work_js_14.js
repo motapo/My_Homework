@@ -47,7 +47,7 @@ var answerAll = JSON.parse(resultAnswerAll);
     document.getElementById('myButton').setAttribute('value', outputSubmit);
 
 
-var $statusAnswer1 = $("#Восьмерка Оно Озаки").is(':checked');
+var $statusAnswer1 = $("#Восьмерка Оно Озаки").prop('checked');	
 console.log($statusAnswer1);
 var $statusAnswer2 = $("#Манас").is(':checked');
 console.log($statusAnswer2);
@@ -64,6 +64,7 @@ $('#myButton').on('click', function(e) {
 	console.log($statusAnswer3);
 	e.preventDefault();
 	if($statusAnswer1) {
+
   		console.log('ты прав!')
   	} else { console.log('ты не прав!')};
 });

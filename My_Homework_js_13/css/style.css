@@ -62,3 +62,44 @@ li {
     background: -ms-linear-gradient(top, #681193, #260236);
     background: -o-linear-gradient(top, #681193, #260236);
 }
+.statusAnswer-modal, .statusAnswer-modal-no {
+	position: absolute;
+	width: 60%;
+	height: 75%;
+	top: 10%;
+	left: 20%;
+	background: radial-gradient(#55ddff, #0081b5);
+	text-align: center;
+	border-radius: 25px;
+	border: 3px double black;
+	box-shadow: 1px 1px 15px white; 
+}
+.statusAnswer-modal-no {
+	background: radial-gradient(#fcfda2, #f30a0f);
+}
+.statusAnswer-modal img {
+	margin: 10px;
+}
+.statusAnswer-modal h2, .statusAnswer-modal-no h2{ 
+	position: relative;
+	display: block;
+	top: 20px;
+	font-weight: 900;
+	font-size: 24px;
+	color: #d9f446;
+	font-family: "league_gothicregular";
+	text-shadow: 1px 1px 8px black;
+}
+.statusAnswer-modal-no h2 {
+	color: #031a8e;
+	text-shadow: 1px 1px 8px white;
+}
+.statusAnswer-modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8); 		
+}
+

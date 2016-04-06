@@ -8,7 +8,7 @@ html {
 	background: #8255f6;
 }
 body {
-	background: #daf870;
+	background: #1ac100;
 	margin: 30px auto;
 	padding-top: 10px;
 	width: 70%;
@@ -39,7 +39,7 @@ ul {
 }
 li {
 	display: block;
-	color: #090f90;
+	color: white;
 	font-size: 16px;
 	margin-left: 20px;
 	margin-top: 10px;

@@ -5,8 +5,8 @@
 	<title>index.html</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/gothicregular.css">
+	<link rel="stylesheet" href="css/gothicregular_condensedregular.css">
 	<script src="js/jquery-1.12.2.min.js"></script>	
 	<script src="js/home_work_js_13.js"></script>
 	<script src="js/template.js"></script>
@@ -22,7 +22,7 @@
 		<ul class="question1"><h5><%= question.quest1 %></h5>
 				<% for (var i = 0; i < data.length; i++) { %>
 			<li class="answer1-<%= i %>">
-				<input name="answer1" type="checkbox" id="answer1-<%= i %>" value="<%= data[i].answer1 %>">
+				<input name="answer1" type="radio" id="answer1-<%= i %>" value="<%= data[i].answer1 %>">
 					<label for="answer1-<%= i %>">
 						<%= data[i].answer1 %>
 					</label>
