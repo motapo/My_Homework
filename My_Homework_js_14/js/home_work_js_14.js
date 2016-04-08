@@ -31,13 +31,13 @@ var answerAll = JSON.parse(resultAnswerAll);
 	var outputQuest1 = Mustache.render("{{quest1}}", question);
 	var templateAnswer1 = "{{#answer1}} <li><input name='answer1' type='radio' id='{{.}}' value=''><label for='{{.}}'> {{.}} </label> </li> {{/answer1}}";
 	var resultAnswer1 = Mustache.render(templateAnswer1, answerAll);
-	document.getElementById('qiestion1Div').innerHTML = resultAnswer1;
+	document.getElementById('question1Div').innerHTML = resultAnswer1;
 	var templateAnswer2 = "{{#answer2}} <li><input name='answer2' type='radio' id='{{.}}' value=''><label for='{{.}}'> {{.}} </label> </li> {{/answer2}}";
 	var resultAnswer2 = Mustache.render(templateAnswer2, answerAll);
-	document.getElementById('qiestion2Div').innerHTML = resultAnswer2;
+	document.getElementById('question2Div').innerHTML = resultAnswer2;
 	var templateAnswer3 = "{{#answer3}} <li><input name='answer3' type='radio' id='{{.}}' value=''><label for='{{.}}'> {{.}} </label> </li> {{/answer3}}";
 	var resultAnswer3 = Mustache.render(templateAnswer3, answerAll);
-	document.getElementById('qiestion3Div').innerHTML = resultAnswer3;
+	document.getElementById('question3Div').innerHTML = resultAnswer3;
 	document.getElementById('question1h5').innerHTML = outputQuest1;
 	var outputQuest2 = Mustache.render("{{quest2}}", question);
     document.getElementById('question2h5').innerHTML = outputQuest2;
@@ -71,14 +71,3 @@ $('#myButton').on('click', function(e) {
 
 
 };
-
-
-
-
-
-// ========пытаемся пробовать вешать функции на кнопку
-
-
-
-
-

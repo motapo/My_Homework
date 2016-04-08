@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'broken_15regular';
+    src: url('../font/broken15-webfont.eot');
+    src: url('../font/broken15-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/broken15-webfont.woff2') format('woff2'),
+         url('../font/broken15-webfont.woff') format('woff'),
+         url('../font/broken15-webfont.ttf') format('truetype'),
+         url('../font/broken15-webfont.svg#broken_15regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
