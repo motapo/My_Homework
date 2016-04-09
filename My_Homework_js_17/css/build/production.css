@@ -1,0 +1,432 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.checkbox_css_wrapper {
+  position: relative;
+  display: inline-block;
+  height: 40px;
+  font-size: 30px;
+  color: black;
+  text-shadow: 2px 2px 4px #3598ec;
+}
+.checkbox_css {
+  width: 100px;
+  position: relative;
+  display: inline-block;
+  float: left;
+}
+#checkbox_id_css {
+  display: inline-block;
+  position: relative;
+  margin-left: 15px;
+  top: -5px;
+}
+@keyframes click-wave {
+  0% {
+    height: 40px;
+    width: 40px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    height: 120px;
+    width: 120px;
+    margin-left: -50px;
+    margin-top: -50px;
+    opacity: 0;
+  }
+}
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 3.33333px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+  background: black;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  border-radius: 2px;
+  border: 1px solid red;
+  box-shadow: 2px 4px 6px black;
+}
+.option-input:hover {
+  background: red;
+}
+.option-input:checked {
+  background: #3598ec;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+.option-input:checked::before {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  content: '\2716';
+  display: inline-block;
+  font-size: 27px;
+  text-align: center;
+  line-height: 30px;
+}
+.option-input:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #3598ec;
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+
+#checkbox_id {
+	display: block;
+	width: 640px;
+	margin: 15px 5px 0 5px;
+	font-size: 18px;
+	font-family: Arial;
+	font-weight: 700;
+	color: black;
+	text-shadow: 1px 1px 3px white;
+}
+#checkbox_id div {
+	display: inline-block;
+	margin-right: 6px;
+	margin-left: 3px;
+}
+#checkbox_id label {
+	position: relative;
+	display: inline;
+	top: -14px;
+	margin: 5px;
+}
+/*==========================================*/
+
+/*========== общие настройки документа ===============*/
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	background: url(../../img/wallpaper1.jpg);
+}
+.main {
+  width: 650px;
+  margin: 0 auto;
+}
+/*=============== jCarousel =========================*/
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+}
+ul {
+    width: 20000em;
+    position: relative;
+}
+li {
+      float: left;
+}
+.wrap_jcarousel {
+  width: 622px;
+  height: 400px;
+  padding: 10px; 
+  margin: 5px auto;
+  position: relative;
+  border: 1px solid #400db3;
+  border-radius: 10px;
+  background: #0e0e0f;
+  box-shadow: 0px 4px 10px #3705a7;
+}
+.jcarousel-pagination {
+	position: relative;
+	top: -40px;
+	left: 190px;
+	font-size: 20px;
+	padding: 5px;
+	text-decoration: underline;
+	color: white;
+	width: 250px;
+}
+.jcarousel-next {
+	position: relative;
+	display: inline-block;
+	left: 455px;
+	height: 20px;
+}
+.jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 21px;
+    width: 30px;
+    background: black;
+    color: #3598ec;
+	  border: 2px solid grey; 	
+    border-radius: 50%;
+    padding: 3px;
+    text-align: center;
+    margin-right: 4px;
+}
+.jcarousel-pagination a.active {
+    background: #3598ec;
+    color: black;
+    font-weight: 900;
+}
+nav {
+	width: 650px;
+  	height: 105px;
+	margin: 0 auto;
+}
+#main_menu {
+	display: block;
+	width: 100%;
+	height: 40px;
+	margin: 20px auto;	 
+	padding: 0 15px;
+	background: #fff;
+	border-radius: 6px;
+	box-shadow: 0px 8px 15px black;
+	cursor: pointer;
+	outline: none;
+	font-weight: bold;
+	background: #0e0e0f;
+	border-top: 1px solid #a61b08;
+	border-bottom: 1px solid #a61b08;
+	z-index: 2;
+}
+#main_menu li { 
+	display: block; 
+	position: relative; 
+	float: left; 
+	font-size: 18px;
+	width: 124px; 
+}
+#main_menu li a {
+	display: block;
+	float: left;
+	padding: 0 12px 0 20px;
+	line-height: 38px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #3598ec;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+}
+#main_menu li:hover { 
+	background: #7e1316;
+	color: #050505; 
+}
+#main_menu li:hover > a { 
+	color: black; 
+}
+.name_brend, .main_menu_sub, .main_menu_sub_item_ul {
+	position: absolute;
+	top: 38px;
+	width: 102%;
+	background: #0e0e0f;
+	display: none;
+	margin: 0;
+	padding: 7px 0;
+	list-style: none;
+	border-radius: 3px;
+	border-right: 1px solid #a61b08;
+	border-left: 1px solid #a61b08;
+	box-shadow: 2px 4px 20px #5659e9;
+}
+.main_menu_sub {
+	left: 96%;
+	top: 12px;
+	width: 102%;
+	background: #170505;
+}
+.main_menu_sub_item_ul {
+	right: 96%;
+	top: 12px;
+	width: 102%;
+	z-index: 100;
+	background: #2c0b0c;
+}
+span {
+	font-size: 10px;
+}
+.name_li a {
+	text-align: center;
+	padding-right: 40px;
+}
+
+.select_auto {
+	display: inline-block;
+	position: relative;
+	float: left;
+	width: 230px;
+}
+.sbHolder{
+	background: #0e0e0f;
+	border-top: 1px solid #a61b08;
+	border-bottom: 1px solid #a61b08;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	height: 30px;
+	position: relative;
+	width: 200px;
+	box-shadow: 0px 8px 15px black;
+	border-radius: 2px;
+}
+.sbHolder:hover {
+	border-radius: 2px 2px 0px 0px;
+	border-bottom: none;
+	background-color: #212121;
+}
+.sbSelector{
+	display: block;
+	height: 30px;
+	left: 0;
+	line-height: 30px;
+	outline: none;
+	overflow: hidden;
+	position: absolute;
+	text-indent: 10px;
+	top: 0;
+	width: 100px;
+}
+.sbSelector:link, .sbSelector:visited, .sbSelector:hover{
+	color: #3598ec;
+	outline: none;
+	text-decoration: none;
+}
+.sbToggle{
+	background: url(../../img/select-icons.png) 0 -116px no-repeat;
+	display: block;
+	height: 30px;
+	outline: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 31px;	
+}
+.sbToggle:hover{
+	background: url(../../img/select-icons.png) 0 -116px no-repeat;
+}
+.sbToggleOpen{
+	background: url(../../img/select-icons.png) 0 -16px no-repeat;
+}
+.sbToggleOpen:hover{
+	background: url(../../img/select-icons.png) 0 -16px no-repeat;
+}
+.sbOptions{
+	background-color: #212121;
+	border: solid 1px red;
+	border-top: none;
+	list-style: none;
+	left: -1px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 40px;
+	width: 200px;
+	z-index: 1;
+	overflow-y: auto;
+}
+.sbOptions li{
+	padding: 0 7px;
+}
+.sbOptions a{
+	border-bottom: dotted 1px #515151;
+	display: block;
+	outline: none;
+	padding: 7px 0 7px 5px;
+}
+.sbOptions a:link, .sbOptions a:visited{
+	color: white;
+	text-decoration: none;
+}
+.sbOptions a:hover,
+.sbOptions a:focus,
+.sbOptions a.sbFocus{
+	color: red;
+}
+.sbOptions li.last a{
+	border-bottom: none;
+}
+.sbOptions .sbDisabled{
+	border-bottom: dotted 2px #515151;
+	color: #999;
+	display: block;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions .sbGroup{
+	border-bottom: dotted 1px #515151;
+	color: #3598ec;
+	display: block;
+	font-weight: bold;
+	padding: 10px 0 7px 30px;
+}
+.sbOptions .sbSub{
+	padding-right: 100px;
+}

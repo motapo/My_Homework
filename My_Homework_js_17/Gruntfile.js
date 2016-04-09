@@ -1,24 +1,30 @@
 module.exports = function(grunt) {
-
-    // 1. Вся настройка находится здесь
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         concat: {
             dist: {
                 src: [
-                    'js/libs/*.js', // Все JS в папке libs
-                    'js/home_work_js_9_10_checkbox.js',  // Конкретный файл
-                    'js/home_work_js_9_10_jcarousel.js',  // Конкретный файл
-                    'js/home_work_js_9_10_menu.js',  // Конкретный файл
-                    'js/home_work_js_9_10_select.js',  // Конкретный файл
+                    'js/libs/*.js',  
+                    'js/home_work_js_9_10_checkbox.js',  
+                    'js/home_work_js_9_10_jcarousel.js',  
+                    'js/home_work_js_9_10_menu.js',  
+                    'js/home_work_js_9_10_select.js'  
                 ],
                 dest: 'js/build/production.js'
+            },
+            dist: {
+                src: 'css/*.css', 
+                dest: 'css/build/production.css'
             }
-        },       
+        },    
         uglify: {
             build: {
                 src: 'js/build/production.js',
                 dest: 'js/build/production.min.js'
+            },
+            build: {
+                src: 'css/build/production.css',
+                dest: 'css/build/production.min.css'
             }
         },        
         imagemin: {
@@ -31,7 +37,6 @@ module.exports = function(grunt) {
                 }]
             }
         },
-
         watch: {
             scripts: {
                 files: ['js/*.js'],
@@ -42,14 +47,8 @@ module.exports = function(grunt) {
             }
         }
     });
-
-    // 3. Тут мы указываем Grunt, что хотим использовать этот плагин
-    
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
-
-    // 4. Указываем, какие задачи выполняются, когда мы вводим «grunt» в терминале
     grunt.registerTask('default', ['concat', 'uglify', 'imagemin']);
-
 };
