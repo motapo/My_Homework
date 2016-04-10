@@ -15,7 +15,8 @@ function OnLoad() {
 
       // Вставляем HTML-форму для элемента
       searchControl.draw(document.getElementById("searchcontrol"));
-    
+       // умолчательное значение - 
+       //пусть что-то ищет сразу при загрузке скрипта!)
       searchControl.execute("Google Ajax Search API");
     };
 
