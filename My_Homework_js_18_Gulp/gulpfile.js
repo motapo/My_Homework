@@ -2,6 +2,13 @@ var gulp = require('gulp');
 var	concat = require('gulp-concat');
 var cssmin = require('gulp-cssmin');
 var uglify = require('gulp-uglify');
+//watch есть по умолчанию, поэтому его можно не прописывать как переменную
+//var watch = require('gulp-watch');
+
+gulp.task('watch', function(){
+	gulp.watch('./css/**/*.css', ['cssMin']);
+	gulp.watch('./js/**/*.js', ['jsUglify']);
+});
 //объединяем и минимизируем файлы JS
 gulp.task('jsUglify', function(){
 	//объединяем и минимизируем файлы JS самописанные
