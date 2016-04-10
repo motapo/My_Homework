@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index.html</title>
+	<link rel="stylesheet" href="css/build/production.css">
+	<script src="js/build/production.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.js"></script>
+</head>
+<body>
+<!-- ============общее тело документы======== -->
+<div class="main">
+<!-- ================= вываливающиеся менюшки ====== -->
+	<nav>
+      <ul id="main_menu">
+        <li class="name_li"><a href="#">Asia</a></li>
+        <li class="name_li"><a href="#">Europe</a>
+          <ul class="name_brend">
+            <li class="name_brend_sub"><a href="#">BMW</a></li>
+            <li class="name_brend_sub"><a href="#">Audi</a></li>
+            <li class="name_brend_sub"><a href="#">Opel</a></li>
+          </ul>
+        </li>
+        <li class="name_li"><a href="#">Japan</a>
+          <ul class="name_brend">
+            <li class="name_brend_sub"><a href="#">Honda 	&emsp;<span>&#9658;</span></a>
+				<ul class="main_menu_sub">
+					<li class="main_menu_sub_item"><a href="#">Accord</a></li>
+					<li class="main_menu_sub_item"><a href="#">Crosstour</a></li>
+					<li class="main_menu_sub_item"><a href="#">Civic &emsp;<span>&#9658;</span></a>
+						<ul class="main_menu_sub_item_ul">
+							<li><a href="#">2012</a></li>
+							<li><a href="#">2013</a></li>
+							<li><a href="#">2014</a></li>
+							<li><a href="#">2015</a></li>
+							<li><a href="#">2016</a></li>
+						</ul>
+					</li>
+					<li class="main_menu_sub_item"><a href="#">CRV</a></li>
+					<li class="main_menu_sub_item"><a href="#">HRV</a></li>
+				</ul>
+            </li>
+            <li class="name_brend_sub"><a href="#">Toyota</a></li>
+            <li class="name_brend_sub"><a href="#">Suzuki</a></li>
+            <li class="name_brend_sub"><a href="#">Nissan 	&emsp;<span>&#9658;</span></a>
+				<ul class="main_menu_sub">
+					<li><a href="#">Almera</a></li>
+					<li><a href="#">GTR</a></li>
+					<li><a href="#">Juke</a></li>
+					<li><a href="#">Maxima</a></li>
+					<li><a href="#">Teana</a></li>
+				</ul>
+            </li>
+            <li class="name_brend_sub"><a href="#">Subaru</a></li>
+          </ul>
+        </li>
+        <li class="name_li"><a href="#">China</a>
+          <ul class="name_brend">
+            <li class="name_brend_sub"><a href="#">Foton</a></li>
+            <li class="name_brend_sub"><a href="#">BYD</a></li>
+            <li class="name_brend_sub"><a href="#">Cherry &emsp;<span>&#9658;</span></a>
+				<ul class="main_menu_sub">
+					<li><a href="#">Amulet</a></li>
+					<li><a href="#">Tiggo</a></li>
+					<li><a href="#">CrossEastar</a></li>
+					<li><a href="#">Jaggi</a></li>
+					<li><a href="#">Kimo</a></li>
+				</ul>
+            </li>
+            <li class="name_brend_sub"><a href="#">Lifan</a></li>
+          </ul>
+        </li>
+        <li class="name_li"><a href="#">Korea</a></li>
+      </ul>
+      <!-- ========================= select ============== --> 
+	<div class="select_auto">
+	    <select id="select_auto_id">
+	    <optgroup label="">
+        	<option value="Your car brand">Your car brand</option>
+        <optgroup label="Europe">
+            <option value="Audi">Audi</option>
+            <option value="BMW">BMW</option>
+            <option value="Opel">Opel</option>
+            <option value="Seat">Seat</option>
+            <option value="Skoda">Skoda</option>
+        </optgroup>
+        <optgroup label="Japan">
+            <option value="Honda">Honda</option>
+            <option value="Mitsubishi">Mitsubishi</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Subaru">Subaru</option>
+            <option value="Suzuki">Suzuki</option>
+        </optgroup>
+        <optgroup label="China">
+            <option value="Brilliance">Brilliance</option>
+            <option value="Chery">Chery</option>
+            <option value="Changan">Changan</option>
+            <option value="Great Wall">Great Wall</option>
+            <option value="Lifan">Lifan</option>
+        </optgroup>
+        </select>
+	</div>
+
+	<!-- ======================= Checkbox css ================== -->
+	<div class="checkbox_css_wrapper">
+		<div>
+  			<label id="checkbox_id_css">
+    			<input type="checkbox" class="option-input checkbox" checked/>BMW</label>
+  			<label id="checkbox_id_css">
+    			<input type="checkbox" class="option-input checkbox"/>Audi</label>
+  			<label id="checkbox_id_css">
+   				<input type="checkbox" class="option-input checkbox" disabled/>Skoda</label> 
+		</div>
+	</div>
+ </nav>
+ <!-- ============================ Checkbox JS ============== -->
+		<div id="checkbox_id">
+			<div>
+				<input type="checkbox" checked="checked" id="Audi" name="Audi" class="design_ckeckbox">
+				<label for="Audi">Audi</label>
+			</div>
+			<div>
+				<input type="checkbox" id="BMW" class="design_ckeckbox">
+				<label for="BMW">BMW</label>
+			</div>
+ 			<div>
+ 				<input type="checkbox" disabled="disabled" id="Porshe" class="design_ckeckbox">
+ 				<label for="Porshe">Porshe</label>
+ 			</div>
+ 			<div>
+ 				<input type="checkbox" id="Skoda" class="design_ckeckbox">
+ 				<label for="Skoda">Skoda</label>
+ 			</div>
+ 			<div>
+ 				<input type="checkbox" checked="checked" id="Seat" class="design_ckeckbox">
+ 				<label for="Seat">Seat</label>
+ 			</div>
+	</div>	
+<!-- ====================== jCarousel ====================== -->
+	<div class="wrap_jcarousel">
+		<div class="jcarousel">
+    		<ul>
+               	<li><img src="img/image_1.jpg" alt=""></li>
+               	<li><img src="img/image_2.jpg" alt=""></li>
+               	<li><img src="img/image_3.jpg" alt=""></li>
+               	<li><img src="img/image_4.jpg" alt=""></li>
+               	<li><img src="img/image_5.jpg" alt=""></li>
+               	<li><img src="img/image_6.jpg" alt=""></li>
+               	<li><img src="img/image_7.jpg" alt=""></li>
+    		</ul>
+		<a class="jcarousel-prev" href="#"><img src="img/prew.png" alt=""></a>
+  		<a class="jcarousel-next" href="#"><img src="img/next.png" alt=""></a>
+		<p class="jcarousel-pagination"></p>
+ 		</div>
+	</div>	
+</div>
+</body>
+</html
