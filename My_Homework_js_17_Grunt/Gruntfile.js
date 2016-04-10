@@ -53,5 +53,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
-    grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'imagemin']);
+    grunt.registerTask('default', ['cssmin']);
 };

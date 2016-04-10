@@ -171,7 +171,7 @@ table {
 	box-sizing: border-box;
 }
 body {
-	background: url(../img/wallpaper1.jpg);
+	background: url(../../img/wallpaper1.jpg);
 }
 .main {
   width: 650px;
@@ -361,7 +361,7 @@ span {
 	text-decoration: none;
 }
 .sbToggle{
-	background: url(../img/select-icons.png) 0 -116px no-repeat;
+	background: url(../../img/select-icons.png) 0 -116px no-repeat;
 	display: block;
 	height: 30px;
 	outline: none;
@@ -371,13 +371,13 @@ span {
 	width: 31px;	
 }
 .sbToggle:hover{
-	background: url(../img/select-icons.png) 0 -116px no-repeat;
+	background: url(../../img/select-icons.png) 0 -116px no-repeat;
 }
 .sbToggleOpen{
-	background: url(../img/select-icons.png) 0 -16px no-repeat;
+	background: url(../../img/select-icons.png) 0 -16px no-repeat;
 }
 .sbToggleOpen:hover{
-	background: url(../img/select-icons.png) 0 -16px no-repeat;
+	background: url(../../img/select-icons.png) 0 -16px no-repeat;
 }
 .sbOptions{
 	background-color: #212121;
