@@ -31,9 +31,9 @@ gulp.task('webServer', function(){
 
 //делаем спрайты 
 gulp.task('sprite', function(){
-	var spriteData = gulp.src('./dest/browser/*.png').pipe(spritesmith({
-		imgName: 'spriteBrowser.png',
-		cssName: 'spriteBrowser.css'
+	var spriteData = gulp.src('./dest/iconSocialF/*.png').pipe(spritesmith({
+		imgName: 'spriteSocialF.png',
+		cssName: 'spriteSocialF.css'
 	}));
 return spriteData.pipe(gulp.dest('dest/'));	
 });

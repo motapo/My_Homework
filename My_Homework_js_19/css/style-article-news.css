@@ -93,7 +93,7 @@ article {
 .spolerContent, .spolerContent1, .spolerContent2 {
 	width: 100%;
 	display: none; 
-	padding: 3px 5px 10px 110px;
+	padding: 3px 15px 30px 110px;
 	color: #A9D0F5;
 	line-height: 18px;
 }
