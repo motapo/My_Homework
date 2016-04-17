@@ -19,6 +19,7 @@ nav {
 	float: left;
 	height: 50px;
 	width: 150px;
+	border-right: 1px solid black;
 }
 .nav-menu-title:hover {
 	background: #8A8162;
@@ -28,7 +29,8 @@ nav {
 	height: 50px;
 	width: 150px;
 	padding-top: 15px;
-	text-align: center; 
+	text-align: center;
+	text-transform: uppercase; 
 }
 .nav-menu-link:hover {
 	background: №665E45;
@@ -51,7 +53,7 @@ nav {
 	width: 100%;
 	background: #AEA78F;	
 	border-bottom: 1px solid black;
-	box
+
 }
 .nav-menu-item-sub {
 	position: absolute;
@@ -61,12 +63,15 @@ nav {
 .nav-menu-title {
 	display: block;
 	width: 150px;
+	/*padding-left: 20px;*/
+	/*padding-right: 20px;*/
+
 	height: 48px;
 	margin: 0 auto;
 	color: black;
 	font-size: 18px;
 	font-family:'akashiregular';
-	text-transform: uppercase;
+	
 	text-align: center;
 	text-decoration: none;
 }
@@ -78,8 +83,9 @@ nav {
 .nav-menu-link-item-sub {
 	display: block;
 	padding-top: 15px;
+	padding-bottom: 15px;
 	text-align: center; 
-	height: 50px;
+	
 }
 .nav-menu-link-item:hover,
 .nav-menu-link-item-sub:hover {

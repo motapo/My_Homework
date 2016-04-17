@@ -3,12 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Home.Work.JS.19</title>
-	<link rel="stylesheet" href="dist/all.min.css">
-	<script src="dist/all.libs.min.js"></script>
-	<script src="dist/all.min.js"></script>
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,900&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<style>
+		#page-preloader { position: fixed; left: 0; top: 0; right: 0; bottom: 0; 
+			background: #000; z-index: 100500; width: 100%; }
+		#page-preloader .spinner { width: 500px; height: 500px; position: absolute; top: 10%; left: 30%; margin: 0 auto;
+		    background: url(img/spinner.gif) no-repeat 50% 50%; background-position: center; }
+	</style>
 </head>
 <body>
+ <!-- ===============прелоадер=========== -->
+<div id="page-preloader"><span class="spinner"></span></div>
 <!-- =================== Хэдер ================================  -->
 	<div id="wrapper-header-nav-news">
 		<header>
@@ -26,7 +30,7 @@
 					<li class=""><a class="icon-social-all icon-link" href="https://ua.linkedin.com/in/виктор-рачок-b294aba3" target="_blank"></a></li>
 					<li class=""><a class="icon-social-all icon-mail" href="mailto:viktor.rachok@gmail.com" target="_blank"></a></li>
 					<li class=""><a class="icon-social-all icon-instagram" href="https://www.instagram.com/viktor.rachok/" target="_blank"></a></li>
-					<li class=""><a class="icon-social-all icon-skype" href="https://www.instagram.com/viktor.rachok/" target="_blank"></a></li>
+					<li class=""><a class="icon-social-all icon-skype" href="skype:motapo-?call" target="_blank"></a></li>
 				</ul>
 			</div>
 				<!-- =================== Спрайт социалок фикс================================  -->
@@ -89,7 +93,6 @@
 					<li class="nav-menu-title nmi-5"><a href="" class="nav-menu-link nmi-5">text5</a></li>
 				</ul>
 			</div>
-				
 			<!-- =================== Поисковик ================================  -->	
 			<div id="page">
 			    <form id="searchForm" method="post">
@@ -100,8 +103,6 @@
 			    </form>
 			</div>
 		</nav>
-
-
 		<!-- =================== Результат поиска ================================  -->
 		<div id="resultsDiv"></div>
 		<!-- =================== Слайдер ================================  -->
@@ -213,7 +214,6 @@
 					</li>
 				</ul>
 			</div>
-
 			<div class="box-news-accordeon">		
 				<h1>Learn WEB</h1>
 				<div id="accordion">
@@ -229,7 +229,6 @@
 				    				<li>Сертификат с персональной страничкой на нашем сайте</li>
 				    				<li>Лучшим выпускникам будет оказана реальная помощь в трудоустройстве.</li>
 				    			</ul>
-
 				    		</p>
 				  		</div>
 				  	<h3>QA START UP</h3>
@@ -325,7 +324,13 @@
 		</div>
 		</div>
 	</footer>
+	<!-- =================== скрипты =======================  -->
+	<script src="dist/all.libs.min.js"></script>
+	<script src="dist/all.min.js"></script>
 	<!-- =================== скрипт для появления модлек под горизонтальный бокс с инфой=======================  -->
-<script src="js/script-modal-browser.js"></script>
+	<script src="js/script-modal-browser.js"></script>
+	<!-- =================== стили =======================  -->
+	<link rel="stylesheet" href="dist/all.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,900&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </body>
 </html>
