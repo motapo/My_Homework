@@ -8,10 +8,11 @@ var imagemin = require('gulp-imagemin'); //жмет картинки
 var webserver = require('gulp-webserver');//следит за сайтом 
 var gutil = require('gulp-util');//модуль для релизов нашего проэкта
 var spritesmith = require('gulp.spritesmith'); //сборщик спрайтов
+var sass = require('gulp-sass');
 
 //если прописать в дефолтном таске все нужные команды, 
 //то можно вызывать их выполнение командой gulp
-gulp.task('default', ['cssConcat', 'cssMin', 'jsUglify', 'watch', 'webServer']);
+gulp.task('default', ['cssMin', 'jsUglify', 'watch', 'webServer']);
 
 //создание релизов проекта
 gulp.task('release', function(){
@@ -27,6 +28,54 @@ gulp.task('webServer', function(){
 	directoryListing: true,
 	open: true
 	}));
+});
+
+gulp.task('watch', function(){
+	gulp.watch('./js/**/*.js', ['jsUglify']);
+	gulp.watch('./scss/**/*.scss', ['cssSass']);
+	// gulp.watch('./css/**/*.css', ['cssMin']);
+});
+
+//конвертируем Sass в css
+gulp.task('cssSass', function(){
+	gulp.src('./scss/*.scss')
+	.pipe(autoprefixer())
+	.pipe(plumber())
+	.pipe(sass())
+	.pipe(gulp.dest('./css'));
+	gulp.src(['css/!reset.css', 'css/*.css'])
+	.pipe(cssmin())
+	.pipe(plumber()) // отлавливает ошибки кода
+	.pipe(concat('all.min.css'))
+	.pipe(gulp.dest('./dist'));
+});
+
+//минимизируем файлы CSS
+gulp.task('cssMin', function(){
+	//снова важен порядок, поэтому делаем массив
+	gulp.src(['css/!reset.css', 'css/*.css'])
+	.pipe(cssmin())
+	.pipe(plumber()) // отлавливает ошибки кода
+	.pipe(concat('all.min.css'))
+	.pipe(gulp.dest('./dist'));
+});
+
+//объединяем и минимизируем файлы JS
+gulp.task('jsUglify', function(){
+	//объединяем и минимизируем файлы JS самописанные
+	gulp.src('./js/*.js')
+	.pipe(uglify())
+	.pipe(plumber())
+	.pipe(concat('all.min.js'))
+	.pipe(gulp.dest('./dist'));
+	//объединяем и минимизируем файлы JS бибилотек
+	gulp.src(['./js/libs/jquery-1.12.2.min.js', 
+		'./js/libs/jquery-jCarousel-v.0.3.4.js',
+		'js/libs/jquery-UI.1.11.4-for-Accordeon.js'])
+	.pipe(uglify())
+	.pipe(plumber())
+	.pipe(concat('all.libs.min.js'))
+	.pipe(gulp.dest('./dist'));
 });
 
 //делаем спрайты 
@@ -54,35 +103,3 @@ gulp.task('cssConcat', function(){
 	.pipe(gulp.dest('./dist'));
 });
 
-gulp.task('watch', function(){
-	gulp.watch('./css/**/*.css', ['cssMin']);
-	gulp.watch('./js/**/*.js', ['jsUglify']);
-});
-
-//объединяем и минимизируем файлы JS
-gulp.task('jsUglify', function(){
-	//объединяем и минимизируем файлы JS самописанные
-	gulp.src('./js/*.js')
-	.pipe(uglify())
-	.pipe(plumber())
-	.pipe(concat('all.min.js'))
-	.pipe(gulp.dest('./dist'));
-	//объединяем и минимизируем файлы JS бибилотек
-	gulp.src(['./js/libs/jquery-1.12.2.min.js', 
-		'./js/libs/jquery-jCarousel-v.0.3.4.js',
-		'js/libs/jquery-UI.1.11.4-for-Accordeon.js'])
-	.pipe(uglify())
-	.pipe(plumber())
-	.pipe(concat('all.libs.min.js'))
-	.pipe(gulp.dest('./dist'));
-});
-
-//и минимизируем файлы CSS
-gulp.task('cssMin', function(){
-	//снова важен порядок, поэтому делаем массив
-	gulp.src(['css/!reset.css', 'css/*.css'])
-	.pipe(cssmin())
-	.pipe(plumber()) // отлавливает ошибки кода
-	.pipe(concat('all.min.css'))
-	.pipe(gulp.dest('./dist'));
-});
