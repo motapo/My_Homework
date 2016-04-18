@@ -1,0 +1,76 @@
+$jc-color:          white;
+$fontSz:            18px;
+$color-buttons:     gray;
+
+@mixin box-shadow($h_l, $v_l, $blur, $color) {
+    -ms-box-shadow: $h_l $v_l $blur $color;
+    box-shadow: $h_l $v_l $blur $color;
+}
+
+.wrap_jcarousel {
+    width: 1160px;
+    height: 304px;
+    margin: 5px auto;
+    position: relative;
+    .jcarousel {
+        position: relative;
+        overflow: hidden;
+        ul {
+            width: 20000em;
+            position: relative;
+            li {
+                float: left;
+            }        
+        }
+    }
+}
+.jcarousel-next, .jcarousel-prev {
+    position: relative;
+    display: inline-block;
+    top: -190px;
+    left: 1080px;
+    padding: 2px;
+    padding-bottom: 9px;
+    text-decoration: none;
+    font-size: 50px;
+    color: $jc-color;
+    transition: 0.5s;
+    @include box-shadow(0px, 0px, 5px, white); 
+    &:hover {
+        background: $color-buttons;
+        @include box-shadow(0px, 0px, 15px, white);
+        color: black;
+        transition: 0.5s;
+    }
+}
+.jcarousel-prev {
+    left: 14px;
+}
+.jcarousel-pagination {
+    position: relative;
+    top: -105px;
+    left: 465px;
+    font-size: $fontSz + 2px;
+    padding: 5px;
+    text-decoration: underline;
+    color: $jc-color;
+    width: 270px;
+    a {
+        text-decoration: none;
+        display: inline-block;
+        font-size: $fontSz;
+        line-height: 18px;
+        width: 25px;
+        height: 25px;
+        color: $jc-color;
+        padding: 2px;
+        text-align: center;
+        margin-right: 11px;
+        @include box-shadow(0px, 0px, 5px, white);
+        &.active {
+            background: $color-buttons;
+            color: black;
+            font-weight: 900;
+        }        
+    }
+}

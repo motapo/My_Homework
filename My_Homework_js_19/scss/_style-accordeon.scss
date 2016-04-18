@@ -1,0 +1,116 @@
+$font-default: 		Arial, Helvetica, sans-serif;
+$font-1: 			'akashiregular';
+$font-2:			'Roboto';
+$fontSz:            18px;
+$blog-colorH1:		gray;
+$blog-colorH5:		gray;
+$accord-colorH3:	black;
+$accord-bkgH3:		#FCB95B;
+$accord-bkgH3H:		gray;
+$border-solid: 		1px solid black;
+
+@mixin box-shadow($h_l, $v_l, $blur, $color) {
+    -ms-box-shadow: $h_l $v_l $blur $color;
+    box-shadow: $h_l $v_l $blur $color;
+}
+
+
+#wrapper-blog-accordeon {
+	width: 1160px;
+	margin: 35px auto;
+	border-right: 1px solid gray;
+	border-left: 1px solid gray;
+	.box-blog {
+		display: inline-block;
+		float: left;
+		width: 60%;
+		padding: 10px;
+		@include box-shadow(-1px, 1px, 0px, gray); 
+		font-family: $font-2;
+		font-size: $fontSz - 2px;
+		line-height: 1.2;
+		color: #CDBBF5;
+		h1 {
+			display: block;
+			text-align: center;
+			font-family: $font-1;
+			font-size: $fontSz + 9px;
+			color: $blog-colorH1;
+			text-shadow: 0px 0px 3px black;
+			text-transform: uppercase; 
+		}
+		.box-blog-news {
+			display: block;
+			padding: 20px;
+			margin-bottom: 40px;
+			img {
+				padding: 5px;
+				margin-right: 15px; 
+				clear: both;
+				display: block;
+				float: left;
+				border-radius: 10px;
+			}
+			h5 {
+				display: block;
+				text-align: center;
+				font-family: $font-default;
+				font-size: $fontSz - 2px;
+				color: $blog-colorH5;
+				margin-bottom: 12px;
+				text-shadow: 0px 0px 3px black;
+				text-transform: uppercase; 
+			}
+		}
+		.box-blog-news-2 img {
+			background: gray;
+		}
+	}
+	.box-news-accordeon {
+		@include box-shadow(1px, -1px, 0px, gray); 
+		width: 40%;
+		height: 100%;
+		@extend .box-blog;
+		h1 {
+			@extend h1;
+		}
+		#accordion {
+			margin-top: 25px;
+			h3 {
+				cursor: pointer;
+				display: block;
+				position: relative;
+				width: 100%;
+				height: 35px;
+				background: $accord-bkgH3;
+				border: $border-solid;
+				margin-bottom: 3px;
+				border-radius: 3px;
+				outline: none;
+				color: $accord-colorH3;
+				font-family: $font-1;
+				padding: 6px 0px 0px 25px;
+				&:hover {
+					background: $accord-bkgH3H;
+					@include box-shadow(0px, 0px, 4px, pink); 
+				}
+			}
+			p {
+				margin: 8px 3px;
+				.Python-Django {
+					list-style-type: square;
+					list-style-position: inside;
+				 }
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+

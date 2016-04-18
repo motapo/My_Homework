@@ -1,0 +1,65 @@
+$border-solid:    1px solid black;
+
+@mixin box-shadow($h_l, $v_l, $blur, $color) {
+    -ms-box-shadow: $h_l $v_l $blur $color;
+    box-shadow: $h_l $v_l $blur $color;
+}
+
+.social-fixed {
+  display: block;
+  position: fixed;
+  top: 57px;
+  left: 2px;
+  border: $border-solid;
+  z-index: 900;
+  background: #D8D8D8;
+  &:hover {
+    @include box-shadow(0px, 0px, 5px, black); 
+  }
+  ul li {
+    display: block;
+    margin: 1px;
+    .icon-social-all-fix {
+      background-image: url(../img/spriteSocialF.png);
+      display: block;
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+.icon-fix-facebook {
+  background-position: 0px -64px;
+  &:hover {
+    background-position: -32px 0px;
+  }
+}
+.icon-fix-google {
+  background-position: -32px -32px;
+  &:hover {
+  background-position: 0px -32px;    
+  }
+}
+.icon-fix-instagram {
+  background-position: -64px -32px;
+  &:hover {
+    background-position: -64px 0px;
+   }
+}
+.icon-fix-link {
+  background-position: -32px -64px;
+  &:hover {
+    background-position: 0px 0px;
+  }
+}
+.icon-fix-mail {
+  background-position: -96px 0px;
+  &:hover {
+    background-position: -64px -64px;
+  }
+}
+.icon-fix-skype {
+  background-position: -96px -64px;
+  &:hover {
+    background-position: -96px -32px;
+  }
+}

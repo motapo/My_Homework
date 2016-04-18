@@ -1,11 +1,11 @@
-$font-menu:			'akashiregular';
 $block-whidth: 		150px;
-$border-solid: 		1px solid black;
 $menu-bkg: 			#2E2E2E;
 $menu1-bkg-hov: 	#8A8162;
 $menu2-bkg-hov: 	№665E45;
 $menu2-color-hov: 	#000;
 $menu-color:		#DAD7CD;
+$font-1: 			'akashiregular';
+$border-solid: 		1px solid black;
 
 nav {
 	position: relative;
@@ -30,7 +30,7 @@ nav {
 	margin: 0 auto;
 	color: black;
 	font-size: 18px;
-	font-family: $font-menu;
+	font-family: $font-1;
 	text-align: center;
 	text-decoration: none;
 	border-right: $border-solid;
@@ -49,8 +49,7 @@ nav {
 			color: $menu2-color-hov;
 		}
 	}		
-	.nav-menu-item,
-	.nav-menu-item-sub {
+	.nav-menu-item {
 		display: none;
 		position: relative;
 		width: 100%;
@@ -58,6 +57,7 @@ nav {
 		border-bottom: $border-solid;
 	}
 	.nav-menu-item-sub {
+		@extend .nav-menu-item;
 		position: absolute;
 		width: $block-whidth;
 		left: 149px;

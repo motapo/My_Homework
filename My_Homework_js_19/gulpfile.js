@@ -9,10 +9,11 @@ var webserver = require('gulp-webserver');//следит за сайтом
 var gutil = require('gulp-util');//модуль для релизов нашего проэкта
 var spritesmith = require('gulp.spritesmith'); //сборщик спрайтов
 var sass = require('gulp-sass');
+var sassGlob = require('gulp-sass-glob');
 
 //если прописать в дефолтном таске все нужные команды, 
 //то можно вызывать их выполнение командой gulp
-gulp.task('default', ['cssMin', 'jsUglify', 'watch', 'webServer']);
+gulp.task('default', ['Sass','jsUglify', 'watch', 'webServer']);
 
 //создание релизов проекта
 gulp.task('release', function(){
@@ -25,24 +26,27 @@ gulp.task('webServer', function(){
 	gulp.src('./')
 	.pipe(webserver({
 	livereload: true,
-	directoryListing: true,
+	directoryListing: false,
 	open: true
 	}));
 });
 
+// отслеживаем изменение файлов js и scss 
+// и сразу же компилируем новые минимзируемые файлы 
 gulp.task('watch', function(){
 	gulp.watch('./js/**/*.js', ['jsUglify']);
-	gulp.watch('./scss/**/*.scss', ['cssSass']);
+	gulp.watch('./scss/**/*.scss', ['Sass']);
 	// gulp.watch('./css/**/*.css', ['cssMin']);
 });
 
-//конвертируем Sass в css
-gulp.task('cssSass', function(){
-	gulp.src('./scss/*.scss')
+//командой cssSass создаем в папке CSS 
+// из файлов scss компилированные файлы css с теми же именами 
+gulp.task('Sass', function(){
+	gulp.src('./scss/**/*.scss')
 	.pipe(autoprefixer())
-	.pipe(plumber())
 	.pipe(sass())
-	.pipe(gulp.dest('./css'));
+	.pipe(gulp.dest('./css'))
+// и сразу же минимизируем их все в один файл 
 	gulp.src(['css/!reset.css', 'css/*.css'])
 	.pipe(cssmin())
 	.pipe(plumber()) // отлавливает ошибки кода
