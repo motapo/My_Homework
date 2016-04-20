@@ -17,8 +17,6 @@ body {
 				.main-logo {
 					display: block;
 					position: relative;
-					float: left;
-					margin-right: 20px;
 					overflow: hidden;
 					background-image: url(../img/spriteAll.png);
 					background-position: -238px 0px;
@@ -44,6 +42,34 @@ body {
 				} 
 			}
 		}	
+	}
+}
+
+// ================= эффект блеска логотипа ===========
+.logo a{
+	position: relative;
+	display:block;
+	float: left;
+	width:164px;
+	height: 90px;
+	margin-right: 20px;
+	background: none;
+	background-position: -158px 0;
+	-webkit-filter: drop-shadow(1px 1px 2px rgba(0,0,0,.5));
+	&:hover, &:focus{
+		background-position: 25px 0;
+		transition: all 0.8s;
+	}
+	&::after {
+		content:'';
+		position: absolute;
+		pointer-events: none;
+		top:0; left:0; right:0; bottom: 0;
+		background: radial-gradient(0 0,circle farthest-side, rgba(255,255,255,0) 90%,rgba(255,255,255,.8) 98%,rgba(255,255,255,0) 100%) no-repeat;
+		background: radial-gradient(circle farthest-side at 0 0, rgba(255,255,255,0) 90%,rgba(255,255,255,.8) 98%,rgba(255,255,255,0) 100%) no-repeat;
+		background-position: inherit; 
+		-webkit-mask: url(../img/iconWeb/MainLogo.png) center;
+		mask: url('#mask-firefox');
 	}
 }
 
