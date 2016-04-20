@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/*================столбцы со сслыками=================*/
+.menu-links-colomn {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  padding: 15px 10px;
+  box-shadow: 0px 3px 0px gray;
+  margin-bottom: 20px; }
+  .menu-links-colomn .links-colomn-all {
+    display: inline-block;
+    width: 24%;
+    float: left;
+    overflow: hidden;
+    padding-left: 20px; }
+    .menu-links-colomn .links-colomn-all h2 {
+      display: block;
+      padding: 0px 6px;
+      margin-bottom: 20px;
+      font-family: "akashiregular";
+      font-size: 28px;
+      color: gray;
+      text-shadow: 2px -1px 2px black;
+      border-left: 2px solid #453A5C; }
+    .menu-links-colomn .links-colomn-all .lsa-border {
+      border-bottom: 1px solid #453A5C; }
+    .menu-links-colomn .links-colomn-all .links-str-all {
+      display: block;
+      margin-top: 7px;
+      padding-bottom: 10px;
+      color: white;
+      font-family: "Roboto";
+      font-size: 18px; }
+      .menu-links-colomn .links-colomn-all .links-str-all a {
+        text-decoration: none;
+        color: #CDBBF5; }
+        .menu-links-colomn .links-colomn-all .links-str-all a:hover {
+          text-decoration: underline;
+          color: #000;
+          text-shadow: 0px 0px 2px White; }

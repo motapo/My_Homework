@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home.Work.JS.19</title>
+	<style>
+		#page-preloader { position: fixed; left: 0; top: 0; right: 0; bottom: 0; 
+			background: #000; z-index: 100500; width: 100%; }
+		#page-preloader .spinner { 
+			display: block; height: 80px; position: relative; 
+			top: 280px; left: 30%; width: 40%;
+		    font-family: arial; font-size: 34px; padding-top: 20px;
+		    text-shadow: 0px 0px 3px white; color: gray;
+		    text-align: center; box-shadow: 1px -1px 10px red;
+		    border-radius: 20px; border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+	<!-- ===============прелоадер=========== -->
+	<div id="page-preloader">
+		<p class="spinner">connect libraries, please wait...</p>
+	</div>
+	<!-- =================== Хэдер ================================  -->
+	<div id="wrapper-header-nav-news">
+		<header>
+			<!-- =================== Логотип ================================  -->
+			<div class="logo">
+				<a href="http://motapo.ltd.ua" target="_blank">
+					<span class="main-logo"></span>
+				</a>
+				<h1>World Wide Web</h1>
+				<h5>Industrial Theme</h5>
+			</div>
+			<!-- =================== Спрайт социалок ================================  -->
+		//= ../html/social.html
+			<!-- =================== Спрайт социалок фикс================================  -->
+		//= ../html/social-fixed.html
+			
+		</header>
+		<!-- =================== Менюшка ================================  -->
+		//= ../html/nav.html
+		
+		<!-- =================== Результат поиска ================================  -->
+		<div id="resultsDiv"></div>
+		<!-- =================== Слайдер ================================  -->
+		
+		//= ../html/jcarousel.html
+		
+		<!-- =================== Три колонки информации ================================  -->
+		
+		//= ../html/news.html
+	</div>
+	<!-- ===================  горизонтальный блок информации ================================  -->
+	
+		//= ../html/browser.html
+
+	<!-- =================== Блок с блогом и менюшками-аккордеон================================  -->
+	
+		//= ../html/blog-accordion.html
+
+	<!-- =================== логотипы брэндов ================================  -->
+	
+		//= ../html/footer.html
+
+	<!-- =================== скрипты =======================  -->
+	<script src="dist/all.libs.min.js"></script>
+	<script src="dist/all.min.js"></script>
+	<!-- =================== скрипт для появления модлек под горизонтальный бокс с инфой=======================  -->
+	<script src="js/script-modal-browser.js"></script>
+	<!-- =================== стили =======================  -->
+	<link rel="stylesheet" href="dist/all.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,900&subset=latin,cyrillic' rel='stylesheet' type='text/css'></body>
+</html>

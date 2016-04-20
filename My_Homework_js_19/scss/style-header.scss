@@ -1,0 +1,49 @@
+@import "_variable-mixed.scss";
+
+body {
+	background: linear-gradient(to bottom, #322424, black);
+	background-size: 100%;
+	font-family: $font-default;
+	#wrapper-header-nav-news {
+		width: 1160px;
+		margin: 0 auto;
+		header {
+			width: 100%;
+			height: 137px;
+			padding-top: 37px;
+			.logo {
+				float: left;
+				width: 50%;
+				.main-logo {
+					display: block;
+					position: relative;
+					float: left;
+					margin-right: 20px;
+					overflow: hidden;
+					background-image: url(../img/spriteAll.png);
+					background-position: -238px 0px;
+					width: 164px;
+					height: 90px;
+				}
+				h1 {
+					display: block;
+					font-size: $font-h1;
+					font-family: 'misprojectregular';
+					letter-spacing: 1px;
+					color: $color-h1;
+					text-shadow: 0px 0px 8px black;
+				}	  
+				h5 {
+					display: block;
+					margin-top: 10px;
+					font-size: $font-h1/2;
+					font-family: 'akashiregular';
+					color: $color-h5;
+					letter-spacing: 3px;	
+					text-shadow: 0px -1px 5px black;
+				} 
+			}
+		}	
+	}
+}
+

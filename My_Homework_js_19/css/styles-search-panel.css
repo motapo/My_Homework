@@ -1,0 +1,101 @@
+@charset "UTF-8";
+#page {
+  display: inline-block;
+  height: 46px;
+  width: 250px;
+  float: right; }
+  #page fieldset {
+    padding-top: 8px;
+    border: none; }
+    #page fieldset #s {
+      border: none;
+      color: white;
+      background: black;
+      float: left;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      height: 32px;
+      line-height: 32px;
+      margin-right: 8px;
+      outline: medium none;
+      border: 1px solid black;
+      padding: 0 5px 0 5px;
+      text-shadow: 1px 1px 0 black;
+      width: 200px; }
+    #page fieldset #icon-search {
+      cursor: pointer;
+      background: #868686;
+      width: 36px;
+      height: 32px;
+      border-radius: 3px;
+      font-size: 24px;
+      line-height: 0;
+      letter-spacing: 0;
+      transition: 0.5s;
+      outline: none;
+      border: 1px solid black; }
+      #page fieldset #icon-search:hover {
+        background: black;
+        color: #DFF6AE;
+        width: 36px;
+        height: 32px;
+        transition: 0.5s;
+        font-size: 26px;
+        -ms-box-shadow: 0px 0px 4px gray;
+        box-shadow: 0px 0px 4px gray; }
+
+/*================================Стили для результатов поиска */
+.pageContainer {
+  /*================ Сожержит каждую страницу с результатом поиска. Имеет вложенную нижнюю границу. */
+  border-bottom: 1px solid #5e7481;
+  margin-bottom: 50px;
+  -ms-box-shadow: 0px 1px 0px #798e9c;
+  box-shadow: 0px 1px 0px #798e9c; }
+
+p.notFound {
+  text-align: center;
+  padding: 0 0 40px; }
+
+/*================================ Результаты поиска: новости и веб страницы */
+.webResult {
+  margin: 0 10px 10px;
+  background: #F9CE68;
+  padding: 10px 2px;
+  border-radius: 2px;
+  width: 98%; }
+  .webResult:hover {
+    -ms-box-shadow: 2px 2px 12px white;
+    box-shadow: 2px 2px 12px white; }
+  .webResult p {
+    line-height: 1.5;
+    padding: 5px 40px;
+    color: black;
+    font-size: 16px;
+    font-weight: 700; }
+    .webResult p b {
+      color: #BE3C4B; }
+  .webResult h2 {
+    background: #212226;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 2px 4px;
+    border-radius: 2px 2px 1px 1px;
+    text-shadow: 0px 0px 3px #0299D5; }
+    .webResult h2 b {
+      color: #fff; }
+    .webResult h2 a {
+      color: #A6B127; }
+  .webResult > a {
+    margin-left: 60px;
+    font-size: 18px; }
+
+/* ===============Кнопка Read More==================*/
+#more {
+  background-image: url(../img/spriteAll.png);
+  background-position: -238px -90px;
+  width: 148px;
+  height: 70px;
+  cursor: pointer;
+  margin: 30px auto; }
+  #more:hover {
+    background-position: -402px 0px; }

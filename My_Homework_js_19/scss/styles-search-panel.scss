@@ -1,0 +1,113 @@
+@import "_variable-mixed.scss";
+
+#page {
+	display: inline-block;
+	height: 46px;
+	width: 250px;
+	float: right;
+	fieldset {
+		padding-top: 8px;
+		border: none;
+		#s {
+			border: none;
+			color: white;
+			background: black;
+			float: left;
+			font-family: $font-default;
+			font-size: 15px;
+			height: 32px;
+			line-height: 32px;
+			margin-right: 8px;
+			outline: medium none;
+			border: $border-solid;
+			padding: 0 5px 0 5px;
+			text-shadow: 1px 1px 0 black;
+			width: 200px;
+		}
+		#icon-search {
+			cursor:pointer;
+			background: $icon-bkg; 	
+			width: 36px;
+			height: 32px;
+			border-radius: 3px;
+		  	font-size: 24px;
+		  	line-height: 0;
+		  	letter-spacing: 0;
+			transition: 0.5s;
+			outline: none;
+			border: $border-solid;
+			&:hover {
+				background: black;
+			  	color: $icon-bkg-hov; 	
+			  	width: 36px;
+			  	height: 32px;
+			  	transition: 0.5s;
+			  	font-size: 26px;
+			  	@include box-shadow(0px, 0px, 4px, gray); 
+			}
+		}
+	}
+}
+
+/*================================Стили для результатов поиска */
+.pageContainer{
+/*================ Сожержит каждую страницу с результатом поиска. Имеет вложенную нижнюю границу. */
+	border-bottom:1px solid #5e7481;
+	margin-bottom:50px;
+	@include box-shadow(0px, 1px, 0px, #798e9c); 
+}
+p.notFound{
+	text-align:center;
+	padding:0 0 40px;
+}
+/*================================ Результаты поиска: новости и веб страницы */
+.webResult { 
+	margin: 0 10px 10px;
+	background: $result-bkg;
+	padding: 10px 2px;
+	border-radius: 2px;
+	width: 98%;
+	&:hover {
+		@include box-shadow(2px, 2px, 12px, $result-shw); 
+	}
+	p {
+		line-height: 1.5;
+		padding: 5px 40px;
+		color: black;
+		font-size: 16px;
+		font-weight: 700;
+		b {
+			color: $result-search-word;
+		}
+	}
+	h2 {
+		background: $result-bkg-title;
+		font-size:18px;
+		font-weight:normal;
+		padding:2px 4px;
+		border-radius: 2px 2px 1px 1px;
+		text-shadow:0px 0px 3px $result-shwt; 
+		b {
+			color: $result-title-word;
+		}
+		a {
+			color: $result-title; 
+		}		
+	}
+	> a { 
+		margin-left: 60px;
+		font-size: 18px;
+	}
+}
+/* ===============Кнопка Read More==================*/
+#more {
+	background-image: url(../img/spriteAll.png);
+	background-position: -238px -90px;
+	width: 148px;
+	height: 70px;
+	cursor: pointer;
+	margin: 30px auto;
+	&:hover {
+		background-position: -402px 0px;
+	}
+}

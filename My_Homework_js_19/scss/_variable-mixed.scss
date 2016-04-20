@@ -1,0 +1,70 @@
+// @import "all-scss/**/*.scss";
+
+@mixin box-shadow($h_l, $v_l, $blur, $color) {
+    -ms-box-shadow: $h_l $v_l $blur $color;
+    box-shadow: $h_l $v_l $blur $color;
+}
+
+$fontSz:         		18px;
+$border-solid:    		1px solid black;
+$font-default: 			Arial, Helvetica, sans-serif;
+$font-1: 				'akashiregular';
+$font-2:				'Roboto';
+$modal-fontH2:  		"league_gothicregular";
+
+// ============== styles-search-panel ====
+$result-title:  		#A6B127;
+$result-bkg-title:  	#212226;
+$result-title-word: 	#fff; 
+$result-search-word: 	#BE3C4B;
+$result-shw: 			white;
+$result-shwt:			#0299D5;
+$result-bkg:            #F9CE68;
+$icon-bkg: 				#868686;
+$icon-bkg-hov:			#DFF6AE;
+
+// ========= style-nav-menu ==============
+$block-whidth: 			150px;
+$menu-bkg: 				#2E2E2E;
+$menu1-bkg-hov: 		#8A8162;
+$menu2-bkg-hov: 		№665E45;
+$menu2-color-hov: 		#000;
+$menu-color:			#DAD7CD;
+
+// ============ style-jcarousel ==========
+$jc-color:          	white;
+$color-buttons:     	gray;
+
+//================ slyle-header ==========
+$font-h1:				50px;
+$color-h1: 				black;
+$color-h5: 				darkgray;
+
+//=========== style-footer-table-links ===
+$color-links:			#CDBBF5;
+$color-linksH:			#000;
+$colorH4-title:	 		#595959;
+
+//====== style-block-information-modal ===
+$modal-bkg: 			#0B2E32;
+$modal-colorH2: 		#d9f446;
+$modal-colorP: 			#D8D9DA;
+
+//====== style-article-news ==============
+$news-color: 			white;
+$news1-shadowTcolor: 	#FA8258;
+$news2-shadowTcolor: 	#01A9DB; 
+$news3-shadowTcolor: 	#2EFE2E;
+$news-colorTitle: 	 	black;
+$news1-colorSpoler:  	#FA8258;
+$news2-colorSpoler:  	#01A9DB;
+$news3-colorSpoler:  	#2EFE2E;
+$newsAll-colorSpolerH:  #FCE77F;
+$news-colorSpolerActiv: #A9D0F5;
+
+//====== syle-accordion ==================
+$blog-colorH1:			gray;
+$blog-colorH5:			gray;
+$accord-colorH3:		black;
+$accord-bkgH3:			#FCB95B;
+$accord-bkgH3H:			gray;

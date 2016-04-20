@@ -1,0 +1,5 @@
+@font-face {
+  font-family: 'Amble Condensed';
+  src: local("Amble Light Condensed"), local("Amble-LightCondensed"), url("../fonts/amblelightcondensed.woff2") format("woff2"), url("../fonts/amblelightcondensed.woff") format("woff"), url("../fonts/amblelightcondensed.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }

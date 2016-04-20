@@ -8,17 +8,29 @@ var imagemin = require('gulp-imagemin'); //жмет картинки
 var webserver = require('gulp-webserver');//следит за сайтом 
 var gutil = require('gulp-util');//модуль для релизов нашего проэкта
 var spritesmith = require('gulp.spritesmith'); //сборщик спрайтов
-var sass = require('gulp-sass');
-var sassGlob = require('gulp-sass-glob');
+var sass = require('gulp-sass'); //конвертит все scss в css 
+var sassGlob = require('gulp-sass-glob');/*..позволяет делать импорт стилей из каталога всех сразу*/
+var globSass = require('gulp-sass-globbing'); //тоже самое, ставил ради эксперимента
+var cleanCss = require('gulp-clean-css'); //ставилрали эксперимента, пользы не вынес
+var rigger = require('gulp-rigger'); //импортирует один файлв другой, нужен нам для импорта кусков html в index
 
 //если прописать в дефолтном таске все нужные команды, 
 //то можно вызывать их выполнение командой gulp
-gulp.task('default', ['Sass','jsUglify', 'watch', 'webServer']);
+gulp.task('default', ['styles', 'cssMin', 'watch', 'webServer']);
 
-//создание релизов проекта
-gulp.task('release', function(){
-	var number = gutil.env.number;
-	console.log('Number', number);
+gulp.task('html', function () {
+    gulp.src('./index/index.html') // берем черновик странички 
+        .pipe(rigger()) // прогоняем через риггер
+        .pipe(gulp.dest('./')) //Выплюнем в корень над папкой dest
+});
+
+//берем все файлы scss и конвертим их в такие же css
+gulp.task('styles', function () {
+    return gulp
+        .src('scss/**/*.scss')
+        .pipe(sassGlob())
+        .pipe(sass())
+        .pipe(gulp.dest('./css'));
 });
 
 //запускаем сервер для отслеживания и релоадов всех файлов проекта
@@ -31,27 +43,23 @@ gulp.task('webServer', function(){
 	}));
 });
 
-// отслеживаем изменение файлов js и scss 
-// и сразу же компилируем новые минимзируемые файлы 
+// отслеживаем изменение файлов js, html и scss 
+// и сразу же компилируем новые, а потом минимзирует результаты 
 gulp.task('watch', function(){
 	gulp.watch('./js/**/*.js', ['jsUglify']);
-	gulp.watch('./scss/**/*.scss', ['Sass']);
-	// gulp.watch('./css/**/*.css', ['cssMin']);
-});
+	gulp.watch('./html/**/*.html', ['html']);
+	gulp.watch('./scss/**/*.scss', ['styles']);
+	//запуск cssMin произойдет в момент, когда комплириуется последний в списке css
+	gulp.watch('./css/styles-search-panel.css', ['cssMin']);   
+	});
 
 //командой cssSass создаем в папке CSS 
 // из файлов scss компилированные файлы css с теми же именами 
 gulp.task('Sass', function(){
-	gulp.src('./scss/**/*.scss')
+	gulp.src('./scss/all-import-varible-mixed.scss')
 	.pipe(autoprefixer())
 	.pipe(sass())
 	.pipe(gulp.dest('./css'))
-// и сразу же минимизируем их все в один файл 
-	gulp.src(['css/!reset.css', 'css/*.css'])
-	.pipe(cssmin())
-	.pipe(plumber()) // отлавливает ошибки кода
-	.pipe(concat('all.min.css'))
-	.pipe(gulp.dest('./dist'));
 });
 
 //минимизируем файлы CSS
@@ -98,12 +106,18 @@ gulp.task('imageMin', function(){
 	.pipe(gulp.dest('./dist/imgMin'));
 });
 
-//объединяем файлы CSS
+//объединяем файлы CSS - особо не нужен, лучше сразу использовать cssMin
+//там уже прописан у меня concat 
 gulp.task('cssConcat', function(){
-	gulp.src('./**/*.css')
+	gulp.src(['css/!reset.css', 'css/*.css'])
 	.pipe(autoprefixer())
 	.pipe(plumber())
 	.pipe(concat('all.css'))
 	.pipe(gulp.dest('./dist'));
 });
 
+//создание релизов проекта - есть в видео, не разбирался за ненадобностью
+gulp.task('release', function(){
+	var number = gutil.env.number;
+	console.log('Number', number);
+});

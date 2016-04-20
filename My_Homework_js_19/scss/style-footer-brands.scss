@@ -1,0 +1,80 @@
+@import "_variable-mixed.scss";
+
+#wrapper-brend-menu	{
+  	width: 1160px;
+  	margin: 0 auto;
+    .brend-logo {
+      	position: relative;
+      	display: block;
+      	width: 100%;
+      	clear: both;
+      	padding: 80px;
+      	padding-right: 0px;
+      	margin-bottom: 80px;
+        .logo-links-all {
+          	background-image: url(../img/spriteAll.png);
+          	margin-right: 36px;
+          	position: relative;
+          	display: inline-block;
+          	height: 100px;
+          	float: left;
+        }
+    }
+}
+
+.logo-link-android {
+    background-position: -352px -440px;
+    width: 85px;
+    &:hover {
+        background-position: -437px -440px;
+        width: 85px;
+   }
+}
+.logo-link-apple {
+    background-position: 0px -440px;
+    width: 91px;
+    &:hover {
+        background-position: -91px -440px;
+        width: 91px;
+    }
+}
+.logo-link-evernote {
+    background-position: -550px 0px;
+    width: 84px;
+    &:hover {
+        background-position: -550px -100px;
+        width: 84px;
+    }
+}
+.logo-link-git {
+    background-position: -300px -200px;
+    width: 100px;
+    &:hover {
+        background-position: -402px -70px;
+        width: 100px;
+    }
+}
+.logo-link-linux {
+     background-position: -182px -440px;
+     width: 85px;
+     &:hover{
+         background-position: -267px -440px;
+         width: 85px;
+     }
+}
+.logo-link-windows {
+    background-position: -200px -340px;
+    width: 100px;
+    &:hover{
+        background-position: 0px -340px;
+        width: 100px;
+    }
+}
+.logo-link-youtube {
+    background-position: 0px 0px;
+    width: 238px;
+    &:hover {
+        background-position: 0px -100px;
+        width: 238px;
+    }
+}
