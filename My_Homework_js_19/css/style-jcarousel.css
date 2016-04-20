@@ -3,6 +3,21 @@
   height: 304px;
   margin: 5px auto;
   position: relative; }
+  .wrap_jcarousel:before, .wrap_jcarousel:after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 10px;
+    max-width: 300px;
+    box-shadow: 0 17px 5px #000;
+    transform: rotate(-3deg); }
+  .wrap_jcarousel:after {
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto; }
   .wrap_jcarousel .jcarousel {
     position: relative;
     overflow: hidden; }
@@ -61,3 +76,20 @@
       background: gray;
       color: black;
       font-weight: 900; }
+
+.wrap_jcarousel:before, .wrap_jcarousel:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 10px;
+  max-width: 300px;
+  box-shadow: 0 17px 5px #000;
+  transform: rotate(-3deg); }
+
+.wrap_jcarousel:after {
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto; }

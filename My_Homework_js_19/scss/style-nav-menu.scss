@@ -9,6 +9,26 @@ nav {
 	border-top: $border-solid;
 	border-bottom: $border-solid;
 	z-index: 901;
+	box-shadow: 0 19px 6px -12px #000;
+	&:before {
+		z-index: -1;
+		position: absolute;
+		content: "";
+		bottom: 15px;
+		left: 10px;
+		width: 50%;
+		top: 80%;
+		max-width:300px;
+		background: #777;
+		box-shadow: 0 15px 10px #777;
+		transform: rotate(-3deg);
+	}
+	&:after {
+		@extend nav:before;
+		transform: rotate(3deg);
+		right: 10px;
+		left: auto;
+	}
 	.nav-menu a {
 		text-decoration: none;
 		color: $menu-color;
@@ -76,3 +96,5 @@ nav {
 		} 
 	}
 }
+
+

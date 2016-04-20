@@ -7,7 +7,24 @@ nav {
   margin-bottom: 25px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  z-index: 901; }
+  z-index: 901;
+  box-shadow: 0 19px 6px -12px #000; }
+  nav:before, nav:after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width: 300px;
+    background: #777;
+    box-shadow: 0 15px 10px #777;
+    transform: rotate(-3deg); }
+  nav:after {
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto; }
   nav .nav-menu a {
     text-decoration: none;
     color: #DAD7CD;

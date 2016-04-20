@@ -5,6 +5,24 @@
     height: 304px;
     margin: 5px auto;
     position: relative;
+    &:before {
+        z-index: -1;
+        position: absolute;
+        content: "";
+        bottom: 15px;
+        left: 10px;
+        width: 50%;
+        top: 10px;
+        max-width:300px;
+        box-shadow: 0 17px 5px #000;
+        transform: rotate(-3deg);
+    }
+    &:after {
+    @extend .wrap_jcarousel:before;
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto;
+    } 
     .jcarousel {
         position: relative;
         overflow: hidden;
@@ -67,3 +85,22 @@
         }        
     }
 }
+
+.wrap_jcarousel:before {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 10px;
+    max-width:300px;
+    box-shadow: 0 17px 5px #000;
+    transform: rotate(-3deg);
+  }
+.wrap_jcarousel:after {
+    @extend .wrap_jcarousel:before;
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto;
+  } 
