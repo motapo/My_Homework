@@ -1,0 +1,14 @@
+@media (min-width: 481px) and (max-width: 768px) {
+  footer {
+    background: #1f232c;
+    height: 60px;
+    color: #737373;
+    font-family: Georgia, sans-serif;
+    padding: 15px 20px;
+    font-family: 12px; }
+    footer .copyright {
+      display: block;
+      margin-bottom: 10px; }
+    footer .template {
+      display: block;
+      float: left; } }

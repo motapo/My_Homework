@@ -1,0 +1,96 @@
+body {
+	background: linear-gradient(to bottom, #27292f, white);
+}
+.wrapper {
+	width: 1000px;
+	margin: 0px auto;
+	box-shadow: 0px 0px 6px black;
+	header {
+		padding: 30px 20px;
+		height: 135px;
+		background: #27292f;
+		background-image: url(../img/fone-header.jpg);
+		background-size: 100%;
+		font-family: Georgia, sans-serif;
+		color: white;
+		.logo {
+			display: block;
+			float: left;
+			margin-top: 13px;
+			height: 60px;
+			width: 301px;
+			color: white;
+			h1 {
+				font-size: 36px;
+				text-transform: uppercase;
+				span {
+					font-size: 46px;
+				}
+			}
+			h5 {
+				font-size: 15px;
+				letter-spacing: 0.5;
+			}
+		}
+		.seurch {
+			display: block;
+			float: right;
+			margin-bottom: 30px;
+			fieldset {
+				#s {
+					display: block;
+					height: 25px;
+					width: 212px;
+					padding-left: 11px; 
+					background: #1f232c;
+					border-radius: 10px;
+					outline: none;
+					border: none;
+					float: right;
+					color: white; 
+				}
+				#icon-search {
+					position: relative;
+					font-size: 12px;
+					display: block;
+					background: #11131a;
+					border-radius: 50%;
+					width: 20px;
+					height: 20px;
+					border: none;
+					outline: none;
+					color: white;
+					left: 205px;
+					top: 2px;
+					&:hover {
+						cursor: pointer;
+						background: gray;
+					}
+				}
+			}	
+		}	
+		.menu {
+			display: block;
+			float: right;
+			height: 20px;
+			li {
+				position: relative;
+				display: inline-block;
+				a {	
+					display: inline-block;
+					margin-left: 18px;
+					font-size: 13px;
+					text-transform: uppercase;
+					text-decoration: none;
+					font-weight: 100;
+					letter-spacing: 0em;
+					color: white;
+					&:hover {
+						color: gray;
+					}
+				}
+			}
+		}
+	}
+}
+

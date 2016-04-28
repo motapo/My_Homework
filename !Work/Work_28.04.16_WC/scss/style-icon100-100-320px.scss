@@ -1,0 +1,33 @@
+@media (min-width: 240px) and (max-width: 480px) {
+.icon100-100 {
+	font-family: Georgia, sans-serif;
+	padding: 5px 2px;
+	height: 96px;
+	ul{ display: flex;
+		li {
+			width: 32%;
+			display: block;
+			img {
+				margin: 1px;
+				display: block;
+			}
+			h3 {
+				display: none;
+				padding-bottom: 4px;
+				margin-bottom: 6px;
+				font-size: 18px;
+				border-bottom: 2px solid #333333; 
+			}
+			p {
+				display: none;
+				font-size: 10px;
+				line-height: 1.5;
+				color: #979797;
+			}
+		}
+		.li-right {
+			margin-right: 1%;
+		}
+	}
+}
+}

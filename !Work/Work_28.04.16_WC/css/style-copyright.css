@@ -1,0 +1,13 @@
+footer {
+  background: #1f232c;
+  height: 60px;
+  color: #737373;
+  font-family: Georgia, sans-serif;
+  padding: 25px 20px;
+  font-family: 12px; }
+  footer .copyright {
+    display: inline-block; }
+  footer .template {
+    display: inline-block;
+    float: right;
+    margin-right: 10px; }

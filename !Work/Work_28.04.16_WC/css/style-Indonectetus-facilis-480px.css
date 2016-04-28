@@ -1,0 +1,32 @@
+@media (min-width: 481px) and (max-width: 768px) {
+  .image300-170 {
+    height: 1470px;
+    padding: 0px 20px;
+    font-family: Georgia, sans-serif; }
+    .image300-170 fieldset {
+      border: 1px solid black;
+      text-align: center; }
+      .image300-170 fieldset legend {
+        padding: 10px;
+        margin-bottom: 8px;
+        font-size: 20px; }
+      .image300-170 fieldset ul li {
+        display: inline-block;
+        height: 220px;
+        width: 300px;
+        background: #eeeeee;
+        margin: 0px 0px 15px 0px; }
+        .image300-170 fieldset ul li h4 {
+          display: block;
+          margin: 6px auto 4px;
+          text-align: center;
+          font-size: 13px;
+          color: black;
+          font-weight: 500; }
+        .image300-170 fieldset ul li p {
+          display: block;
+          color: #979797;
+          font-size: 11px;
+          margin: 0 auto; }
+      .image300-170 fieldset .marg-right {
+        margin-right: 0px; } }

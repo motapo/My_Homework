@@ -1,0 +1,36 @@
+.icon100-100 {
+	font-family: Georgia, sans-serif;
+	background: #2B2837;
+	padding: 20px;
+	height: 140px;
+	ul{ display: flex;
+		li {
+			width: 300px;
+			height: 100px;
+			display: block;
+		img {
+			margin-right: 20px;
+			display: block;
+			float: left;
+			overflow: hidden;
+		}
+		h3 {
+			display: inline-block;
+			padding-bottom: 6px;
+			margin-bottom: 8px;
+			font-size: 20px;
+			color: #EBFCFC;
+			border-bottom: 2px solid #988D8D; 
+		}
+		p {
+			display: block;
+			font-size: 13px;
+			line-height: 1.6;
+			color: #979797;
+		}
+	}
+	} 
+	.li-right {
+		margin-right: 30px;
+	}
+}

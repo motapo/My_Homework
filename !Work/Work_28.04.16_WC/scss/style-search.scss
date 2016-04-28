@@ -1,0 +1,55 @@
+/*================================Стили для результатов поиска */
+.pageContainer{
+/*================ Сожержит каждую страницу с результатом поиска. Имеет вложенную нижнюю границу. */
+	border-bottom: 1px solid #5e7481;
+	margin-bottom:20px;
+}
+p.notFound{
+	text-align:center;
+	padding:0 0 40px;
+}
+/*================================ Результаты поиска: новости и веб страницы */
+.webResult { 
+	margin: 5px auto;
+	background: #59585A;
+	padding: 5px;
+	width: 98%;
+	font-family: Georgia, sans-serif;
+	p {
+		line-height: 1.5;
+		padding: 5px 30px;
+		color: black;
+		font-size: 14px;
+		font-weight: 700;
+		b {
+			color: #B9B5B5;
+		}
+	}
+	h2 {
+		background: #212226;
+		font-size: 16px;
+		padding: 5px;
+		b {
+			color: #fff; 
+		}
+		a {
+			color: #6A6C50;
+		}		
+	}
+	> a { 
+		margin-left: 60px;
+		font-size: 14px;
+		color: #4095CB;
+	}
+}
+/* ===============Кнопка Read More==================*/
+#more {
+	background-image: url(../img/readmore-button.png);
+	width: 122px;
+	height: 43px;
+	cursor: pointer;
+	margin: 15px auto;
+	&:hover {
+			box-shadow: 0px 0px 2px white;
+	}
+}

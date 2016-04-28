@@ -1,0 +1,143 @@
+@media (min-width: 240px) and (max-width: 480px) {
+	nav {
+	height: 620px;
+	background: #eeeeee;
+	padding: 20px;
+	font-family: Georgia, sans-serif;
+	color: #7c7c7c;
+	font-size: 12px;
+	.contact-us {
+		width: 200px;
+		display: block;
+		float: left;
+		margin: 0px 30px 20px 5px;
+		border-bottom: 3px double gray;
+		padding-bottom: 10px;
+		h1 {
+			display: block;
+			font-size: 18px;
+			color: #2c2c2c;
+			margin-bottom: 24px;
+		}
+		ul li {
+			line-height: 1.65;
+		}
+		.ul-1 {
+			margin-bottom: 8px;
+		}
+	}
+	.quick-links {
+		width: 200px;
+		margin: 0px 30px 20px 5px;
+		display: block;
+		float: left;
+		border-bottom: 3px double gray;
+		padding-bottom: 10px;
+		h1 {
+			display: block;
+			font-size: 18px;
+			color: #2c2c2c;
+			margin-bottom: 17px;
+		}
+		ul li {
+			font-weight: 500;
+			display: inline-block;
+			padding: 9px 10px;
+			border-bottom: 1px solid gray;
+			a {
+				text-decoration: none;
+				color: #1f232c;
+				&:hover {
+					color: #D5C6C6;
+					border-left: 1px solid gray;
+					text-shadow: 0px 0px 3px black;
+				}
+			}
+		}
+	}
+	.from-the-blog {
+		width: 224px;
+		margin: 0px 30px 20px;
+		display: none;
+		float: left;
+		padding-bottom: 10px;
+		h1 {
+			display: block;
+			font-size: 16px;
+			color: #2c2c2c;
+			margin-bottom: 26px;
+		}
+		h3 {
+			font-size: 13px;
+			color: #7c7c7c;
+			display: block;
+			margin-bottom: 6px;
+			font-weight: 700;
+		}
+		.text-11 {
+			font-size: 11px;
+			display: block;
+			margin-bottom: 7px;
+		}
+		ul li {
+			line-height: 1.5;
+		}
+		a {
+			display: block;
+			float: right;
+			margin-top: 13px;
+			margin-right: 10px;
+			text-decoration: none;
+			color: #1f232c;
+			&:hover {
+				color: gray;
+				text-decoration: underline;
+			}
+		}
+	}
+	.grab-our-newsletter {
+		display: block;
+		margin: 0px 30px 20px 5px;
+		border-bottom: 3px double gray;
+		padding-bottom: 10px;
+		h1 {
+			display: block;
+			font-size: 18px;
+			color: #2c2c2c;
+			margin-bottom: 15px;
+		}
+		ul li input {
+			display: block;
+			background: white;
+			border-radius: 5px;
+			outline: none;
+			border: none;
+			color: black;
+			font-size: 13px;
+			height: 30px;
+			width: 225px;
+			padding: 9px;
+			margin-bottom: 11px;
+		}
+		.button {
+			display: block;
+			width: 75px;
+			height: 28px;
+			background: #1f232c;
+			border-radius: 5px;
+			border: none;
+			outline: none;
+			text-transform: uppercase;
+			color: white;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+footer {
+
+	font-size: 12px;
+}
+}

@@ -1,0 +1,119 @@
+nav {
+  height: 260px;
+  background: #eeeeee;
+  padding: 50px 20px 30px;
+  font-family: Georgia, sans-serif;
+  color: #7c7c7c;
+  font-size: 12px; }
+  nav .contact-us {
+    width: 245px;
+    display: block;
+    float: left; }
+    nav .contact-us h1 {
+      display: block;
+      font-size: 18px;
+      color: #2c2c2c;
+      margin-bottom: 24px; }
+    nav .contact-us ul li {
+      line-height: 1.65; }
+    nav .contact-us .ul-1 {
+      margin-bottom: 8px; }
+  nav .quick-links {
+    width: 227px;
+    margin-right: 18px;
+    display: block;
+    float: left; }
+    nav .quick-links h1 {
+      display: block;
+      font-size: 18px;
+      color: #2c2c2c;
+      margin-bottom: 17px; }
+    nav .quick-links ul li {
+      font-weight: 500;
+      display: block;
+      padding: 9px 0px;
+      border-bottom: 1px solid gray; }
+      nav .quick-links ul li a {
+        text-decoration: none;
+        color: #1f232c; }
+        nav .quick-links ul li a:hover {
+          color: #D5C6C6;
+          border-left: 1px solid gray;
+          text-shadow: 0px 0px 3px black; }
+  nav .from-the-blog {
+    width: 224px;
+    margin-right: 22px;
+    display: block;
+    float: left; }
+    nav .from-the-blog h1 {
+      display: block;
+      font-size: 18px;
+      color: #2c2c2c;
+      margin-bottom: 26px; }
+    nav .from-the-blog h3 {
+      font-size: 13px;
+      color: #7c7c7c;
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 700; }
+    nav .from-the-blog .text-11 {
+      font-size: 11px;
+      display: block;
+      margin-bottom: 7px; }
+    nav .from-the-blog ul li {
+      line-height: 1.5; }
+    nav .from-the-blog a {
+      display: block;
+      float: right;
+      margin-top: 13px;
+      text-decoration: none;
+      color: #1f232c; }
+      nav .from-the-blog a:hover {
+        color: gray;
+        text-decoration: underline; }
+  nav .grab-our-newsletter {
+    display: block; }
+    nav .grab-our-newsletter h1 {
+      display: block;
+      font-size: 18px;
+      color: #2c2c2c;
+      margin-bottom: 28px; }
+    nav .grab-our-newsletter ul li input {
+      display: block;
+      background: white;
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      color: black;
+      font-size: 13px;
+      height: 30px;
+      width: 224px;
+      padding: 9px;
+      margin-bottom: 11px; }
+    nav .grab-our-newsletter .button {
+      display: block;
+      width: 81px;
+      height: 30px;
+      background: #1f232c;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      text-transform: uppercase;
+      color: white; }
+      nav .grab-our-newsletter .button:hover {
+        cursor: pointer; }
+
+footer {
+  font-size: 12px; }
+
+.spolerContent {
+  display: none;
+  padding: 10px 20px;
+  font-family: Georgia, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #7c7c7c; }
+  .spolerContent span {
+    font-weight: 700;
+    color: #2B2727;
+    text-transform: uppercase; }

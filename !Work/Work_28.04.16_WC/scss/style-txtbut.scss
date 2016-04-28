@@ -1,0 +1,40 @@
+.txtbut {
+	height: 90px;
+	border-bottom: 6px solid #7E7B7B;
+	background: #e7e7e7;
+	color: #1f222c;
+	padding: 10px 20px;
+	.txtbut-text {
+		display: block;
+		float: left;
+		width: 680px;
+		font-family: Georgia, sans-serif;
+		font-size: 28px;
+		line-height: 1.2;
+	}
+	.txtbut-button{ 
+		display: block;
+		float: rihgt;
+		button{
+			width: 280px;
+			height: 58px;
+			margin-top: 3px;
+			background: linear-gradient(to top, #4C4C3B, #0A0A0A);
+			border-radius: 10px;
+			font-size: 22px;
+			text-transform: uppercase;
+			outline: none;
+			border: none;
+			color: #dfd6d6; 
+			text-shadow: 0px 0px 2px #969597;
+			&:hover {
+				cursor: pointer;
+				background: #524C4C;
+				color: #CDE6E7;
+			}
+		}
+	}
+}
+.banner {
+	height: 365px;
+}

@@ -1,0 +1,9 @@
+@media (min-width: 240px) and (max-width: 480px) {
+  .txtbut {
+    display: none;
+  }
+
+  .banner {
+    height: 110px;
+  }
+}

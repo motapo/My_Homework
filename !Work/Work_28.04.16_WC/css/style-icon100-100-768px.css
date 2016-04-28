@@ -1,0 +1,29 @@
+@media (min-width: 769px) and (max-width: 960px) {
+  .icon100-100 {
+    font-family: Georgia, sans-serif;
+    padding: 20px 20px;
+    height: 128px; }
+    .icon100-100 ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .icon100-100 ul li {
+        width: 32%;
+        display: block; }
+        .icon100-100 ul li img {
+          margin-right: 10px;
+          display: block; }
+        .icon100-100 ul li h3 {
+          display: inline-block;
+          padding-bottom: 4px;
+          margin-bottom: 6px;
+          font-size: 18px;
+          border-bottom: 2px solid #333333; }
+        .icon100-100 ul li p {
+          display: block;
+          font-size: 10px;
+          line-height: 1.5;
+          color: #979797; }
+      .icon100-100 ul .li-right {
+        margin-right: 1%; } }

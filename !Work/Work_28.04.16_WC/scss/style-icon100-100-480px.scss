@@ -1,0 +1,39 @@
+@media (min-width: 481px) and (max-width: 768px) {
+.icon100-100 {
+	display: block;
+	font-family: Georgia, sans-serif;
+	padding: 15px 19px;
+	height: 225px;
+	ul{ display: flex;
+		li {
+			width: 32%;
+			height: 100%;
+			display: block;
+			img {
+				display: block;
+				position: relative;
+				padding-left: 2px;
+				margin: 0 auto;
+			}
+			h3 {
+				display: block;
+				position: relative;
+				padding-bottom: 5px;
+				margin-bottom: 5px;
+				font-size: 18px;
+				border-bottom: 2px solid #333333; 
+			}
+			p {
+				display: block;
+				margin: 0 auto;
+				font-size: 10px;
+				line-height: 1.5;
+				color: #979797;
+			}
+		}
+		.li-right {
+			margin-right: 2%;
+		}
+	}
+}
+}

@@ -1,0 +1,46 @@
+.icon100-100 {
+  font-family: Georgia, sans-serif;
+  background: #2B2837;
+  padding: 20px;
+  height: 140px;
+}
+
+.icon100-100 ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.icon100-100 ul li {
+  width: 300px;
+  height: 100px;
+  display: block;
+}
+
+.icon100-100 ul li img {
+  margin-right: 20px;
+  display: block;
+  float: left;
+  overflow: hidden;
+}
+
+.icon100-100 ul li h3 {
+  display: inline-block;
+  padding-bottom: 6px;
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: #EBFCFC;
+  border-bottom: 2px solid #988D8D;
+}
+
+.icon100-100 ul li p {
+  display: block;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #979797;
+}
+
+.icon100-100 .li-right {
+  margin-right: 30px;
+}

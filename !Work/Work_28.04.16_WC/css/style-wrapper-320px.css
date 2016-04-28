@@ -1,0 +1,62 @@
+@media (min-width: 240px) and (max-width: 480px) {
+  body {
+    background: -webkit-linear-gradient(top, #27292f, white);
+    background: linear-gradient(to bottom, #27292f, white); }
+  .wrapper {
+    width: 300px;
+    margin: 0px auto;
+    box-shadow: 0px 0px 6px black; }
+    .wrapper header {
+      padding: 6px;
+      height: 80px;
+      background: #27292f;
+      background-image: url(../img/fone-header.jpg);
+      background-size: 100%;
+      font-family: Georgia, sans-serif;
+      color: white; }
+      .wrapper header .logo {
+        display: block;
+        float: left;
+        margin: 0px;
+        height: 30px;
+        color: white; }
+        .wrapper header .logo h1 {
+          font-size: 24px;
+          text-transform: uppercase; }
+          .wrapper header .logo h1 span {
+            font-size: 30px; }
+        .wrapper header .logo h5 {
+          display: none;
+          font-size: 12px;
+          letter-spacing: 0.5; }
+      .wrapper header .seurch {
+        display: none; }
+      .wrapper header .menu {
+        display: block;
+        float: left;
+        height: 20px; }
+        .wrapper header .menu li {
+          position: relative;
+          display: inline-block; }
+          .wrapper header .menu li a {
+            width: 92px;
+            display: inline-block;
+            margin: 0px 1px 0px 0px;
+            padding: 5px;
+            font-size: 7px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 100;
+            letter-spacing: 0em;
+            color: white;
+            background: #322828;
+            border-radius: none;
+            box-shadow: none;
+            text-align: center;
+            border: 1px solid gray; }
+            .wrapper header .menu li a:hover {
+              color: black;
+              background: #CFC9C9; }
+  .banner img {
+    width: 300px;
+    height: 110px; } }
