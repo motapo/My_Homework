@@ -1,0 +1,117 @@
+/*@extend .wrap_jcarousel;
+
+@include box-shadow(0px, 0px, 5px, white); */
+/*============== styles-header ====*/
+.actors-block fieldset {
+  display: block;
+  margin-top: 10px;
+  padding: 20px 20px 11px;
+  border-top: 3px double black;
+  text-align: center; }
+  .actors-block fieldset legend {
+    display: block;
+    width: 170px;
+    height: 40px;
+    background: #FB47C2;
+    color: #F6EDED;
+    text-shadow: 1px 0px 4px black;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 22px;
+    border-top: 3px double black;
+    border-bottom: 3px double black;
+    box-shadow: 0 19px 6px -12px #000; }
+  .actors-block fieldset .actors ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .actors-block fieldset .actors ul .marg-right {
+      margin-right: 15px; }
+    .actors-block fieldset .actors ul li {
+      width: 179px;
+      display: inline-block;
+      position: relative;
+      padding-bottom: 10px; }
+      .actors-block fieldset .actors ul li .actors-animate-all {
+        display: block;
+        width: 170px;
+        height: 170px;
+        margin: 5px auto;
+        box-shadow: 0px 0px 8px 1px white;
+        border: 4px solid #382A2A;
+        -webkit-transition: all .7s;
+        transition: all .7s;
+        background-color: rgba(0, 0, 0, 0.3);
+        background-image: url(../img/spriteAll.png); }
+        .actors-block fieldset .actors ul li .actors-animate-all:hover {
+          -webkit-transition: all .7s;
+          transition: all .7s;
+          box-shadow: 0px 0px 8px 2px black; }
+      .actors-block fieldset .actors ul li .actors-animate-a {
+        background-position: 0px -170px; }
+        .actors-block fieldset .actors ul li .actors-animate-a:hover {
+          background-position: 0px 0px; }
+      .actors-block fieldset .actors ul li .actors-animate-b {
+        background-position: 0px -510px; }
+        .actors-block fieldset .actors ul li .actors-animate-b:hover {
+          background-position: 0px -340px; }
+      .actors-block fieldset .actors ul li .actors-animate-c {
+        background-position: 0px -1190px; }
+        .actors-block fieldset .actors ul li .actors-animate-c:hover {
+          background-position: 0px -1020px; }
+      .actors-block fieldset .actors ul li .actors-animate-d {
+        background-position: 0px -850px; }
+        .actors-block fieldset .actors ul li .actors-animate-d:hover {
+          background-position: 0px -680px; }
+      .actors-block fieldset .actors ul li .actors-animate-e {
+        background-position: 0px -1530px; }
+        .actors-block fieldset .actors ul li .actors-animate-e:hover {
+          background-position: 0px -1360px; }
+      .actors-block fieldset .actors ul li h3 {
+        display: inline-block;
+        margin: 10px 0px;
+        color: white;
+        font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        text-shadow: 1px 0px 2px black; }
+      .actors-block fieldset .actors ul li span {
+        margin: 20px 0px 0px;
+        display: block;
+        color: #d7d7d7;
+        font-family: Arial;
+        font-weight: 700;
+        font-size: 15px; }
+      .actors-block fieldset .actors ul li p {
+        display: inline-block;
+        text-align: left;
+        color: whitesmoke;
+        line-height: 1.05;
+        padding: 5px;
+        height: 150px; }
+      .actors-block fieldset .actors ul li a {
+        display: block;
+        position: relative;
+        margin-left: 25%;
+        font-style: italic;
+        text-decoration: none;
+        color: #F4F57B;
+        font-size: 17px;
+        text-shadow: 0px 0px 2px black; }
+
+.spolContActor {
+  display: none;
+  margin: 0px 20px;
+  padding: 10px 30px;
+  line-height: 1.1;
+  color: white;
+  border-top: none; }
+  .spolContActor li {
+    display: block;
+    padding: 2px;
+    border-top: 1px solid gray;
+    font-size: 18px;
+    color: #fafafa; }
+    .spolContActor li span {
+      font-weight: 700;
+      color: #192336; }

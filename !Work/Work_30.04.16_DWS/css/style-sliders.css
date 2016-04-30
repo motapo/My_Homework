@@ -1,0 +1,33 @@
+/*@extend .wrap_jcarousel;
+
+@include box-shadow(0px, 0px, 5px, white); */
+/*============== styles-header ====*/
+.slides_container {
+  padding: 0px 20px;
+  width: 960px;
+  height: 350px; }
+  .slides_container div {
+    width: 960px;
+    height: 350px;
+    display: block; }
+
+.pagination {
+  display: block;
+  margin: 10px auto;
+  text-align: center; }
+  .pagination li {
+    display: inline-block;
+    padding: 1px; }
+    .pagination li a {
+      text-indent: -9999px;
+      height: 25px;
+      width: 25px;
+      padding-left: 7px;
+      border-radius: 50%;
+      margin-right: 3px;
+      display: block;
+      background: linear-gradient top, #015420, #92C605;
+      border: 3px solid #4C4B37; }
+      .pagination li a:active:hover {
+        background: #048110;
+        border: 3px solid #602323; }

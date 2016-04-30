@@ -1,0 +1,82 @@
+/*@extend .wrap_jcarousel;
+
+@include box-shadow(0px, 0px, 5px, white); */
+/*============== styles-header ====*/
+.news-block fieldset {
+  padding: 11px 20px;
+  border-top: 3px double black;
+  text-align: center; }
+  .news-block fieldset legend {
+    display: block;
+    width: 170px;
+    height: 40px;
+    background: #FB47C2;
+    color: #F6EDED;
+    text-shadow: 1px 0px 4px black;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 22px;
+    border-top: 3px double black;
+    border-bottom: 3px double black;
+    box-shadow: 0 19px 6px -12px #000; }
+  .news-block fieldset .news {
+    padding-bottom: 15px 0px; }
+    .news-block fieldset .news ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .news-block fieldset .news ul li {
+        margin: 5px; }
+        .news-block fieldset .news ul li .news-text-1 {
+          height: 131px; }
+        .news-block fieldset .news ul li .logo-movie-1, .news-block fieldset .news ul li .logo-movie-2, .news-block fieldset .news ul li .logo-movie-3 {
+          display: block;
+          width: 300px;
+          height: 117px;
+          margin: 0 auto 13px;
+          background-image: url(../img/logo/dragon-2.png); }
+        .news-block fieldset .news ul li .logo-movie-2 {
+          height: 116px;
+          margin: 0px auto 14px;
+          background-image: url(../img/logo/the-croods-300.png); }
+        .news-block fieldset .news ul li .logo-movie-3 {
+          height: 107px;
+          background-image: url(../img/logo/panda-kungfu-3.png);
+          margin: 5px auto 18px; }
+        .news-block fieldset .news ul li span {
+          display: inline-block;
+          float: left;
+          width: 32px;
+          height: 23px;
+          background-image: url(../img/cinema.png); }
+        .news-block fieldset .news ul li h2 {
+          font-family: Georgia, sans-serif;
+          font-size: 20px;
+          font-weight: 700;
+          color: #e6e6e6;
+          text-shadow: 1px 1px 3px black; }
+        .news-block fieldset .news ul li p {
+          text-align: justify;
+          color: whitesmoke;
+          line-height: 1.05;
+          padding: 5px 10px; }
+        .news-block fieldset .news ul li a {
+          display: block;
+          margin-top: 20px;
+          font-style: italic;
+          text-decoration: none;
+          color: #F4F57B;
+          font-size: 17px;
+          text-shadow: 0px 0px 2px black; }
+          .news-block fieldset .news ul li a:active {
+            color: #412D8B; }
+
+.spolCont {
+  display: none;
+  margin: 0px 20px;
+  padding: 10px 21px;
+  border-top: none;
+  line-height: 1.1;
+  font-size: 18px;
+  color: whitesmoke; }

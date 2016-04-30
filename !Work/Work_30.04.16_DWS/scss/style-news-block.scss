@@ -1,0 +1,97 @@
+@import "_variable-mixed.scss";
+
+.news-block {
+	fieldset {
+		padding: 11px 20px;
+		border-top: 3px double black;
+		text-align: center;
+		legend {
+			display: block;
+			width: 170px;
+			height: 40px;
+			background: $bckg-legend;
+			color: $color-legend;
+			text-shadow: 1px 0px 4px black;
+			border-radius: 5px;
+			padding: 7px;
+			font-size: $fontSz + 4px;
+			border-top: 3px double black; 
+			border-bottom: 3px double black;
+			box-shadow: 0 19px 6px -12px #000; 
+		}
+		.news {
+			padding-bottom: 15px 0px;
+			ul {
+				display: flex;
+				li {
+					margin: 5px;
+					.news-text-1 {
+						height: 131px;
+					}
+					.logo-movie-1 {
+						display: block;
+						width: 300px;
+						height: 117px;
+						margin: 0 auto 13px;
+						background-image: url(../img/logo/dragon-2.png);
+					}
+					.logo-movie-2 {
+						@extend .logo-movie-1;
+						height: 116px;
+						margin: 0px auto 14px;
+						background-image: url(../img/logo/the-croods-300.png);
+					}
+					.logo-movie-3 {
+						@extend .logo-movie-1;
+						height: 107px;
+						background-image: url(../img/logo/panda-kungfu-3.png);
+						margin: 5px auto 18px;
+					}
+					span {
+						display: inline-block;
+						float: left;
+						width: 32px;
+						height: 23px;
+						background-image: url(../img/cinema.png);
+					}
+					h2 {
+						font-family: $font-1;
+						font-size: $fontSz + 2px;
+						font-weight: 700;
+						color: $color-default - 25%;
+						text-shadow: 1px 1px 3px black;
+					}
+					p {
+						text-align: justify;
+						color: $color-default - 10%;
+						line-height: 1.05;
+						padding: 5px 10px;
+					}
+					a {
+						display: block;
+						margin-top: 20px;
+						font-style: italic;
+						text-decoration: none;
+						color: #F4F57B;
+						font-size: $fontSz - 1px; 
+						text-shadow: 0px 0px 2px black;
+						&:active {
+							color: #412D8B;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.spolCont {
+	display: none;
+	margin: 0px 20px;
+	padding: 10px 21px;
+	border-top: none;
+	line-height: 1.1;
+	font-size: $fontSz;
+	color: $color-default - 10%;
+}

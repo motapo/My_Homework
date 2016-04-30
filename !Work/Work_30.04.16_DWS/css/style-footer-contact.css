@@ -1,0 +1,142 @@
+/*@extend .wrap_jcarousel;
+
+@include box-shadow(0px, 0px, 5px, white); */
+/*============== styles-header ====*/
+.contact {
+  border-top: 2px solid #F8CCCC;
+  margin-top: 10px;
+  padding: 40px 20px 25px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .contact .contact-left {
+    display: block;
+    width: 470px;
+    margin-right: 20px; }
+    .contact .contact-left ul li {
+      display: block;
+      margin: 20px 0px;
+      height: 110px; }
+      .contact .contact-left ul li a {
+        display: block;
+        float: left;
+        width: 112px;
+        height: 102px;
+        background-image: url(../img/walt-disney.jpg);
+        margin-right: 10px;
+        border-radius: 5px;
+        border: 6px solid #072C48;
+        overflow: hidden;
+        -webkit-transition: all .5s;
+        transition: all .5s; }
+        .contact .contact-left ul li a:hover {
+          border: 6px solid #A8A7A7;
+          box-shadow: 0px 0px 4px red;
+          -webkit-transition: all .6s;
+          transition: all .6s; }
+      .contact .contact-left ul li .worn-bros-link {
+        background-image: url(../img/Warner_bros.jpg); }
+      .contact .contact-left ul li h5 {
+        font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+        font-weight: 900;
+        display: block;
+        padding: 10px;
+        color: black;
+        text-shadow: 1px 1px 4px white; }
+      .contact .contact-left ul li p {
+        display: inline;
+        text-align: left;
+        color: whitesmoke;
+        line-height: 1.05;
+        padding: 5px;
+        height: 150px; }
+    .contact .contact-left h4 {
+      display: block;
+      color: #C9D752;
+      text-shdow: 0px 0px 3px gray;
+      font-size: 23px;
+      font-weight: 700; }
+  .contact .contact-centr {
+    width: 225px;
+    display: inline-block; }
+    .contact .contact-centr h4 {
+      display: block;
+      color: #C9D752;
+      text-shdow: 0px 0px 3px gray;
+      font-size: 23px;
+      font-weight: 700;
+      margin-bottom: 20px; }
+    .contact .contact-centr ul {
+      display: block;
+      padding: 5px 3px; }
+      .contact .contact-centr ul li {
+        display: block;
+        text-align: left;
+        color: whitesmoke;
+        line-height: 1.05;
+        padding: 2px;
+        font-size: 14px; }
+        .contact .contact-centr ul li h5 {
+          color: gray;
+          font-weight: 700; }
+  .contact .contact-right h4 {
+    display: block;
+    color: #C9D752;
+    text-shdow: 0px 0px 3px gray;
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 20px; }
+  .contact .contact-right ul {
+    display: block; }
+    .contact .contact-right ul li input, .contact .contact-right ul li textarea {
+      display: block;
+      width: 225px;
+      height: 33px;
+      border: none;
+      outline: none;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      padding-left: 10px;
+      color: black;
+      background-color: #E3E5D7; }
+      .contact .contact-right ul li input:focus, .contact .contact-right ul li textarea:focus {
+        box-shadow: 0px 0px 4px #F07508;
+        background-color: #FDD698; }
+    .contact .contact-right ul li textarea {
+      height: 110px; }
+  .contact .contact-right .button {
+    display: block;
+    background-color: #D005AC;
+    border-radius: 5px;
+    border: 1px solid #7E046B;
+    box-shadow: 0px 0px 3px #FC77F1;
+    width: 80px;
+    height: 30px;
+    font-size: 16px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-family: Georgia, sans-serif;
+    font-weight: 700;
+    -webkit-transition: all .6s;
+    transition: all .6s; }
+    .contact .contact-right .button:hover {
+      cursor: pointer;
+      -webkit-transition: all .6s;
+      transition: all .6s;
+      background: #F853B8; }
+
+.copyright-tamplate {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  font-size: 16px;
+  color: #818181;
+  padding: 25px 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 -12px 6px -4px #000; }
+  .copyright-tamplate .copyright {
+    margin-right: 360px; }

@@ -1,0 +1,83 @@
+/*@extend .wrap_jcarousel;
+
+@include box-shadow(0px, 0px, 5px, white); */
+/*============== styles-header ====*/
+body {
+  background: -webkit-linear-gradient(20deg, #ae36c7, #c28053);
+  background: linear-gradient(70deg, #ae36c7, #c28053); }
+  body .wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.2); }
+    body .wrapper header {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      height: 136px;
+      padding: 0px 20px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #F8CCCC;
+      background-color: rgba(0, 0, 0, 0.6); }
+      body .wrapper header .logo {
+        display: inline-block;
+        margin-top: 10px; }
+      body .wrapper header .menu {
+        border-radius: 10px;
+        margin: 40px 0px 0px 170px;
+        display: inline-block;
+        height: 55px;
+        background: #6A025D;
+        box-shadow: 0 19px 6px -12px #000; }
+        body .wrapper header .menu .border-li-1 {
+          border-radius: 10px 0px 0px 10px; }
+          body .wrapper header .menu .border-li-1::before {
+            border-radius: 10px 0px 1px 10px; }
+        body .wrapper header .menu .border-li-5 {
+          border-radius: 0px 10px 10px 0px; }
+          body .wrapper header .menu .border-li-5::before {
+            border-radius: 0px 10px 10px 0px; }
+      body .wrapper header li {
+        height: 55px;
+        width: 128px;
+        position: relative;
+        display: inline-block; }
+        body .wrapper header li::before {
+          content: "";
+          display: block;
+          background-color: #F0A0ED;
+          width: 0px;
+          height: 55px;
+          position: absolute;
+          -webkit-transition: all .5s;
+          transition: all .5s; }
+        body .wrapper header li:hover::before {
+          width: 128px; }
+        body .wrapper header li a {
+          display: block;
+          margin-top: 20px;
+          position: relative;
+          width: 128px;
+          height: 55px;
+          text-align: center;
+          color: white;
+          font-size: 15px;
+          text-transform: uppercase;
+          text-decoration: none;
+          text-shadow: 0 1px 3px black; }
+          body .wrapper header li a:hover {
+            color: black;
+            text-shadow: 0 1px 3px white;
+            z-index: 2;
+            -webkit-transition: all .5s;
+            transition: all .5s; }
+
+.wiki h1 {
+  position: relative;
+  color: white;
+  font-size: 18px;
+  text-shadow: 0 1px 2px black;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  font-style: italic; }

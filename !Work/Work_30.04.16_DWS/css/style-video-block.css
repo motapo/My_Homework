@@ -1,0 +1,37 @@
+/*@extend .wrap_jcarousel;
+
+@include box-shadow(0px, 0px, 5px, white); */
+/*============== styles-header ====*/
+.video-block {
+  height: 250px; }
+  .video-block fieldset {
+    padding: 0 20px;
+    display: block;
+    padding: 20px 20px 10px;
+    border-top: 3px double black;
+    text-align: center; }
+    .video-block fieldset legend {
+      display: block;
+      width: 170px;
+      height: 40px;
+      background: #FB47C2;
+      color: #F6EDED;
+      text-shadow: 1px 0px 4px black;
+      border-radius: 5px;
+      padding: 7px;
+      font-size: 22px;
+      border-top: 3px double black;
+      border-bottom: 3px double black;
+      box-shadow: 0 19px 6px -12px #000; }
+    .video-block fieldset ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .video-block fieldset ul li {
+        display: inline-block;
+        width: 300px;
+        height: 160px;
+        background: #502424; }
+      .video-block fieldset ul .marg-right-video {
+        margin-right: 10px; }
