@@ -1,4 +1,4 @@
-define('CheckBox', ['jquery'], function($){
+define('CheckBox', ['jquery', 'screwdefaultbuttons'], function(){
 	var ChBox = $(function(){
 		
 			$('input:radio').screwDefaultButtons({

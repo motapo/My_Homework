@@ -1,0 +1,1 @@
+define("Select",["jquery","selectbox"],function(){var e=$(function(){$("#select_auto_id").selectbox()});return e});

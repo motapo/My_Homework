@@ -1,7 +1,7 @@
 // 1. 'JCarousel' - это имя модуля
 // 2. ['jquery', 'jcarousel'] - зависимости - бибилиотеки или же другие модули, которые будут использованы в этом блоке
 // 3.  функция, которая будет выполнена после загрузки всех зависимостей.
-define('JCarousel', ['jquery', 'jcarousel'], function ($, jcarousel){
+define('JCarousel', ['jquery', 'jcarousel'], function (){
   
   var JqCar = $(function() {
   $('.jcarousel').jcarousel({

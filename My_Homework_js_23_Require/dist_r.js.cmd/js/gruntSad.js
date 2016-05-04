@@ -1,0 +1,1 @@
+"use strict;";function showModal(){$modal.css("display","block"),$close.one("click",hideModal)}function hideModal(){$modal.fadeOut(700)}var animData={container:document.getElementById("container"),renderer:"svg",loop:!0,autoplay:!0,animationData:animationData},anim=bodymovin.loadAnimation(animData),$modal=$("#overlay"),$close=$("#close");showModal();
