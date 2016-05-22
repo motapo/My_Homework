@@ -1,7 +1,7 @@
 @import "_variable-mixed.scss";
 
 body {
-	background: linear-gradient(to bottom, #595856, black);
+	background: linear-gradient(45deg, #6F6E6F, #050505, #F3FF2D, #6102E2);
 	background-size: 100%;
 	font-family: $font-default;
 	#wrapper-header-nav-news {
@@ -30,6 +30,7 @@ body {
 					letter-spacing: 1px;
 					color: $color-h1;
 					text-shadow: 0px 0px 8px black;
+					float: left;
 				}	  
 				h5 {
 					display: block;
@@ -39,6 +40,7 @@ body {
 					color: $color-h5;
 					letter-spacing: 3px;	
 					text-shadow: 0px -1px 5px black;
+					float: left;
 				} 
 			}
 		}	

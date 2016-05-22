@@ -10,12 +10,20 @@ var plumber = require('gulp-plumber'); //отлавливает ошибки к�
 var autoprefixer = require('gulp-autoprefixer'); //добавляет префиксы -webkit и т.д.
 var imagemin = require('gulp-imagemin'); //жмет картинки
 var webserver = require('gulp-webserver');//следит за сайтом 
+var gutil = require('gulp-util');//модуль для релизов нашего проэкта
 
 //если прописать в дефолтном таске все нужные команды, 
 //то можно вызывать их выполнение командой gulp
 //gulp.task('default', ['cssMin', 'jsUglify', 'watch']);
 gulp.task('default', ['cssConcat', 'cssMin', 'jsUglify', 'watch', 'webServer']);
 
+//создание релизов проекта
+gulp.task('release', function(){
+	var number = gutil.env.number;
+	console.log('Number', number);
+});
+
+//запускаем сервер для отслеживания и релоадов всех файлов проекта
 gulp.task('webServer', function(){
 	gulp.src('./')
 	.pipe(webserver({

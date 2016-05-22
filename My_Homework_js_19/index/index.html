@@ -15,18 +15,40 @@
 		    border-radius: 20px; border: 1px solid red;
 		}
 	</style>
+
+	<!--[if IE]>
+	<script>
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('article');
+      document.createElement('aside');
+      document.createElement('footer');
+  	</script>
+  	<link rel="stylesheet" href="css/style-ie.css">
+  	<![endif]-->
+
+
 </head>
 <body>
 	<!-- ===============прелоадер=========== -->
 	<div id="page-preloader">
 		<p class="spinner">connect libraries, please wait...</p>
 	</div>
+
+	<!--[if IE]>
+		<p class="big_text">Ваш браузер устарел, <a href="http://www.google.com.ua/chrome/browser/desktop/#">мир уже давно стал цветным и привлекательным!</a></p>
+	<![endif]-->
+
 	<!-- =================== Хэдер ================================  -->
 	<div id="wrapper-header-nav-news">
 		<header>
 				<!-- =================== Логотип ==================  -->
 			
 			//= ../html/logo.html
+
+			
+			//= ../html/logo-spinner.html
 
 				<!-- =================== Спрайт социалок ==========  -->
 			

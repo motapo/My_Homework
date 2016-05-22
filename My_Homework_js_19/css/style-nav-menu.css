@@ -25,59 +25,58 @@ nav {
     transform: rotate(3deg);
     right: 10px;
     left: auto; }
-  nav .nav-menu a {
+  nav .nav-menu-wrapper .nav-menu a {
     text-decoration: none;
     color: #DAD7CD;
     text-shadow: 0px 0px 4px black; }
-
-.nav-menu-title {
-  display: block;
-  float: left;
-  width: 150px;
-  height: 48px;
-  margin: 0 auto;
-  color: black;
-  font-size: 18px;
-  font-family: "akashiregular";
-  text-align: center;
-  text-decoration: none;
-  border-right: 1px solid black; }
-  .nav-menu-title:hover {
-    background: #8A8162; }
-  .nav-menu-title .nav-menu-link {
+  nav .nav-menu-wrapper .nav-menu-title {
     display: block;
-    height: 50px;
+    float: left;
     width: 150px;
-    padding-top: 15px;
+    height: 48px;
+    margin: 0 auto;
+    color: black;
+    font-size: 18px;
+    font-family: "akashiregular";
     text-align: center;
-    text-transform: uppercase; }
-    .nav-menu-title .nav-menu-link:hover {
-      background: №665E45;
-      color: #000; }
-  .nav-menu-title .nav-menu-item, .nav-menu-title .nav-menu-item-sub {
-    display: none;
-    position: relative;
-    width: 100%;
-    background: #AEA78F;
-    border-bottom: 1px solid black; }
-  .nav-menu-title .nav-menu-item-sub {
-    position: absolute;
-    width: 150px;
-    left: 149px; }
-  .nav-menu-title .nmis-3-4 {
-    top: 150px; }
-  .nav-menu-title .nmis-2-2 {
-    top: 50px; }
-  .nav-menu-title .nav-menu-link-item,
-  .nav-menu-title .nav-menu-link-item-sub {
-    display: block;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    height: 50px;
-    text-align: center;
-    width: 150px; }
-    .nav-menu-title .nav-menu-link-item:hover,
-    .nav-menu-title .nav-menu-link-item-sub:hover {
-      background: gray;
-      color: #000;
-      box-shadow: 0px 0px 5px black; }
+    text-decoration: none;
+    border-right: 1px solid black; }
+    nav .nav-menu-wrapper .nav-menu-title:hover {
+      background: #8A8162; }
+    nav .nav-menu-wrapper .nav-menu-title .nav-menu-link {
+      display: block;
+      height: 50px;
+      width: 150px;
+      padding-top: 15px;
+      text-align: center;
+      text-transform: uppercase; }
+      nav .nav-menu-wrapper .nav-menu-title .nav-menu-link:hover {
+        background: №665E45;
+        color: #000; }
+    nav .nav-menu-wrapper .nav-menu-title .nav-menu-item, nav .nav-menu-wrapper .nav-menu-title .nav-menu-item-sub {
+      display: none;
+      position: relative;
+      width: 100%;
+      background: #AEA78F;
+      border-bottom: 1px solid black; }
+    nav .nav-menu-wrapper .nav-menu-title .nav-menu-item-sub {
+      position: absolute;
+      width: 150px;
+      left: 149px; }
+    nav .nav-menu-wrapper .nav-menu-title .nmis-3-4 {
+      top: 150px; }
+    nav .nav-menu-wrapper .nav-menu-title .nmis-2-2 {
+      top: 50px; }
+    nav .nav-menu-wrapper .nav-menu-title .nav-menu-link-item,
+    nav .nav-menu-wrapper .nav-menu-title .nav-menu-link-item-sub {
+      display: block;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      height: 50px;
+      text-align: center;
+      width: 150px; }
+      nav .nav-menu-wrapper .nav-menu-title .nav-menu-link-item:hover,
+      nav .nav-menu-wrapper .nav-menu-title .nav-menu-link-item-sub:hover {
+        background: gray;
+        color: #000;
+        box-shadow: 0px 0px 5px black; }

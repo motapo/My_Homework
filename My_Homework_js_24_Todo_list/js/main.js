@@ -1,16 +1,23 @@
 require.config({
+	// baseUrl: "modul/", 
 	paths: {
 		"jquery" : "libs/jquery-1.12.2.min",
 		"template" : "libs/template",
 		"model" : "ModelMVC",
 		"view" : "ViewMVC",
 		"controller" : "ControllerMVC"
-
 	}
-})
+
+	
+	// shim: {
+	// 	'template': {
+	// 		exports: 'tmpl'
+	// 	}
+	// }
+});
 // require(['ModelMVC'], function(ModelMVC){});
 // require(['ViewMVC'], function(ViewlMVC){});
-require(['ModelMVC', 'ControllerMVC', 'ViewMVC'], function(ModelMVC, ViewlMVC, ControllerMVC){
+require(['TestMVC', 'ModelMVC', 'ControllerMVC', 'ViewMVC'], function(TestMVC, ModelMVC, ViewlMVC, ControllerMVC){
 
 	$(function (){
 	var firstToDoList = ['test1', 'test2', 'test3'];

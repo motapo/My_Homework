@@ -1,0 +1,13 @@
+header, nav, section, article, aside, footer {
+   display:block;
+}
+
+body {
+  background: #5C4343;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5C4343', endColorstr='#000');
+  background-size: 100%;
+  font-family: Arial, Helvetica, sans-serif; 
+}
+.spinner {
+	display: none;
+}

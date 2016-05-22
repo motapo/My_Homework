@@ -1,0 +1,17 @@
+header, nav, section, article, aside, footer {
+   display:block;
+}
+
+body {
+  background: #201B1B;
+  font-family: Arial, Helvetica, sans-serif; 
+}
+.spinner {
+	display: none;
+}
+.logo a::after {
+	display: none;
+}
+.logo a:hover, .logo a:focus {
+    display: none;
+}

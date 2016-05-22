@@ -37,6 +37,7 @@ var question1 = JSON.parse(resultQuestion1Temp);
 var question2 = JSON.parse(resultQuestion2Temp);
 var question3 = JSON.parse(resultQuestion3Temp);
 // шаблонизируем это дело в HTML
+
 $(function(){
 	var html = $('#template').html();
 	var title = 'Философские учения Востока';

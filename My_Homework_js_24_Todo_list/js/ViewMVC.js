@@ -1,9 +1,10 @@
 define('ViewMVC', ['jquery', 'template', 'model'], function (){
+  
     var viewMvc = 
 function View(model){
   var self = this;
 
-  self.init = function () {
+    self.init = function () {
     var wrapper = tmpl($('#wrapper-template').html());
     $('body').append(wrapper);
     self.elements = {

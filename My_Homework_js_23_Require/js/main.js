@@ -10,18 +10,19 @@ require.config({
 		"css_live_reload" : "http://assets.codepen.io/assets/editor/live/css_live_reload_init-bad5f8d322020126e7b4287d497c7efe.js"
 	}
 })
-require(['JCarousel'], 	function (JCarousel)	{ 	});
-require(['JqueryMenu'], function (JqueryMenu) 	{   });
-require(['Select'], 	function (Select)		{ 	});
+require(['JCarousel', 'JqueryMenu', 'Select','CheckBox', 'jquery', 'screwdefaultbuttons'], 	
+	function (JCarousel, JqueryMenu, Select, CheckBox, $)	{ 	});
+
+
 // если указание зависимостей внутри модуля не помогает, 
 // то можно указать зависимости тут в require 
-require(['jquery', 'screwdefaultbuttons', 'CheckBox'], 	function (CheckBox)		{   });
+// require(['jquery', 'screwdefaultbuttons', 'CheckBox'], 	function (Checkbox)		{   });
 
 
 // =============================================================
 // ситуация следующая, если указание внутри модуля зависимостей не помогает и их
 // необходимо указать внутри require - то есть подводный
-// камень - оптимизация main.js с помощью "r.js.cmd -0 build/app.build.js"
+// камень - оптимизация main.js с помощью "r.js.cmd -o build/app.build.js"
 // создаст main.js в котором спорный модуль так и не заработает! 
 
 // 1. со временем нужно выбирать только те библиотеки и плагины, которые проходят испытание на правильное указание зависимостей внутри отдельных модулей подключаемых к main.js

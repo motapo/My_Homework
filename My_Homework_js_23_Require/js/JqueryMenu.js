@@ -1,6 +1,5 @@
-define( 'JqueryMenu', ['jquery'], 	function () {
-
-		var JqMenu = $(document).ready(function(){
+define('JqueryMenu', ['jquery'], 	function () {
+    var jqMenu = $(document).ready(function(){
   $('a').on('click', function(e){
     e.preventDefault();
   });
@@ -32,6 +31,6 @@ define( 'JqueryMenu', ['jquery'], 	function () {
     }, this), 100));
   });
 });
-	return JqMenu;
+    return jqMenu;
 	
 	});
