@@ -38,26 +38,6 @@
 	}
 }); 
 
-
-// $(function(){
-// 	function LoadImg (value){
-// 		$.getJSON(
-// 			'http://api.pixplorer.co.uk/image?word=' + value + '&amount=7&size=tb', 
-// 			function(data){
-// 				for (var i = 0; i <= 6; i++) {
-// 					console.log(data);
-// 					console.log(data.images[i].imageurl);
-// 					$('.image-' + (i+1) + '-item').css('background', 'url(' + data.images[i].imageurl +')'); 
-// 					$('.image-' + (i+1) + '-item').css('background-repeat', 'no-repeat'); 
-// 					$('.image-' + (i+1) + '-item').css('background-position', 'center center'); 
-// 					$('.image-' + (i+1) + '-item').css('background-size', 'contain'); 
-// 	        		$('.image-' + (i+1) + '-Name').html(data.images[i].word);
-// 				}
-// 			}
-// 		);
-// 	}	
-// 	LoadImg();
-
 	function LoadImg0 (i){
 		$.getJSON(
 			'http://api.pixplorer.co.uk/image?word=&amount=1&size=tb', 
@@ -76,6 +56,25 @@
 		for (var i = 0; i <= 6; i++) {
 	LoadImg0(i);
 	};
+
+
+$(function(){
+	function LoadImg (value){
+		$.getJSON(
+			'http://api.pixplorer.co.uk/image?word=' + value + '&amount=7&size=tb', 
+			function(data){
+				for (var i = 0; i <= 6; i++) {
+					console.log(data);
+					console.log(data.images[i].imageurl);
+					$('.image-' + (i+1) + '-item').css('background', 'url(' + data.images[i].imageurl +')'); 
+					$('.image-' + (i+1) + '-item').css('background-repeat', 'no-repeat'); 
+					$('.image-' + (i+1) + '-item').css('background-position', 'center center'); 
+					$('.image-' + (i+1) + '-item').css('background-size', 'contain'); 
+	        		$('.image-' + (i+1) + '-Name').html(data.images[i].word);
+				}
+			}
+		);
+	}	
 	
 	 $('.search-interest-submit').on('click', function(event) {
         event.preventDefault();
@@ -84,4 +83,4 @@
 
         LoadImg(search);
  
-});
+}); });
