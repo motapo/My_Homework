@@ -1,0 +1,70 @@
+/*@extend .wrap_jcarousel;*/
+@media (min-width: 768px) and (max-width: 1439px) {
+  .activity-title {
+    display: block;
+    width: 768px;
+    font-size: 137.5%;
+    font-family: "Montserrat Bold", Arial, sans-serif;
+    text-align: center; }
+  .wrapper-activity {
+    width: 768px;
+    height: 1020px;
+    margin-bottom: 54px;
+    padding-top: 30px;
+    display: block; }
+    .wrapper-activity .activImg {
+      border-radius: 5px;
+      border: 1px solid black;
+      display: inline-block;
+      float: left;
+      margin: 5px;
+      box-shadow: 0px 0px 17px 2px rgba(0, 0, 0, 0.4); }
+    .wrapper-activity .image-1, .wrapper-activity .image-2, .wrapper-activity .image-3, .wrapper-activity .image-4, .wrapper-activity .image-5, .wrapper-activity .image-6, .wrapper-activity .image-7 {
+      background-color: #08F5ED;
+      width: 237px;
+      height: 310px; }
+      .wrapper-activity .image-1-item, .wrapper-activity .image-2-item, .wrapper-activity .image-3-item, .wrapper-activity .image-4-item, .wrapper-activity .image-5-item, .wrapper-activity .image-6-item, .wrapper-activity .image-7-item {
+        width: 90%;
+        height: 80%; }
+        .wrapper-activity .image-1-item:before, .wrapper-activity .image-2-item:before, .wrapper-activity .image-3-item:before, .wrapper-activity .image-4-item:before, .wrapper-activity .image-5-item:before, .wrapper-activity .image-6-item:before, .wrapper-activity .image-7-item:before {
+          position: relative;
+          content: "Sports and Activity";
+          text-align: left;
+          text-transform: italic;
+          font-weight: 500;
+          font-family: "Roboto", sans-serif;
+          color: white;
+          bottom: -10px;
+          left: 15px;
+          z-index: 1; }
+    .wrapper-activity .image-2 {
+      background-color: #7AE506; }
+      .wrapper-activity .image-2-item:before {
+        content: "Wellnes and Health";
+        color: blue; }
+    .wrapper-activity .image-3 {
+      background-color: #F90404; }
+      .wrapper-activity .image-3-item:before {
+        content: "Extreme Sports and Expedition";
+        color: #56EA05; }
+    .wrapper-activity .image-4 {
+      background-color: #29D8F8; }
+      .wrapper-activity .image-4-item:before {
+        content: "Games";
+        color: #EB8B03; }
+    .wrapper-activity .image-5, .wrapper-activity .image-6 {
+      background-color: #140AF6;
+      width: 490px; }
+      .wrapper-activity .image-5-item:before {
+        content: "Cultere and Education";
+        color: #F6FF00; }
+    .wrapper-activity .image-6 {
+      background-color: #AFF30A; }
+      .wrapper-activity .image-6-item:before {
+        content: "Relaxation";
+        color: #0A38E3; }
+    .wrapper-activity .image-7 {
+      background-color: #E701F5; }
+      .wrapper-activity .image-7-item:before {
+        content: "Travelling";
+        color: #060606; } }

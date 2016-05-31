@@ -1,0 +1,62 @@
+/*@extend .wrap_jcarousel;*/
+@media (min-width: 1440px) {
+  .activity-title {
+    display: block;
+    font-size: 137.5%;
+    font-family: "Montserrat Bold", Arial, sans-serif;
+    text-align: center; }
+  .wrapper-activity {
+    width: 940;
+    height: auto;
+    margin: 36px 250px 85px; }
+    .wrapper-activity .activImg {
+      border-radius: 5px;
+      border: 1px solid black;
+      display: block;
+      float: left;
+      box-shadow: 0px 0px 19px 2px rgba(0, 0, 0, 0.4);
+      margin-bottom: 18px; }
+    .wrapper-activity .image-1, .wrapper-activity .image-2, .wrapper-activity .image-3, .wrapper-activity .image-4, .wrapper-activity .image-5, .wrapper-activity .image-6, .wrapper-activity .image-7 {
+      background-color: #08F5ED;
+      width: 300px;
+      height: 310px; }
+      .wrapper-activity .image-1-item, .wrapper-activity .image-2-item, .wrapper-activity .image-3-item, .wrapper-activity .image-4-item, .wrapper-activity .image-5-item, .wrapper-activity .image-6-item, .wrapper-activity .image-7-item {
+        display: block;
+        width: 90%;
+        height: 74%;
+        margin: 0 auto 13%; }
+      .wrapper-activity .image-1-Name, .wrapper-activity .activImg-NameNew, .wrapper-activity .image-2-Name, .wrapper-activity .image-3-Name, .wrapper-activity .image-4-Name, .wrapper-activity .image-5-Name, .wrapper-activity .image-6-Name, .wrapper-activity .image-7-Name {
+        width: 100%;
+        height: 13%;
+        display: block;
+        text-align: left;
+        text-decoration: italic;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+        color: #373A20;
+        padding: 9px 0 0 5%; }
+    .wrapper-activity .image-2 {
+      background-color: #7AE506; }
+      .wrapper-activity .image-2-Name {
+        color: blue; }
+    .wrapper-activity .image-3 {
+      background-color: #F90404; }
+      .wrapper-activity .image-3-Name {
+        color: #001016; }
+    .wrapper-activity .image-4 {
+      background-color: #F7CC03; }
+      .wrapper-activity .image-4-Name {
+        color: #691F02; }
+    .wrapper-activity .image-5, .wrapper-activity .image-6 {
+      background-color: #140AF6;
+      width: 620px; }
+      .wrapper-activity .image-5-Name {
+        color: #F6FF00; }
+    .wrapper-activity .image-6 {
+      background-color: #AFF30A; }
+      .wrapper-activity .image-6-Name {
+        color: #0A38E3; }
+    .wrapper-activity .image-7 {
+      background-color: #E701F5; }
+      .wrapper-activity .image-7-Name {
+        color: #060606; } }

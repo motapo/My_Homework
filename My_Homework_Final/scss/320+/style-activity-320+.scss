@@ -1,0 +1,128 @@
+@import "../_variable-mixed.scss";
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+	.activity-title {
+		display: block;
+		font-size: 137.5%;
+		font-family: $MontsBold;
+		text-align: center;
+		line-height: 120%;
+	}
+
+	.wrapper-activity {
+		width: auto;
+		height: auto;
+		margin: 14px auto 25px;
+		padding: 0 10px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		.activImg {
+			border-radius: 5px;
+			border: 1px solid black;
+			display: block;
+			float: left;
+			box-shadow: 0px 0px 18px 2px rgba(0,0,0, .4);
+			margin-bottom: 10px;
+			&-NameNew {
+				@extend .image-1-Name;
+			}
+		}
+		.image-1 {
+			background-color: #08F5ED;
+			width: 300px;
+			height: 120px;
+			&-item {
+				display: inline-block;
+				width: 66%;
+				height: 94%;
+				margin: 1%;
+			}
+			&-Name{
+				display: inline-block;
+				width: 24%;
+				height: 79%;
+				text-align: left;
+				font-weight: 700;
+				font-family: $Roboto;
+				color: #373A20;
+				margin: 4%;
+				float: left;
+				line-height: 120%;
+			}
+		}
+		.image-2 {
+			@extend .image-1;
+			background-color: #7AE506;
+			&-item {
+				@extend .image-1-item;
+			}
+			&-Name{
+				@extend .image-1-Name;
+					color: blue;
+			}
+		}
+		.image-3 {
+			@extend .image-1;
+			background-color: #F90404;
+			&-item {
+				@extend .image-1-item;
+			}
+			&-Name {
+				@extend .image-1-Name;
+				color: #001016;
+			
+			}
+		}
+		.image-4 {
+			@extend .image-1;
+			background-color: #F7CC03;
+			&-item {
+				@extend .image-1-item;
+			}
+			&-Name {
+				@extend .image-1-Name;
+				color: #691F02;
+			
+			}
+		}
+		.image-5 {
+			@extend .image-1;
+			background-color: #140AF6;
+			&-item {
+				@extend .image-1-item;
+			}
+			&-Name {
+				@extend .image-1-Name;
+				color: #F6FF00;
+			
+			}
+		}
+		.image-6 {
+			@extend .image-5;
+			background-color: #AFF30A;
+			&-item {
+				@extend .image-1-item;
+			}
+			&-Name {
+				@extend .image-1-Name;
+				color: #0A38E3;
+			
+			}
+		}
+		.image-7 {
+			@extend .image-1;
+			background-color: #E701F5;
+			&-item {
+				@extend .image-1-item;
+			}
+			&-Name {
+				@extend .image-1-Name;
+				color: #060606;
+			
+			}
+		}
+	}
+}

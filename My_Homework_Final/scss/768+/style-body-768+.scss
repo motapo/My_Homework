@@ -1,0 +1,16 @@
+@import "../_variable-mixed.scss";
+
+@media (min-width: 768px) and (max-width: 1439px) {
+	
+	body {
+		background-color: #ffffff;
+		.wrapper {
+			width: 100%;
+			height: auto;
+			margin: 0 auto;
+			background-color: #ffffff;
+			box-shadow: 0px 0px 22px 1px rgba(0,0,0, .2);
+		}
+	}
+
+}

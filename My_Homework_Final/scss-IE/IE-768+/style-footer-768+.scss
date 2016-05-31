@@ -1,0 +1,112 @@
+@import "../_variable-mixed.scss";
+
+@media (min-width: 768px) and (max-width: 1439px) {
+
+	footer{
+		width: 768px;
+		display: inline-block;
+		height: 125px;
+		padding: 37px 34px 0px 41px;
+		border-top: 5px solid $color1;
+		.information {
+			display: inline-block;
+			width: 470px;
+			height: auto;
+			margin-right: 80px;
+			margin-left: 35px;
+			&-title {
+				display: inline-block;
+				font-family: $MontsBold;
+				font-size: 100%;
+				color: $color1;
+				text-transform: uppercase;
+				vertical-align: top;
+				letter-spacing: 0.9px;
+			}
+			&-blockLink {
+				display: inline-block;
+				margin: 0px 100px 0px 78px;
+				&-linkBig {
+					display: block;
+					text-decoration: none;
+					font-size: 87.5%;
+					font-family: $MontsBold;
+					color: black;
+					margin-bottom: 15px;
+				}
+				&-A {
+					display: block;
+					margin-bottom: 8px;
+					&-link{
+						color: #989898;
+						text-decoration: none;
+						font-weight: 300;
+						font-size: 87.5%;
+						font-family: $Roboto;
+						line-height: 100%;
+						&:hover {
+							color: black;
+						} 
+					}
+				}
+				&-B {
+					@extend .information-blockLink-A;
+					&-link {
+						@extend .information-blockLink-A-link;
+						&:hover {
+							color: black;
+						} 
+					}
+				}
+				&-C {
+					@extend .information-blockLink-A;
+					&-link {
+						@extend .information-blockLink-A-link;
+						&:hover {
+							color: black;
+						} 
+					}
+				}
+				&-D {
+					@extend .information-blockLink-A;
+					&-link {
+						@extend .information-blockLink-A-link;
+						&:hover {
+							color: black;
+						} 
+					}
+				}
+
+			}
+			&-linkBig2 {
+				@extend .information-blockLink-linkBig;
+				display: inline-block;
+				vertical-align: top;
+			}
+		}
+		.logo {
+			display: inline-block;
+			width: 115px;
+			height: 50px;
+			&-title {
+				display: block;
+				font-family: $MontsBold;
+				font-size: 62.5%;
+				text-transform: uppercase;
+				color: $color5;
+				text-align: right;
+				width: 110px;
+				margin-bottom: 10px;
+				letter-spacing: 1px;
+				
+			}
+			&-image {
+				display: block;
+				background-image:url(/img/icon/design-logo.png);
+  				width: 110px;
+  				height: 24px;
+			}
+
+		}
+	}
+}

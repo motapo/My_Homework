@@ -1,0 +1,72 @@
+/*@extend .wrap_jcarousel;*/
+@media (min-width: 768px) and (max-width: 1439px) {
+  footer {
+    width: 768px;
+    display: inline-block;
+    height: 125px;
+    padding: 37px 34px 0px 41px;
+    border-top: 5px solid #ff4e50; }
+    footer .information {
+      display: inline-block;
+      width: 470px;
+      height: auto;
+      margin-right: 80px;
+      margin-left: 35px; }
+      footer .information-title {
+        display: inline-block;
+        font-family: "Montserrat Bold", Arial, sans-serif;
+        font-size: 100%;
+        color: #ff4e50;
+        text-transform: uppercase;
+        vertical-align: top;
+        letter-spacing: 0.9px; }
+      footer .information-blockLink {
+        display: inline-block;
+        margin: 0px 100px 0px 78px; }
+        footer .information-blockLink-linkBig, footer .information-linkBig2 {
+          display: block;
+          text-decoration: none;
+          font-size: 87.5%;
+          font-family: "Montserrat Bold", Arial, sans-serif;
+          color: black;
+          margin-bottom: 15px; }
+        footer .information-blockLink-A, footer .information-blockLink-B, footer .information-blockLink-C, footer .information-blockLink-D {
+          display: block;
+          margin-bottom: 8px; }
+          footer .information-blockLink-A-link, footer .information-blockLink-B-link, footer .information-blockLink-C-link, footer .information-blockLink-D-link {
+            color: #989898;
+            text-decoration: none;
+            font-weight: 300;
+            font-size: 87.5%;
+            font-family: "Roboto", sans-serif;
+            line-height: 100%; }
+            footer .information-blockLink-A-link:hover, footer .information-blockLink-B-link:hover, footer .information-blockLink-C-link:hover, footer .information-blockLink-D-link:hover {
+              color: black; }
+        footer .information-blockLink-B-link:hover {
+          color: black; }
+        footer .information-blockLink-C-link:hover {
+          color: black; }
+        footer .information-blockLink-D-link:hover {
+          color: black; }
+      footer .information-linkBig2 {
+        display: inline-block;
+        vertical-align: top; }
+    footer .logo {
+      display: inline-block;
+      width: 115px;
+      height: 50px; }
+      footer .logo-title {
+        display: block;
+        font-family: "Montserrat Bold", Arial, sans-serif;
+        font-size: 62.5%;
+        text-transform: uppercase;
+        color: #cccccc;
+        text-align: right;
+        width: 110px;
+        margin-bottom: 10px;
+        letter-spacing: 1px; }
+      footer .logo-image {
+        display: block;
+        background-image: url(/img/icon/design-logo.png);
+        width: 110px;
+        height: 24px; } }

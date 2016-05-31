@@ -1,0 +1,169 @@
+@import "../_variable-mixed.scss";
+
+@media (min-width: 768px) and (max-width: 1439px) {
+
+.partner-title {
+	display: block;
+	padding-top: 88px;
+	font-size: 137.5%;
+	font-family: $MontsBold;
+	text-align: center;
+}
+	.wrapper-partner {
+		display: block;
+		width: 768px;
+		height: 600px;
+		padding: 30px 144px 37px 144px;
+		.partner-A {
+			display: inline-block;
+			width: 46.5%;
+			height: auto;
+			text-align: center;
+			float: left;
+			&-img {
+				width: 130px;
+				height: 130px;
+				text-align: center;
+				margin: 0 auto 14px;
+				&-foto {
+					border-radius: 50%;
+					height: 130px;
+					width: 130px;
+					border: 4px solid white;
+					background-image:url(/img/spriteAll.jpg);
+  					background-position: -1200px -390px;
+
+				}
+				&-icon {
+					background-color: $color1;
+					background-image:url(/img/icon/technology.png);
+					background-position: center center;
+					background-repeat: no-repeat;
+					border-radius: 50%;
+					border: 4px solid white;
+					position: relative;
+					bottom: 42px;
+					left: 88px;
+					width: 42px;
+					height: 42px; 
+				}
+			}
+			&-name {
+				display: block;
+				font-family: $MontsBold;
+				font-size: 87.5%;
+				text-align: center;
+				margin-bottom: 17px;
+			}
+			&-text {
+				display: block;
+				font-family: $Roboto;
+				font-weight: 300;
+				font-size: 87.5%;
+				text-align: center;
+				line-height: 117%;
+				letter-spacing: 0.15px;
+
+			}
+		}
+		.partner-B {
+			@extend .partner-A;
+			&-img {
+				@extend .partner-A-img;
+				&-foto {
+					@extend .partner-A-img-foto;
+					background-position: -1200px 0px;
+				}
+				&-icon {
+					@extend .partner-A-img-icon;
+					background-color: $color3;
+					background-image:url(/img/icon/cup-1.png);
+				}
+			}
+			&-name {
+				@extend .partner-A-name;
+			}
+			&-text {
+				@extend .partner-A-text;
+			}
+
+		}
+		.partner-C {
+			@extend .partner-A;
+			margin-top: 52px;
+			&-img {
+				@extend .partner-A-img;
+				&-foto {
+					@extend .partner-A-img-foto;
+					background-position: -1200px -260px;
+				}
+				&-icon {
+					@extend .partner-A-img-icon;
+					background-color: $color4;
+					background-image:url(/img/icon/flask-1.png);
+				}
+			}
+			&-name {
+				@extend .partner-A-name;
+			}
+			&-text {
+				@extend .partner-A-text;
+			}
+
+		}
+		.partner-D {
+			@extend .partner-A;
+			margin-top: 52px;
+			&-img {
+				@extend .partner-A-img;
+				&-foto {
+					@extend .partner-A-img-foto;
+					background-position: -1200px -130px;
+				}
+				&-icon {
+					@extend .partner-A-img-icon;
+					background-color: $color2;
+					background-image:url(/img/icon/paper-plane-1.png);
+				}
+			}
+			&-name {
+				@extend .partner-A-name;
+			}
+			&-text {
+				@extend .partner-A-text;
+			}
+
+		}
+	}
+
+	#partner-button{
+		width: 768px;
+		height: 140px;
+		.partner-button {
+			display: block;
+			width: 192px;
+			height: 40px;
+			border-radius: 40px;
+			border: 2px solid $color1;
+			background: none;
+			color: $color1; 
+			font-size: 87.5%;
+			font-family: $MontsBold;
+			text-align: center;
+			transition: 0.4s all;
+			margin: 0 auto;
+			transition: 0.3s all;
+			&:hover {
+				background-color: $color1;
+				color: white;
+				position: relative;
+				width: 220px;
+				height: 50px;
+				font-size: 110%;
+				outline: none;
+				transition: 0.3s all;
+			}
+		}
+	}
+
+}

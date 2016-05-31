@@ -1,0 +1,116 @@
+@import "../_variable-mixed.scss";
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+	footer{
+		width: 100%;
+		height: 195px;
+		padding: 18px 0 10px 0;
+		border-top: 5px solid $color1;
+		.information {
+			display: block;
+			width: 100%;
+			height: auto;
+			text-align: center;
+			&-title {
+				display: block;
+				font-family: $MontsBold;
+				font-size: 100%;
+				color: $color1;
+				text-transform: uppercase;
+				vertical-align: top;
+				letter-spacing: 0.9px;
+			}
+			&-blockLink {
+				display: block;
+				margin-top: 5px;
+				&-linkBig {
+					display: block;
+					position: relative;
+					top: 11px;
+					left: -1px;
+					text-decoration: none;
+					font-size: 87.5%;
+					font-family: $MontsBold;
+					color: black;
+					margin-bottom: 15px;
+				}
+				&-A {
+					display: inline-block;
+					margin-right: 6px;
+					&-link{
+						color: #989898;
+						text-decoration: none;
+						font-weight: 300;
+						font-size: 87.5%;
+						font-family: $Roboto;
+						line-height: 100%;
+						&:hover {
+							color: black;
+						}  
+					}
+				}
+				&-B {
+					@extend .information-blockLink-A;
+					&-link {
+						@extend .information-blockLink-A-link;
+						&:hover {
+							color: black;
+						} 
+					}
+				}
+				&-C {
+					@extend .information-blockLink-A;
+					&-link {
+						@extend .information-blockLink-A-link;
+						&:hover {
+							color: black;
+						} 
+					}
+				}
+				&-D {
+					@extend .information-blockLink-A;
+					&-link {
+						@extend .information-blockLink-A-link;
+						&:hover {
+							color: black;
+						} 
+					}
+				}
+
+			}
+			&-linkBig2 {
+				@extend .information-blockLink-linkBig;
+				display: inline-block;
+				margin-top: 6px;
+				margin-bottom: 26px;
+			}
+		}
+		.logo {
+			display: block;
+			width: 100%;
+			height: auto;
+			text-align: center;
+			&-title {
+				display: block;
+				font-family: $MontsBold;
+				font-size: 62.5%;
+				text-transform: uppercase;
+				color: $color5;
+				text-align: center;
+				width: 110px;
+				margin: 0 auto 10px;
+				letter-spacing: 1px;
+				
+			}
+			&-image {
+				margin: 0 auto; 
+				display: block;
+				background-image: url(../img/icon/design-logo.png);
+  				width: 110px;
+  				height: 24px
+			}
+
+		}
+	}
+}

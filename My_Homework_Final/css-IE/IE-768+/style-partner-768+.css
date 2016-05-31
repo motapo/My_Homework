@@ -1,0 +1,105 @@
+/*@extend .wrap_jcarousel;*/
+@media (min-width: 768px) and (max-width: 1439px) {
+  .partner-title {
+    display: block;
+    padding-top: 88px;
+    font-size: 137.5%;
+    font-family: "Montserrat Bold", Arial, sans-serif;
+    text-align: center; }
+  .wrapper-partner {
+    display: block;
+    width: 768px;
+    height: 600px;
+    padding: 30px 144px 37px 144px; }
+    .wrapper-partner .partner-A, .wrapper-partner .partner-B, .wrapper-partner .partner-C, .wrapper-partner .partner-D {
+      display: inline-block;
+      width: 46.5%;
+      height: auto;
+      text-align: center;
+      float: left; }
+      .wrapper-partner .partner-A-img, .wrapper-partner .partner-B-img, .wrapper-partner .partner-C-img, .wrapper-partner .partner-D-img {
+        width: 130px;
+        height: 130px;
+        text-align: center;
+        margin: 0 auto 14px; }
+        .wrapper-partner .partner-A-img-foto, .wrapper-partner .partner-B-img-foto, .wrapper-partner .partner-C-img-foto, .wrapper-partner .partner-D-img-foto {
+          border-radius: 50%;
+          height: 130px;
+          width: 130px;
+          border: 4px solid white;
+          background-image: url(/img/spriteAll.jpg);
+          background-position: -1200px -390px; }
+        .wrapper-partner .partner-A-img-icon, .wrapper-partner .partner-B-img-icon, .wrapper-partner .partner-C-img-icon, .wrapper-partner .partner-D-img-icon {
+          background-color: #ff4e50;
+          background-image: url(/img/icon/technology.png);
+          background-position: center center;
+          background-repeat: no-repeat;
+          border-radius: 50%;
+          border: 4px solid white;
+          position: relative;
+          bottom: 42px;
+          left: 88px;
+          width: 42px;
+          height: 42px; }
+      .wrapper-partner .partner-A-name, .wrapper-partner .partner-B-name, .wrapper-partner .partner-C-name, .wrapper-partner .partner-D-name {
+        display: block;
+        font-family: "Montserrat Bold", Arial, sans-serif;
+        font-size: 87.5%;
+        text-align: center;
+        margin-bottom: 17px; }
+      .wrapper-partner .partner-A-text, .wrapper-partner .partner-B-text, .wrapper-partner .partner-C-text, .wrapper-partner .partner-D-text {
+        display: block;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 87.5%;
+        text-align: center;
+        line-height: 117%;
+        letter-spacing: 0.15px; }
+    .wrapper-partner .partner-B-img-foto {
+      background-position: -1200px 0px; }
+    .wrapper-partner .partner-B-img-icon {
+      background-color: #1cd7ad;
+      background-image: url(/img/icon/cup-1.png); }
+    .wrapper-partner .partner-C {
+      margin-top: 52px; }
+      .wrapper-partner .partner-C-img-foto {
+        background-position: -1200px -260px; }
+      .wrapper-partner .partner-C-img-icon {
+        background-color: #ffa507;
+        background-image: url(/img/icon/flask-1.png); }
+    .wrapper-partner .partner-D {
+      margin-top: 52px; }
+      .wrapper-partner .partner-D-img-foto {
+        background-position: -1200px -130px; }
+      .wrapper-partner .partner-D-img-icon {
+        background-color: #4e73db;
+        background-image: url(/img/icon/paper-plane-1.png); }
+  #partner-button {
+    width: 768px;
+    height: 140px; }
+    #partner-button .partner-button {
+      display: block;
+      width: 192px;
+      height: 40px;
+      border-radius: 40px;
+      border: 2px solid #ff4e50;
+      background: none;
+      color: #ff4e50;
+      font-size: 87.5%;
+      font-family: "Montserrat Bold", Arial, sans-serif;
+      text-align: center;
+      -webkit-transition: 0.4s all;
+      transition: 0.4s all;
+      margin: 0 auto;
+      -webkit-transition: 0.3s all;
+      transition: 0.3s all; }
+      #partner-button .partner-button:hover {
+        background-color: #ff4e50;
+        color: white;
+        position: relative;
+        width: 220px;
+        height: 50px;
+        font-size: 110%;
+        outline: none;
+        -webkit-transition: 0.3s all;
+        transition: 0.3s all; } }
