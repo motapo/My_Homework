@@ -39,6 +39,7 @@
 }); 
 
 	function LoadImg0 (i){
+		var search = $('.search-interest-text').val();
 		$.getJSON(
 			"http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
 			{
@@ -48,12 +49,13 @@
 			},
 			function(data){
 					console.log(data);
-					console.log(data.items[0].media.m);
-					$('.image-' + (i+1) + '-item').css('background', 'url(' + data.items[0].media.m +')'); 
+					var string = data.items[i].author;
+					string = string.substring(18);	
+					$('.image-' + (i+1) + '-item').css('background', 'url(' + data.items[i].media.m +')'); 
 					$('.image-' + (i+1) + '-item').css('background-repeat', 'no-repeat'); 
 					$('.image-' + (i+1) + '-item').css('background-position', 'center center'); 
 					$('.image-' + (i+1) + '-item').css('background-size', 'contain'); 
-	        		$('.image-' + (i+1) + '-Name').html(search);
+	        		$('.image-' + (i+1) + '-Name').html('Autor:' + string);
 				}
 			);
 		}
@@ -66,16 +68,18 @@
 $(function(){
 	function LoadImg (value){
 		$.getJSON(
-			'http://api.pixplorer.co.uk/image?word=' + value + '&amount=7&size=tb', 
+			"http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
+			{
+			tags: " ' " + value + " ' ",
+			tagmode: "any",
+			format: "json"
+			},
 			function(data){
 				for (var i = 0; i <= 6; i++) {
-					console.log(data);
-					console.log(data.images[i].imageurl);
-					$('.image-' + (i+1) + '-item').css('background', 'url(' + data.images[i].imageurl +')'); 
+					$('.image-' + (i+1) + '-item').css('background', 'url(' + data.items[i].media.m +')');  
 					$('.image-' + (i+1) + '-item').css('background-repeat', 'no-repeat'); 
 					$('.image-' + (i+1) + '-item').css('background-position', 'center center'); 
 					$('.image-' + (i+1) + '-item').css('background-size', 'contain'); 
-	        		$('.image-' + (i+1) + '-Name').html(data.images[i].word);
 				}
 			}
 		);
@@ -84,8 +88,8 @@ $(function(){
 	 $('.search-interest-submit').on('click', function(event) {
         event.preventDefault();
         var search = $('.search-interest-text').val();
-        $('.activImgName').html(search);
-
+	    $('.activImgName').html('Tags: ' + search);
+        
         LoadImg(search);
  
 }); });
